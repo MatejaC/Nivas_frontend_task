@@ -17,6 +17,7 @@ $op-black: rgba(0, 0, 0, 0.54);
 $porta-c: #464646;
 $text-c: #414141;
 $whitey: #f8f8f8;
+$grey-services: #acacac;
 
 * {
 	box-sizing: border-box;
@@ -225,6 +226,19 @@ img {
 			margin-top: 10px;
 			margin-bottom: 20px;
 		}
+
+		.Read-more {
+			width: 82px;
+			height: 16px;
+			font-family: Raleway;
+			font-size: 14px;
+			font-weight: bold;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			color: #464646;
+		}
 	}
 
 	.aside {
@@ -239,21 +253,61 @@ img {
 		grid-row: 4;
 	}
 
-	.logo {
-		display: grid;
-		background-color: $whitey;
-		grid-row: 5;
+	.Services {
+		width: 143px;
+		height: 42px;
+		font-family: Raleway;
+		font-size: 36px;
+		font-weight: 500;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		color: $background-color-primary;
 	}
 
-	.contact {
-		display: grid;
-		background-color: $background-color-primary;
-		grid-row: 6;
+	.Rectangle-Copy-4 {
+		width: 360px;
+		height: 612px;
+		background-color: #000000;
+		margin-top: 60px;
+		margin-right: 197px;
+		margin-left: 20px;
+		margin-bottom: 510px;
 	}
 
-	.footer {
-		display: grid;
-		background-color: $black;
-		grid-row: 7;
+	.-Lorem-ipsum-dolor {
+		width: 320px;
+		height: 436px;
+		font-family: Raleway;
+		font-size: 16px;
+		font-weight: 500;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.63;
+		letter-spacing: normal;
+		color: $grey-services;
+		margin-top: 116px;
+		margin-right: 20px;
+		margin-left: 20px;
+		margin-bottom: 60px;
 	}
+}
+
+.logo {
+	display: grid;
+	background-color: $whitey;
+	grid-row: 5;
+}
+
+.contact {
+	display: grid;
+	background-color: $background-color-primary;
+	grid-row: 6;
+}
+
+.footer {
+	display: grid;
+	background-color: $black;
+	grid-row: 7;
 }
