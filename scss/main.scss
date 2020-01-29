@@ -16,6 +16,7 @@ $black: #000000;
 $op-black: rgba(0, 0, 0, 0.54);
 $porta-c: #464646;
 $text-c: #414141;
+$whitey: #f8f8f8;
 
 * {
 	box-sizing: border-box;
@@ -195,7 +196,7 @@ img {
 			width: 264px;
 			height: 29px;
 			font-family: "Raleway";
-			font-size: 24px;
+			font-size: 23px;
 			font-weight: 500;
 			font-stretch: normal;
 			font-style: normal;
@@ -224,5 +225,35 @@ img {
 			margin-top: 10px;
 			margin-bottom: 20px;
 		}
+	}
+
+	.aside {
+		display: grid;
+		background-color: $whitey;
+		grid-row: 3;
+	}
+
+	.services {
+		display: grid;
+		background-color: $black;
+		grid-row: 4;
+	}
+
+	.logo {
+		display: grid;
+		background-color: $whitey;
+		grid-row: 5;
+	}
+
+	.contact {
+		display: grid;
+		background-color: $background-color-primary;
+		grid-row: 6;
+	}
+
+	.footer {
+		display: grid;
+		background-color: $black;
+		grid-row: 7;
 	}
 }
