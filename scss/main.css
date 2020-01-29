@@ -1,38 +1,10 @@
 @import url(//db.onlinewebfonts.com/c/2090551770be22b09600a40b0b4673b7?family=Avenir+Medium);
 @font-face {
-  font-family: "Avenir Medium";
-  src: url("//db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.eot");
-  src: url("//db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.woff") format("woff"), url("//db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.svg#Avenir Medium") format("svg");
-}
-
-@font-face {
   font-family: AvenirNextLTPro;
   src: local(AvenirNextLTPro-Medium), url(/path/to/AvenirNextLTPro-Medium.woff2) format("woff2"), url(/path/to/AvenirNextLTPro-Medium.woff) format("woff"), url(/path/to/AvenirNextLTPro-Medium.ttf) format("truetype");
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
-}
-
-.Text-Style {
-  font-family: AvenirNextLTPro;
-  font-size: 17px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.24;
-  letter-spacing: normal;
-  color: #999999;
-}
-
-.Text-Style-2 {
-  font-family: AvenirNextLTPro;
-  font-size: 15px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #323232;
 }
 
 * {
@@ -42,66 +14,142 @@
   padding: 0;
 }
 
-.message {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-}
-
-@supports (display: grid) {
-  .message {
-    display: none;
-  }
-}
-
-html,
-body {
-  background: black;
-  font-family: "Raleway", sans-serif;
+html {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Raleway";
   font-family: "AvenirNextLTPro", Fallback, sans-serif;
-  font-size: 1rem;
-  overflow-x: hidden;
   margin: 0;
-  line-height: 1;
 }
 
-.clearfix {
-  zoom: 1;
+/* [data-responsive-background-image] {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 24%;
+	padding-bottom: 56.25%;
+	/* 16:9 ratio 
 }
 
-.wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[6];
-      grid-template-columns: repeat(6, 1fr);
-  grid-gap: 16px;
+[data-responsive-background-image] img {
+ display: none;
 }
-
+*/
 @media (min-width: 360px) {
-  .header {
-    /* Set rules to fill background */
-    min-height: 640px;
-    min-width: 360px;
-    /* Set up proportionate scaling */
-    width: 100%;
-    height: 100%;
-    background-color: #ffffff;
-    background-position: center center;
-    background-repeat: no-repeat;
-    /* Set up positioning */
-    top: 0;
-    margin-right: 0;
-    margin-left: 0;
+  body {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+    grid-gap: 16px;
   }
   .img-header {
+    background-image: url("/dist/img/img-header.jpg");
+    width: 100%;
     width: 360px;
     height: 640px;
     -o-object-fit: contain;
        object-fit: contain;
+    position: relative !important;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
   }
-}
-
-p {
-  font-family: AvenirNextLTPro;
+  .img-header .menu {
+    width: 48px;
+    height: 21px;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+    position: absolute !important;
+    top: 25px;
+    bottom: 595px;
+    left: 30px;
+    right: 295px;
+    width: 100%;
+    z-index: 2;
+  }
+  .img-header .menu .hamburger {
+    display: inline-block;
+    -ms-grid-columns: 1/6;
+        grid-template-columns: 1/6;
+    -ms-grid-rows: -5;
+        grid-template-rows: -5;
+    width: 35px;
+    height: 20px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    position: absolute;
+    z-index: 2;
+  }
+  .img-header a {
+    text-decoration: none;
+  }
+  .img-header .Rectangle {
+    width: 130px;
+    height: 44px;
+    background-color: #ffffff;
+  }
+  .img-header .Consectetur-Elit-Ips {
+    width: 320px;
+    height: 92px;
+    font-family: Raleway;
+    font-size: 36px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.28;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+  }
+  .img-header .CTA {
+    width: 83px;
+    height: 19px;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+  }
+  .img-header .Oval {
+    width: 10px;
+    height: 10px;
+    background-color: var(--white);
+  }
+  .img-1-mobile {
+    width: 320px;
+    height: 177px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    border-radius: 6px;
+  }
+  .Ullamcorper-Sem-Port {
+    width: 264px;
+    height: 29px;
+    font-family: "Raleway";
+    font-size: 24px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #464646;
+  }
 }
 /*# sourceMappingURL=main.css.map */
