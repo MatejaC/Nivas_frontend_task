@@ -14,6 +14,7 @@ $background-color-primary: #ffffff;
 $background-color-one: rgba(0, 0, 0, 0.54);
 $black: #000000;
 $op-black: rgba(0, 0, 0, 0.54);
+$porta-c: #464646;
 
 * {
 	box-sizing: border-box;
@@ -36,7 +37,7 @@ $op-black: rgba(0, 0, 0, 0.54);
 // ---for Mmobile S - 320px --- //
 
 .wrapper > * {
-	grid-column: col-start / span 6;
+	display: grid;
 }
 
 img {
@@ -49,9 +50,8 @@ img {
 		display: grid;
 		grid-template-columns: repeat (6, 1fr);
 		grid-template-rows: auto;
-		column-gap: 16px;
+		grid-gap: 16px;
 		background-color: $background-color-primary;
-		justify-content: space-around;
 
 		html,
 		body {
@@ -59,25 +59,30 @@ img {
 			color: $black;
 			font-family: "Raleway", sans-serif;
 			font-family: "AvenirNextLTPro", Fallback, sans-serif;
-			margin: 0;
 			width: 360px;
-			height: 3566px;
+		}
+
+		.header {
+			grid-row: 1;
 		}
 
 		.img-header {
-			display: grid;
-			grid-column-start: 1;
+			object-fit: fill;
 			justify-items: stretch;
+			justify-items: start;
 			max-width: 100%;
 			width: 360px;
 			height: 640px;
-			object-fit: contain;
-			left: 0px;
-			right: 0px;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: 0;
 			background-color: $background-color-primary;
 			background-size: cover;
 			background-position: center center;
 			background-repeat: no-repeat;
+			object-fit: contain;
 		}
 
 		.menu {
@@ -169,23 +174,20 @@ img {
 			z-index: 2;
 		}
 
-		.carousel-indicators {
-			width: 10px;
-			height: 10px;
+		.article {
+			display: grid;
 			background-color: $background-color-primary;
+			grid-row: 2;
 		}
 
 		.img-1-mobile {
-			display: grid;
-			grid-template-columns: 2/6;
 			width: 320px;
 			height: 177px;
-			object-fit: contain;
 			border-radius: 6px;
-			top: 12px;
-			right: 23px;
-			bottom: 13px;
-			left: 24px;
+			margin-top: 20px;
+			margin-right: 20px;
+			margin-left: 20px;
+			margin-bottom: 10px;
 		}
 
 		.Ullamcorper-Sem-Port {
@@ -199,6 +201,10 @@ img {
 			line-height: normal;
 			letter-spacing: normal;
 			color: #464646;
+			left: 20px;
+			right: 29px;
+			top: 20px;
+			bottom: 10px;
 		}
 	}
 }
