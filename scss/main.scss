@@ -13,6 +13,7 @@
 $background-color-primary: #ffffff;
 $background-color-one: rgba(0, 0, 0, 0.54);
 $black: #000000;
+$op-black: rgba(0, 0, 0, 0.54);
 
 * {
 	box-sizing: border-box;
@@ -23,9 +24,11 @@ $black: #000000;
 html {
 	background-color: $background-color-primary;
 	color: $black;
-	font-family: "Raleway";
+	font-family: "Raleway", sans-serif;
 	font-family: "AvenirNextLTPro", Fallback, sans-serif;
 	margin: 0;
+	width: 360px;
+	height: 3566px;
 }
 
 /* [data-responsive-background-image] {
@@ -45,100 +48,116 @@ html {
 @media (min-width: 360px) {
 	body {
 		display: grid;
-		grid-template-columns: repeat(6, 1fr);
-		grid-gap: 16px;
+		grid-template-columns: repeat (6, 40px);
+		grid-column-gap: 16px;
+		background-color: $background-color-primary;
 	}
 
 	.img-header {
-		background-image: url("/dist/img/img-header.jpg");
-		width: 100%;
+		display: grid;
+		justify-items: stretch;
 		width: 360px;
 		height: 640px;
 		object-fit: contain;
-		position: relative !important;
 		left: 0px;
 		right: 0px;
-		margin: auto;
 		background-color: $background-color-primary;
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;
 		z-index: -1;
+	}
 
-		.menu {
-			width: 48px;
-			height: 21px;
-			font-family: Raleway;
-			font-size: 18px;
-			font-weight: 500;
-			font-stretch: normal;
-			font-style: normal;
-			line-height: normal;
-			letter-spacing: normal;
-			color: $background-color-primary;
-			position: absolute !important;
-			top: 25px;
-			bottom: 595px;
-			left: 30px;
-			right: 295px;
-			width: 100%;
-			z-index: 2;
+	.menu {
+		width: 48px;
+		height: 21px;
+		font-family: Raleway;
+		font-size: 18px;
+		font-weight: 500;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		color: $background-color-primary;
+		position: absolute !important;
+		top: 25px;
+		bottom: 594px;
+		left: 80px;
+		right: 232px;
+		width: 100%;
+		z-index: 2;
+	}
 
-			.hamburger {
-				display: inline-block;
-				grid-template-columns: 1/6;
-				grid-template-rows: -5;
-				width: 35px;
-				height: 20px;
-				object-fit: contain;
-				position: absolute;
-				z-index: 2;
-			}
-		}
+	.hamburger {
+		display: grid;
+		width: 35px;
+		height: 20px;
+		top: 25px;
+		bottom: 595px;
+		left: 30px;
+		right: 295px;
+		object-fit: contain;
+		position: absolute;
+		z-index: 2;
+	}
 
-		a {
-			text-decoration: none;
-		}
+	a {
+		text-decoration: none;
+	}
 
-		.Rectangle {
-			width: 130px;
-			height: 44px;
-			background-color: $background-color-primary;
-		}
+	.Rectangle {
+		width: 130px;
+		height: 44px;
+		background-color: $background-color-primary;
+		top: 341px;
+		right: 115px;
+		bottom: 255px;
+		left: 115px;
+		z-index: 2;
+		position: absolute;
+	}
 
-		.Consectetur-Elit-Ips {
-			width: 320px;
-			height: 92px;
-			font-family: Raleway;
-			font-size: 36px;
-			font-weight: bold;
-			font-stretch: normal;
-			font-style: normal;
-			line-height: 1.28;
-			letter-spacing: normal;
-			text-align: center;
-			color: $background-color-primary;
-		}
+	.Consectetur-Elit-Ips {
+		width: 320px;
+		height: 92px;
+		font-family: Raleway;
+		font-size: 36px;
+		font-weight: bold;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.28;
+		letter-spacing: normal;
+		text-align: center;
+		color: $background-color-primary;
+		top: 219px;
+		right: 20px;
+		bottom: 329px;
+		left: 20px;
+		z-index: 2;
+		position: absolute;
+	}
 
-		.CTA {
-			width: 83px;
-			height: 19px;
-			font-family: Raleway;
-			font-size: 16px;
-			font-weight: 500;
-			font-stretch: normal;
-			font-style: normal;
-			line-height: normal;
-			letter-spacing: normal;
-			text-align: center;
-			color: #000000;
-		}
+	.CTA {
+		width: 83px;
+		height: 19px;
+		font-family: Raleway;
+		font-size: 16px;
+		font-weight: 500;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		text-align: center;
+		color: $black;
+		top: 12px;
+		right: 23px;
+		bottom: 13px;
+		left: 24px;
+		position: absolute;
+		z-index: 2;
+	}
 
-		.Oval {
-			width: 10px;
-			height: 10px;
-			background-color: var(--white);
-		}
+	.Oval {
+		width: 10px;
+		height: 10px;
+		background-color: var(--white);
 	}
 
 	.img-1-mobile {

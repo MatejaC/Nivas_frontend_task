@@ -5,28 +5,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width">
-
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700&display=swap" rel="stylesheet">
   <link href="//db.onlinewebfonts.com/c/2090551770be22b09600a40b0b4673b7?family=Avenir+Medium" rel="stylesheet" type="text/css"/>
-  <link rel="stylesheet" type="text/css" href="dist/css/normalize.txt">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="scss/main.css">
   <title>Nivas_Frontend_task</title>
 
 </head>
 
  <body>
  <header>
- 
-
-<img src="dist/img/img-header.jpg" srcset="dist/img/img-header@2x.jpg 2x,
-             dist/img/img-header@3x.jpg 3x" class="img-header">
+  <img srcset="dist/img/img-header@2x.jpg 2x,
+             dist/img/img-header@3x.jpg 3x" 
+             src="dist/img/img-header.jpg" 
+             class="img-header">
 
     <img class="hamburger" src="dist/img/hamburger.svg" alt="hamburger">
-<figcaption>
-    <p class="menu">Menu</p>
-    <p class="Consectetur-Elit-Ips">Consectetur Elit Ipsum Risus</p>
-    <button class="Rectangle CTA" type="button">Read more</button>
- </figcaption>    
+
+    <div class="menu">Menu</div>
+    <div class="Consectetur-Elit-Ips">Consectetur Elit Ipsum Risus</div>
+
+    <figure> 
+      <div class="Rectangle"><p class="CTA">Read more</p></div>
+     </figure>
+
+    <h2>slider</h2>
+    <div class="carousel my-carousel carousel--translate">
+      <input class="carousel__activator" type="radio" name="carousel" id="F" checked="checked" />
+      <input class="carousel__activator" type="radio" name="carousel" id="G" />
+      <input class="carousel__activator" type="radio" name="carousel" id="H" />
+      <input class="carousel__activator" type="radio" name="carousel" id="I" />
+      <input class="carousel__activator" type="radio" name="carousel" id="J" />
+      <div class="carousel__controls">
+        <label class="carousel__control carousel__control--backward" for="J"></label>
+        <label class="carousel__control carousel__control--forward" for="G"></label>
+      </div>
+      <div class="carousel__controls">
+        <label class="carousel__control carousel__control--backward" for="F"></label>
+        <label class="carousel__control carousel__control--forward" for="H"></label>
+      </div>
+      <div class="carousel__controls">
+        <label class="carousel__control carousel__control--backward" for="G"></label>
+        <label class="carousel__control carousel__control--forward" for="I"></label>
+      </div>
+      <div class="carousel__controls">
+        <label class="carousel__control carousel__control--backward" for="H"></label>
+        <label class="carousel__control carousel__control--forward" for="J"></label>
+      </div>
+      <div class="carousel__controls">
+        <label class="carousel__control carousel__control--backward" for="I"></label>
+        <label class="carousel__control carousel__control--forward" for="F"></label>
+      </div>
+      <div class="carousel__track">
+        <li class="carousel__slide">
+          <h1>F</h1>
+        </li>
+        <li class="carousel__slide">
+          <h1>G</h1>
+        </li>
+        <li class="carousel__slide">
+          <h1>H</h1>
+        </li>
+        <li class="carousel__slide">
+          <h1>I</h1>
+        </li>
+        <li class="carousel__slide">
+          <h1>J</h1>
+        </li>
+      </div>
+      <div class="carousel__indicators">
+        <label class="carousel__indicator" for="F"></label>
+        <label class="carousel__indicator" for="G"></label>
+        <label class="carousel__indicator" for="H"></label>
+        <label class="carousel__indicator" for="I"></label>
+        <label class="carousel__indicator" for="J"></label>
+      </div>
+    </div>
+    </div>
+    <div class="carousel-container">
+    </div>
   </header>
   
    <!--  
@@ -47,21 +103,28 @@
   
 
 
-
-  <section>
+<br>
+  <article>
     <img src="dist/img/img-1-mobile-icecream.jpg" srcset="dist/img/img-1-mobile-icecream@2x.jpg 2x,
                  dist/img/img-1-mobile-icecream@3x.jpg 3x" class="img-1-mobile">
-<div class=".Ullamcorper-Sem-Port">Ullamcorper Sem Porta</div>
-<h4 class="text-copy">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor
-fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</h4>
+<div class="Ullamcorper-Sem-Port">Ullamcorper Sem Porta</div>
+<br>
+<br>
+<div class="text-copy">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor
+fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</div>
 <a class="Read.more" href="#">Read more</a>
-  </section> 
+  </article> 
+  <br>
+  <br>
   <section class="product2">
-  <h2>Ullamcorper Sem Porta</h2>
-  <h4>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor
-    fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</h4>
+  <div class="Ullamcorper-Sem-Port">Ullamcorper Sem Porta</div>
+  <div class="text-copy">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor
+    fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</div>
   <a class="Read.more" href="#">Read more</a>
   </section>
+  <br>
+  <br>
+
   <section class="logo" class="Rectangle-Copy-4">
   <ul> 
     <li> Lorem ipsum dolor sit</li>
@@ -135,7 +198,7 @@ Web
 
 <p class="Newsletter">Newsletter</p>
 <input type="text" placeholder="your@email.com">
-<div class="Rectangle Sign-up">Sign up</div>
+<!-- <div class="Rectangle Sign-up">Sign up</div> -->
 
 
 
