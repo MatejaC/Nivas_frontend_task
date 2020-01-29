@@ -191,10 +191,26 @@ img {
     line-height: normal;
     letter-spacing: normal;
     color: #464646;
-    left: 20px;
-    right: 29px;
-    top: 20px;
-    bottom: 10px;
+    margin-left: 20px;
+    margin-right: 76px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .wrapper .text-copy {
+    width: 300px;
+    height: 120px;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #414141;
+    margin-left: 20px;
+    margin-right: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=main.css.map */
