@@ -14,43 +14,58 @@
   padding: 0;
 }
 
-html {
-  background-color: #ffffff;
-  color: #000000;
-  font-family: "Raleway", sans-serif;
-  font-family: "AvenirNextLTPro", Fallback, sans-serif;
-  margin: 0;
-  width: 360px;
-  height: 3566px;
+.clearfix {
+  zoom: 1;
 }
 
-/* [data-responsive-background-image] {
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-	display: inline-block;
-	width: 24%;
-	padding-bottom: 56.25%;
-	/* 16:9 ratio 
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
 }
 
-[data-responsive-background-image] img {
- display: none;
+.wrapper > * {
+  grid-column: col-start / span 6;
 }
-*/
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 @media (min-width: 360px) {
-  body {
+  .wrapper {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: repeat 6, 40px;
-        grid-template-columns: repeat 6, 40px;
-    grid-column-gap: 16px;
+    -ms-grid-columns: repeat 6, 1fr;
+        grid-template-columns: repeat 6, 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -webkit-column-gap: 16px;
+            column-gap: 16px;
     background-color: #ffffff;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
-  .img-header {
+  .wrapper html,
+  .wrapper body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: "Raleway", sans-serif;
+    font-family: "AvenirNextLTPro", Fallback, sans-serif;
+    margin: 0;
+    width: 360px;
+    height: 3566px;
+  }
+  .wrapper .img-header {
     display: -ms-grid;
     display: grid;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
     justify-items: stretch;
+    max-width: 100%;
     width: 360px;
     height: 640px;
     -o-object-fit: contain;
@@ -58,9 +73,11 @@ html {
     left: 0px;
     right: 0px;
     background-color: #ffffff;
-    z-index: -1;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
   }
-  .menu {
+  .wrapper .menu {
     width: 48px;
     height: 21px;
     font-family: Raleway;
@@ -79,7 +96,7 @@ html {
     width: 100%;
     z-index: 2;
   }
-  .hamburger {
+  .wrapper .hamburger {
     display: -ms-grid;
     display: grid;
     width: 35px;
@@ -93,10 +110,10 @@ html {
     position: absolute;
     z-index: 2;
   }
-  a {
+  .wrapper a {
     text-decoration: none;
   }
-  .Rectangle {
+  .wrapper .Rectangle {
     width: 130px;
     height: 44px;
     background-color: #ffffff;
@@ -107,7 +124,7 @@ html {
     z-index: 2;
     position: absolute;
   }
-  .Consectetur-Elit-Ips {
+  .wrapper .Consectetur-Elit-Ips {
     width: 320px;
     height: 92px;
     font-family: Raleway;
@@ -126,7 +143,7 @@ html {
     z-index: 2;
     position: absolute;
   }
-  .CTA {
+  .wrapper .CTA {
     width: 83px;
     height: 19px;
     font-family: Raleway;
@@ -145,19 +162,27 @@ html {
     position: absolute;
     z-index: 2;
   }
-  .Oval {
+  .wrapper .carousel-indicators {
     width: 10px;
     height: 10px;
-    background-color: var(--white);
+    background-color: #ffffff;
   }
-  .img-1-mobile {
+  .wrapper .img-1-mobile {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2/6;
+        grid-template-columns: 2/6;
     width: 320px;
     height: 177px;
     -o-object-fit: contain;
        object-fit: contain;
     border-radius: 6px;
+    top: 12px;
+    right: 23px;
+    bottom: 13px;
+    left: 24px;
   }
-  .Ullamcorper-Sem-Port {
+  .wrapper .Ullamcorper-Sem-Port {
     width: 264px;
     height: 29px;
     font-family: "Raleway";

@@ -21,162 +21,184 @@ $op-black: rgba(0, 0, 0, 0.54);
 	padding: 0;
 }
 
-html {
-	background-color: $background-color-primary;
-	color: $black;
-	font-family: "Raleway", sans-serif;
-	font-family: "AvenirNextLTPro", Fallback, sans-serif;
-	margin: 0;
-	width: 360px;
-	height: 3566px;
+.clearfix {
+	zoom: 1;
 }
 
-/* [data-responsive-background-image] {
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-	display: inline-block;
-	width: 24%;
-	padding-bottom: 56.25%;
-	/* 16:9 ratio 
+.clearfix:after {
+	content: ".";
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
 }
 
-[data-responsive-background-image] img {
- display: none;
+// ---for Mmobile S - 320px --- //
+
+.wrapper > * {
+	grid-column: col-start / span 6;
 }
-*/
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 @media (min-width: 360px) {
-	body {
+	.wrapper {
 		display: grid;
-		grid-template-columns: repeat (6, 40px);
-		grid-column-gap: 16px;
+		grid-template-columns: repeat (6, 1fr);
+		grid-template-rows: auto;
+		column-gap: 16px;
 		background-color: $background-color-primary;
-	}
+		justify-content: space-around;
 
-	.img-header {
-		display: grid;
-		justify-items: stretch;
-		width: 360px;
-		height: 640px;
-		object-fit: contain;
-		left: 0px;
-		right: 0px;
-		background-color: $background-color-primary;
-		z-index: -1;
-	}
+		html,
+		body {
+			background-color: $background-color-primary;
+			color: $black;
+			font-family: "Raleway", sans-serif;
+			font-family: "AvenirNextLTPro", Fallback, sans-serif;
+			margin: 0;
+			width: 360px;
+			height: 3566px;
+		}
 
-	.menu {
-		width: 48px;
-		height: 21px;
-		font-family: Raleway;
-		font-size: 18px;
-		font-weight: 500;
-		font-stretch: normal;
-		font-style: normal;
-		line-height: normal;
-		letter-spacing: normal;
-		color: $background-color-primary;
-		position: absolute !important;
-		top: 25px;
-		bottom: 594px;
-		left: 80px;
-		right: 232px;
-		width: 100%;
-		z-index: 2;
-	}
+		.img-header {
+			display: grid;
+			grid-column-start: 1;
+			justify-items: stretch;
+			max-width: 100%;
+			width: 360px;
+			height: 640px;
+			object-fit: contain;
+			left: 0px;
+			right: 0px;
+			background-color: $background-color-primary;
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
 
-	.hamburger {
-		display: grid;
-		width: 35px;
-		height: 20px;
-		top: 25px;
-		bottom: 595px;
-		left: 30px;
-		right: 295px;
-		object-fit: contain;
-		position: absolute;
-		z-index: 2;
-	}
+		.menu {
+			width: 48px;
+			height: 21px;
+			font-family: Raleway;
+			font-size: 18px;
+			font-weight: 500;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			color: $background-color-primary;
+			position: absolute !important;
+			top: 25px;
+			bottom: 594px;
+			left: 80px;
+			right: 232px;
+			width: 100%;
+			z-index: 2;
+		}
 
-	a {
-		text-decoration: none;
-	}
+		.hamburger {
+			display: grid;
+			width: 35px;
+			height: 20px;
+			top: 25px;
+			bottom: 595px;
+			left: 30px;
+			right: 295px;
+			object-fit: contain;
+			position: absolute;
+			z-index: 2;
+		}
 
-	.Rectangle {
-		width: 130px;
-		height: 44px;
-		background-color: $background-color-primary;
-		top: 341px;
-		right: 115px;
-		bottom: 255px;
-		left: 115px;
-		z-index: 2;
-		position: absolute;
-	}
+		a {
+			text-decoration: none;
+		}
 
-	.Consectetur-Elit-Ips {
-		width: 320px;
-		height: 92px;
-		font-family: Raleway;
-		font-size: 36px;
-		font-weight: bold;
-		font-stretch: normal;
-		font-style: normal;
-		line-height: 1.28;
-		letter-spacing: normal;
-		text-align: center;
-		color: $background-color-primary;
-		top: 219px;
-		right: 20px;
-		bottom: 329px;
-		left: 20px;
-		z-index: 2;
-		position: absolute;
-	}
+		.Rectangle {
+			width: 130px;
+			height: 44px;
+			background-color: $background-color-primary;
+			top: 341px;
+			right: 115px;
+			bottom: 255px;
+			left: 115px;
+			z-index: 2;
+			position: absolute;
+		}
 
-	.CTA {
-		width: 83px;
-		height: 19px;
-		font-family: Raleway;
-		font-size: 16px;
-		font-weight: 500;
-		font-stretch: normal;
-		font-style: normal;
-		line-height: normal;
-		letter-spacing: normal;
-		text-align: center;
-		color: $black;
-		top: 12px;
-		right: 23px;
-		bottom: 13px;
-		left: 24px;
-		position: absolute;
-		z-index: 2;
-	}
+		.Consectetur-Elit-Ips {
+			width: 320px;
+			height: 92px;
+			font-family: Raleway;
+			font-size: 36px;
+			font-weight: bold;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1.28;
+			letter-spacing: normal;
+			text-align: center;
+			color: $background-color-primary;
+			top: 219px;
+			right: 20px;
+			bottom: 329px;
+			left: 20px;
+			z-index: 2;
+			position: absolute;
+		}
 
-	.Oval {
-		width: 10px;
-		height: 10px;
-		background-color: var(--white);
-	}
+		.CTA {
+			width: 83px;
+			height: 19px;
+			font-family: Raleway;
+			font-size: 16px;
+			font-weight: 500;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			text-align: center;
+			color: $black;
+			top: 12px;
+			right: 23px;
+			bottom: 13px;
+			left: 24px;
+			position: absolute;
+			z-index: 2;
+		}
 
-	.img-1-mobile {
-		width: 320px;
-		height: 177px;
-		object-fit: contain;
-		border-radius: 6px;
-	}
+		.carousel-indicators {
+			width: 10px;
+			height: 10px;
+			background-color: $background-color-primary;
+		}
 
-	.Ullamcorper-Sem-Port {
-		width: 264px;
-		height: 29px;
-		font-family: "Raleway";
-		font-size: 24px;
-		font-weight: 500;
-		font-stretch: normal;
-		font-style: normal;
-		line-height: normal;
-		letter-spacing: normal;
-		color: #464646;
+		.img-1-mobile {
+			display: grid;
+			grid-template-columns: 2/6;
+			width: 320px;
+			height: 177px;
+			object-fit: contain;
+			border-radius: 6px;
+			top: 12px;
+			right: 23px;
+			bottom: 13px;
+			left: 24px;
+		}
+
+		.Ullamcorper-Sem-Port {
+			width: 264px;
+			height: 29px;
+			font-family: "Raleway";
+			font-size: 24px;
+			font-weight: 500;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			color: #464646;
+		}
 	}
 }
