@@ -246,6 +246,10 @@ img {
     font-family: Raleway;
     font-size: 36px;
     font-weight: 500;
+    margin-top: 60px;
+    margin-right: 197px;
+    margin-left: 20px;
+    margin-bottom: 14px;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
@@ -285,6 +289,41 @@ img {
   background-color: #ffffff;
   -ms-grid-row: 6;
   grid-row: 6;
+}
+
+.contact .contact-title {
+  width: 133px;
+  height: 42px;
+  font-family: Raleway;
+  font-size: 36px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #464646;
+  margin-left: 20px;
+  margin-right: 207px;
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+
+.contact table.contact_actions {
+  text-align: left;
+}
+
+.contact table.contact_actions th {
+  text-transform: uppercase;
+  font-weight: normal;
+  padding-right: 20px;
+}
+
+.contact table.contact_actions td {
+  text-decoration: none;
+}
+
+.contact form.contact_form > * {
+  display: block;
 }
 
 .footer {

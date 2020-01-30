@@ -204,7 +204,7 @@ img {
 			font-style: normal;
 			line-height: normal;
 			letter-spacing: normal;
-			color: #464646;
+			color: $porta-c;
 			margin-left: 20px;
 			margin-right: 76px;
 			margin-top: 20px;
@@ -238,7 +238,7 @@ img {
 			font-style: normal;
 			line-height: normal;
 			letter-spacing: normal;
-			color: #464646;
+			color: $porta-c;
 		}
 	}
 
@@ -262,6 +262,10 @@ img {
 		font-family: Raleway;
 		font-size: 36px;
 		font-weight: 500;
+		margin-top: 60px;
+		margin-right: 197px;
+		margin-left: 20px;
+		margin-bottom: 14px;
 		font-stretch: normal;
 		font-style: normal;
 		line-height: normal;
@@ -298,6 +302,41 @@ img {
 	display: grid;
 	background-color: $background-color-primary;
 	grid-row: 6;
+
+	.contact-title {
+		width: 133px;
+		height: 42px;
+		font-family: Raleway;
+		font-size: 36px;
+		font-weight: 500;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		color: $porta-c;
+		margin-left: 20px;
+		margin-right: 207px;
+		margin-top: 60px;
+		margin-bottom: 10px;
+	}
+
+	table.contact_actions {
+		text-align: left;
+	}
+
+	table.contact_actions th {
+		text-transform: uppercase;
+		font-weight: normal;
+		padding-right: 20px; // nije ispravna brojka, budeš već namjestila
+	}
+
+	table.contact_actions td {
+		text-decoration: none;
+	}
+
+	form.contact_form > * {
+		display: block;
+	}
 }
 
 .footer {

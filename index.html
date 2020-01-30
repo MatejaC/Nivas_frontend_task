@@ -113,7 +113,7 @@
   </section>
 
   <section class="contact">
-    <h2>Contact</h2>
+    <h2 class="contact-title">Contact</h2>
     <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor
       fringilla.
     </p>
@@ -124,20 +124,28 @@
     </p>
 
     <a class="ON-THE-MAP " href="https://goo.gl/maps/3fxTKv1NsQaczh8h7">ON-THE-MAP</a>
-    <h5 class="Tel-E-mail-Web">Tel
-      E-mail
-      Web</h5>
-    <ul>
-      <li>t. <span><a href="tel:+3859820302180421">09820302180421</a></span></li>
-      <li>E-mail <span><a href="mailto:info@frontend.hr">info@frontend.hr</a></span></li>
-      Web
-    </ul>
-
-    <input type="text" placeholder="Name">
-    <input type="text" placeholder="Your@email.com">
-    <input type="text" placeholder="Your question">
-
-    <a class="Send" href="#">Send</a>
+    <div>
+      <table class="contact_actions">
+        <tr>
+          <th scope="row">Tel</th>
+          <td><a href="tel:+3859820302180421">09820302180421</a></td>
+        </tr>
+        <tr>
+          <th scope="row">E-mail</th>
+          <td><a href="mailto:info@frontend.hr">info@frontend.hr</a></td>
+        </tr>
+        <tr>
+          <th scope="row">web</th>
+          <td><a href="https://www.nivas.hr">www.nivas.hr</a></td>
+        </tr>
+      </table>
+    </div>
+    <form class="contact_form" action="#" method="POST">
+      <input type="text" placeholder="Name">
+      <input type="text" placeholder="Your@email.com">
+      <textarea placeholder="Your question" cols="30" rows="10"></textarea>  <!-- dimenzije textarea nisu ispravne -->
+      <input type="submit" value="Send">
+    </form>
   </section>
 
   <footer class="footer">
