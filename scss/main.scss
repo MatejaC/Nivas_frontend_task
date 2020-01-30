@@ -18,6 +18,7 @@ $porta-c: #464646;
 $text-c: #414141;
 $whitey: #f8f8f8;
 $grey-services: #acacac;
+$grey-softy: #979797;
 
 * {
 	box-sizing: border-box;
@@ -308,4 +309,19 @@ img {
 	display: grid;
 	background-color: $black;
 	grid-row: 7;
+
+	.social_icons > * {
+		color: $whitey;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.newsletter_signup .email {
+		background-color: black;
+		border: solid 1px $grey-softy;
+	}
+
+	.newsletter_signup .signup_submit {
+		border: solid 1px $grey-softy;
+	}
 }
