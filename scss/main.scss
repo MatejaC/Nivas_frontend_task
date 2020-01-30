@@ -22,6 +22,7 @@ $grey-services: #acacac;
 $grey-softy: #979797;
 $color-drakov: #323232;
 $color-callme: #3d3d3d;
+$gray-lorem: #999999;
 
 * {
 	box-sizing: border-box;
@@ -246,6 +247,7 @@ img {
 		display: grid;
 		background-color: $whitey;
 		grid-row: 3;
+		height: 462px;
 
 		.img-2-mobile {
 			width: 319px;
@@ -261,7 +263,7 @@ img {
 		.Ullamcorper-Sem-Port {
 			width: 264px;
 			height: 29px;
-			font-family: "Raleway";
+			font-family: Raleway;
 			font-size: 23px;
 			font-weight: 500;
 			font-stretch: normal;
@@ -335,17 +337,17 @@ img {
 		.-Lorem-ipsum-dolor {
 			width: 320px;
 			font-family: Raleway;
-			font-size: 16px;
+			font-size: 17px;
 			font-weight: 500;
 			font-stretch: normal;
 			font-style: normal;
-			line-height: 1.63;
-			letter-spacing: normal;
-			color: $grey-services;
-			margin-top: 14px;
+			line-height: 26px;
+			letter-spacing: 0px;
+			color: $gray-lorem;
+			margin-top: 20px;
 			margin-right: 40px;
 			margin-left: 50px;
-			margin-bottom: 0px;
+			margin-bottom: 10px;
 		}
 	}
 
@@ -495,8 +497,77 @@ img {
 			margin-left: 30px;
 		}
 
+		.webmail {
+			width: 98px;
+			height: 15px;
+			font-family: Avenir Medium;
+			font-size: 15px;
+			font-weight: 500;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			color: $color-drakov;
+			margin-top: 8px;
+			margin-bottom: 8px;
+			margin-left: 30px;
+		}
+
 		form.contact_form > * {
 			display: block;
+		}
+
+		.name {
+			width: 320px;
+			height: 32px;
+			border: solid 1px $grey-softy;
+
+			margin-right: 20px;
+			margin-bottom: 10px;
+			margin-left: 20px;
+		}
+
+		.your-email {
+			width: 320px;
+			height: 32px;
+			border: solid 1px $grey-softy;
+			margin-top: 0;
+			margin-right: 20px;
+			margin-bottom: 10px;
+			margin-left: 20px;
+		}
+
+		.question {
+			width: 320px;
+			height: 171px;
+			border: solid 1px $grey-softy;
+			margin-top: 0;
+			margin-right: 20px;
+			margin-bottom: 10px;
+			margin-left: 20px;
+		}
+
+		input[type=submit] {
+			width: 96px;
+			height: 32px;
+			background-color: $black;
+			margin-top: 0;
+			margin-right: 20px;
+			margin-bottom: 60px;
+			margin-left: 244px;
+			font-family: Raleway;
+			font-size: 16px;
+			font-weight: 500;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			text-align: center;
+			color: $background-color-primary;
+			padding-top: 6px;
+			padding-right: 6px;
+			padding-bottom: 7px;
+			padding-left: 7px;
 		}
 	}
 
