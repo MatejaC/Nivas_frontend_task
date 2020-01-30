@@ -340,6 +340,9 @@ img {
     background-color: #ffffff;
     -ms-grid-row: 6;
     grid-row: 6;
+    /*   .your-email {
+   
+   } */
   }
   .contact .contact-title {
     width: 133px;
@@ -482,22 +485,25 @@ img {
   .contact form.contact_form > * {
     display: block;
   }
-  .contact .name {
+  .contact input[type=name],
+  .contact input[type=email] {
     width: 320px;
     height: 32px;
     border: solid 1px #979797;
     margin-right: 20px;
     margin-bottom: 10px;
     margin-left: 20px;
-  }
-  .contact .your-email {
-    width: 320px;
-    height: 32px;
-    border: solid 1px #979797;
-    margin-top: 0;
-    margin-right: 20px;
-    margin-bottom: 10px;
-    margin-left: 20px;
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.79;
+    letter-spacing: normal;
+    color: #303030;
+    padding-top: 4px;
+    padding-bottom: 3px;
+    padding-left: 17px;
   }
   .contact .question {
     width: 320px;
