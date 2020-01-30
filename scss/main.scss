@@ -252,6 +252,8 @@ img {
 		display: grid;
 		background-color: $black;
 		grid-row: 4;
+		width: 360px;
+		height: 612px;
 	}
 
 	.Services {
@@ -265,15 +267,6 @@ img {
 		line-height: normal;
 		letter-spacing: normal;
 		color: $background-color-primary;
-	}
-
-	.Rectangle-Copy-4 {
-		width: 360px;
-		background-color: #000000;
-		margin-top: 60px;
-		margin-right: 197px;
-		margin-left: 20px;
-		margin-bottom: 10px;
 	}
 
 	.-Lorem-ipsum-dolor {
@@ -296,6 +289,8 @@ img {
 .logo {
 	display: grid;
 	background-color: $whitey;
+	width: 360px;
+	height: 260px;
 	grid-row: 5;
 }
 

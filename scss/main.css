@@ -237,6 +237,8 @@ img {
     background-color: #000000;
     -ms-grid-row: 4;
     grid-row: 4;
+    width: 360px;
+    height: 612px;
   }
   .Services {
     width: 143px;
@@ -249,14 +251,6 @@ img {
     line-height: normal;
     letter-spacing: normal;
     color: #ffffff;
-  }
-  .Rectangle-Copy-4 {
-    width: 360px;
-    background-color: #000000;
-    margin-top: 60px;
-    margin-right: 197px;
-    margin-left: 20px;
-    margin-bottom: 10px;
   }
   .-Lorem-ipsum-dolor {
     width: 320px;
@@ -279,6 +273,8 @@ img {
   display: -ms-grid;
   display: grid;
   background-color: #f8f8f8;
+  width: 360px;
+  height: 260px;
   -ms-grid-row: 5;
   grid-row: 5;
 }
