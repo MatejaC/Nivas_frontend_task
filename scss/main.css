@@ -40,26 +40,26 @@ img {
   .wrapper {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: repeat 6, 1fr;
-        grid-template-columns: repeat 6, 1fr;
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
     -ms-grid-rows: auto;
         grid-template-rows: auto;
     grid-gap: 16px;
     background-color: #ffffff;
   }
-  .wrapper html,
-  .wrapper body {
+  html,
+  body {
     background-color: #ffffff;
     color: #000000;
     font-family: "Raleway", sans-serif;
     font-family: "AvenirNextLTPro", Fallback, sans-serif;
     width: 360px;
   }
-  .wrapper .header {
+  .header {
     -ms-grid-row: 1;
     grid-row: 1;
   }
-  .wrapper .img-header {
+  .img-header {
     -o-object-fit: fill;
        object-fit: fill;
     justify-items: stretch;
@@ -79,7 +79,7 @@ img {
     -o-object-fit: contain;
        object-fit: contain;
   }
-  .wrapper .menu {
+  .menu {
     width: 48px;
     height: 21px;
     font-family: Raleway;
@@ -98,7 +98,7 @@ img {
     width: 100%;
     z-index: 2;
   }
-  .wrapper .hamburger {
+  .hamburger {
     display: -ms-grid;
     display: grid;
     width: 35px;
@@ -112,10 +112,7 @@ img {
     position: absolute;
     z-index: 2;
   }
-  .wrapper a {
-    text-decoration: none;
-  }
-  .wrapper .Rectangle {
+  .Rectangle {
     width: 130px;
     height: 44px;
     background-color: #ffffff;
@@ -126,7 +123,7 @@ img {
     z-index: 2;
     position: absolute;
   }
-  .wrapper .Consectetur-Elit-Ips {
+  .Consectetur-Elit-Ips {
     width: 320px;
     height: 92px;
     font-family: Raleway;
@@ -145,7 +142,7 @@ img {
     z-index: 2;
     position: absolute;
   }
-  .wrapper .CTA {
+  .CTA {
     width: 83px;
     height: 19px;
     font-family: Raleway;
@@ -164,14 +161,15 @@ img {
     position: absolute;
     z-index: 2;
   }
-  .wrapper .article {
+  .article {
     display: -ms-grid;
     display: grid;
+    width: 360px;
     background-color: #ffffff;
     -ms-grid-row: 2;
     grid-row: 2;
   }
-  .wrapper .img-1-mobile {
+  .article .img-1-mobile {
     width: 320px;
     height: 177px;
     border-radius: 6px;
@@ -180,7 +178,7 @@ img {
     margin-left: 20px;
     margin-bottom: 10px;
   }
-  .wrapper .Ullamcorper-Sem-Port {
+  .article .Ullamcorper-Sem-Port {
     width: 264px;
     height: 29px;
     font-family: "Raleway";
@@ -196,7 +194,7 @@ img {
     margin-top: 20px;
     margin-bottom: 10px;
   }
-  .wrapper .text-copy {
+  .article .text-copy {
     width: 300px;
     height: 120px;
     font-family: Raleway;
@@ -209,20 +207,21 @@ img {
     color: #414141;
     margin-left: 20px;
     margin-right: 40px;
-    margin-top: 10px;
+    margin-top: 0;
     margin-bottom: 20px;
   }
-  .wrapper .Read-more {
+  .article .Read-more {
     width: 82px;
-    height: 16px;
+    height: 14px;
     font-family: Raleway;
     font-size: 14px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
+    margin-top: 0;
+    margin-right: 259px;
+    margin-bottom: 40px;
+    margin-left: 19px;
     color: #464646;
+    text-transform: uppercase;
   }
   .aside {
     display: -ms-grid;

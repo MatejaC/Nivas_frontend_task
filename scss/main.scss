@@ -52,137 +52,134 @@ img {
 @media (min-width: 360px) {
 	.wrapper {
 		display: grid;
-		grid-template-columns: repeat (6, 1fr);
+		grid-template-columns: repeat(6, 1fr);
 		grid-template-rows: auto;
 		grid-gap: 16px;
 		background-color: $background-color-primary;
+	}
 
-		html,
-		body {
-			background-color: $background-color-primary;
-			color: $black;
-			font-family: "Raleway", sans-serif;
-			font-family: "AvenirNextLTPro", Fallback, sans-serif;
-			width: 360px;
-		}
+	html,
+	body {
+		background-color: $background-color-primary;
+		color: $black;
+		font-family: "Raleway", sans-serif;
+		font-family: "AvenirNextLTPro", Fallback, sans-serif;
+		width: 360px;
+	}
 
-		.header {
-			grid-row: 1;
-		}
+	.header {
+		grid-row: 1;
+	}
 
-		.img-header {
-			object-fit: fill;
-			justify-items: stretch;
-			justify-items: start;
-			max-width: 100%;
-			width: 360px;
-			height: 640px;
-			left: 0;
-			right: 0;
-			top: 0;
-			bottom: 0;
-			margin: 0;
-			background-color: $background-color-primary;
-			background-size: cover;
-			background-position: center center;
-			background-repeat: no-repeat;
-			object-fit: contain;
-		}
+	.img-header {
+		object-fit: fill;
+		justify-items: stretch;
+		justify-items: start;
+		max-width: 100%;
+		width: 360px;
+		height: 640px;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin: 0;
+		background-color: $background-color-primary;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		object-fit: contain;
+	}
 
-		.menu {
-			width: 48px;
-			height: 21px;
-			font-family: Raleway;
-			font-size: 18px;
-			font-weight: 500;
-			font-stretch: normal;
-			font-style: normal;
-			line-height: normal;
-			letter-spacing: normal;
-			color: $background-color-primary;
-			position: absolute !important;
-			top: 25px;
-			bottom: 594px;
-			left: 80px;
-			right: 232px;
-			width: 100%;
-			z-index: 2;
-		}
+	.menu {
+		width: 48px;
+		height: 21px;
+		font-family: Raleway;
+		font-size: 18px;
+		font-weight: 500;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		color: $background-color-primary;
+		position: absolute !important;
+		top: 25px;
+		bottom: 594px;
+		left: 80px;
+		right: 232px;
+		width: 100%;
+		z-index: 2;
+	}
 
-		.hamburger {
-			display: grid;
-			width: 35px;
-			height: 20px;
-			top: 25px;
-			bottom: 595px;
-			left: 30px;
-			right: 295px;
-			object-fit: contain;
-			position: absolute;
-			z-index: 2;
-		}
+	.hamburger {
+		display: grid;
+		width: 35px;
+		height: 20px;
+		top: 25px;
+		bottom: 595px;
+		left: 30px;
+		right: 295px;
+		object-fit: contain;
+		position: absolute;
+		z-index: 2;
+	}
 
-		a {
-			text-decoration: none;
-		}
+	.Rectangle {
+		width: 130px;
+		height: 44px;
+		background-color: $background-color-primary;
+		top: 341px;
+		right: 115px;
+		bottom: 255px;
+		left: 115px;
+		z-index: 2;
+		position: absolute;
+	}
 
-		.Rectangle {
-			width: 130px;
-			height: 44px;
-			background-color: $background-color-primary;
-			top: 341px;
-			right: 115px;
-			bottom: 255px;
-			left: 115px;
-			z-index: 2;
-			position: absolute;
-		}
+	.Consectetur-Elit-Ips {
+		width: 320px;
+		height: 92px;
+		font-family: Raleway;
+		font-size: 36px;
+		font-weight: bold;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.28;
+		letter-spacing: normal;
+		text-align: center;
+		color: $background-color-primary;
+		top: 219px;
+		right: 20px;
+		bottom: 329px;
+		left: 20px;
+		z-index: 2;
+		position: absolute;
+	}
 
-		.Consectetur-Elit-Ips {
-			width: 320px;
-			height: 92px;
-			font-family: Raleway;
-			font-size: 36px;
-			font-weight: bold;
-			font-stretch: normal;
-			font-style: normal;
-			line-height: 1.28;
-			letter-spacing: normal;
-			text-align: center;
-			color: $background-color-primary;
-			top: 219px;
-			right: 20px;
-			bottom: 329px;
-			left: 20px;
-			z-index: 2;
-			position: absolute;
-		}
+	.CTA {
+		width: 83px;
+		height: 19px;
+		font-family: Raleway;
+		font-size: 16px;
+		font-weight: 500;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		text-align: center;
+		color: $black;
+		top: 12px;
+		right: 23px;
+		bottom: 13px;
+		left: 24px;
+		position: absolute;
+		z-index: 2;
+	}
 
-		.CTA {
-			width: 83px;
-			height: 19px;
-			font-family: Raleway;
-			font-size: 16px;
-			font-weight: 500;
-			font-stretch: normal;
-			font-style: normal;
-			line-height: normal;
-			letter-spacing: normal;
-			text-align: center;
-			color: $black;
-			top: 12px;
-			right: 23px;
-			bottom: 13px;
-			left: 24px;
-			position: absolute;
-			z-index: 2;
-		}
-
-		.article {
-			display: grid;
-			background-color: $background-color-primary;
-			grid-row: 2;
-		}
+	.article {
+		display: grid;
+		width: 360px;
+		background-color: $background-color-primary;
+		grid-row: 2;
 
 		.img-1-mobile {
 			width: 320px;
@@ -224,21 +221,22 @@ img {
 			color: $text-c;
 			margin-left: 20px;
 			margin-right: 40px;
-			margin-top: 10px;
+			margin-top: 0;
 			margin-bottom: 20px;
 		}
 
 		.Read-more {
 			width: 82px;
-			height: 16px;
+			height: 14px;
 			font-family: Raleway;
 			font-size: 14px;
 			font-weight: bold;
-			font-stretch: normal;
-			font-style: normal;
-			line-height: normal;
-			letter-spacing: normal;
+			margin-top: 0;
+			margin-right: 259px;
+			margin-bottom: 40px;
+			margin-left: 19px;
 			color: $porta-c;
+			text-transform: uppercase;
 		}
 	}
 
