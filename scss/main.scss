@@ -24,6 +24,8 @@ $color-drakov: #323232;
 $color-callme: #3d3d3d;
 $gray-lorem: #999999;
 $color-input: #303030;
+$color-follow: #7a7a7a;
+$y-gmail-color: #737373;
 
 * {
 	box-sizing: border-box;
@@ -589,15 +591,91 @@ img {
 		background-color: $black;
 		grid-row: 7;
 
+		.follow {
+			width: 82px;
+			height: 21px;
+			font-family: Raleway;
+			font-size: 18px;
+			font-weight: 500;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			color: $color-follow;
+			margin-left: 139px;
+			margin-right: 139px;
+			margin-top: 30px;
+			margin-bottom: 18px;
+			white-space: nowrap;
+		}
+
 		.social_icons > * {
 			color: $whitey;
-			padding-left: 20px;
-			padding-right: 20px;
+		}
+
+		.fa-facebook-square {
+			margin-left: 81px;
+			margin-right: 65px;
+			margin-bottom: 19px;
+			margin-top: 15px;
+		}
+
+		.fa-twitter,
+		.fa-pinterest {
+			margin-right: 23px;
+			margin-bottom: 19px;
+			margin-right: 65px;
+		}
+
+		.fa-instagram {
+			margin-right: 84px;
+			margin-bottom: 19px;
+		}
+
+		.fa-snapchat-ghost {
+			margin-left: 80px;
+			margin-right: 64px;
+			margin-bottom: 19px;
+			margin-top: 15px;
+		}
+
+		.Newsletter {
+			width: 94px;
+			height: 21px;
+			font-family: Raleway;
+			font-size: 18px;
+			font-weight: 500;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			color: $color-follow;
+			margin-top: 48px;
+			margin-right: 133px;
+			margin-bottom: 0;
+			margin-left: 133px;
 		}
 
 		.newsletter_signup .email {
 			background-color: black;
 			border: solid 1px $grey-softy;
+			width: 208px;
+			height: 32px;
+			margin-top: 21px;
+			margin-right: 16px;
+			margin-bottom: 30px;
+			margin-left: 20px;
+			font-family: Raleway;
+			font-size: 14px;
+			font-weight: 300;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1.79;
+			letter-spacing: normal;
+			color: $y-gmail-color;
+			padding-left: 14px;
+			padding-top: 4px;
+			padding-bottom: 3px;
 		}
 
 		.newsletter_signup .signup_submit {
