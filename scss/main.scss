@@ -1,14 +1,14 @@
 @font-face {
-	font-family: "Avenir Medium";
-	src: url("//db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.eot");
-	src: url("//db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.eot?#iefix") format("embedded-opentype"),
-		url("//db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.woff2") format("woff2"),
-		url("//db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.woff") format("woff"),
-		url("//db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.ttf") format("truetype"),
-		url("//db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.svg#Avenir Medium") format("svg");
-	font-weight: 500;
-	font-style: normal;
-	font-stretch: normal;
+ font-family: "Avenir Medium";
+ src: url("//db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.eot");
+ src: url("//db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.eot?#iefix") format("embedded-opentype"),
+  url("//db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.woff2") format("woff2"),
+  url("//db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.woff") format("woff"),
+  url("//db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.ttf") format("truetype"),
+  url("//db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.svg#Avenir Medium") format("svg");
+ font-weight: 500;
+ font-style: normal;
+ font-stretch: normal;
 }
 
 $background-color-primary: #ffffff;
@@ -28,722 +28,855 @@ $color-follow: #7a7a7a;
 $y-gmail-color: #737373;
 
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
 }
 
 .clearfix {
-	zoom: 1;
+ zoom: 1;
 }
 
 body {
-	background-color: $background-color-primary;
-	font-family: "Raleway", sans-serif;
-	font-family: "Avenir Medium", sans-serif;
+ background-color: $background-color-primary;
+ font-family: "Raleway", sans-serif;
+ font-family: "Avenir Medium", sans-serif;
 }
 
-// ---for Mobile - 360px --- //
-@media screen and (min-width: 360px) {
-	#content {
+@media (min-width: 360px) {
+ #content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  // grid-auto-columns: minmax(100px, auto);
+  // grid-auto-rows: minmax(120px, auto);
+  // max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+ }
+
+ #content>* {
+  background: $background-color-primary;
+ }
+
+ header {
+  grid-column: 1 / 5;
+  // grid-row: 1 / 2;
+ }
+
+ .header {
+  height: 640px;
+
+  .menu {
+   width: 48px;
+   height: 21px;
+   font-family: Raleway;
+   font-size: 18px;
+   font-weight: 500;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: normal;
+   color: $background-color-primary;
+  }
+
+  /*.hamburger {
 		display: grid;
-		grid-template-columns: repeat(6, 1fr);
-		grid-template-rows: minmax(50px, auto);
-		grid-gap: 16px;
-		margin: 0 auto;
-		grid-template-areas: "header header header header header header""main main main main main main""section section section section section section""aside aside aside aside aside aside""article article article article article article""address address address address address address""footer footer footer footer footer footer";
-	}
+		width: 35px;
+		height: 20px;
+		top: 25px;
+		bottom: 595px;
+		left: 30px;
+		right: 295px;
+		object-fit: contain;
+		position: absolute;
+		z-index: 2;
+	} */
+  .img-header {
+   // object-fit: fill;
+   max-width: 100%;
+   // width: 360px;
+   height: 640px;
+   margin: 0;
+   background-color: $background-color-primary;
+   background-size: cover;
+   // object-fit: contain;
+  }
 
-	header {
-		grid-area: header;
-	}
+  .cta_rectangle {
+   width: 130px;
+   height: 44px;
+   background-color: $background-color-primary;
+  }
 
-	main {
-		grid-area: main;
-	}
+  .cta {
+   width: 83px;
+   height: 19px;
+   font-family: Raleway;
+   font-size: 16px;
+   font-weight: 500;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: normal;
+   text-align: center;
+   color: $black;
+  }
+ }
 
-	section {
-		grid-area: section;
-	}
+ .product_1_image {
+  grid-column: 1 / 5;
+ }
 
-	aside {
-		grid-area: aside;
-	}
+ .product_1_copy {
+  grid-column: 1 / 5;
+ }
 
-	article {
-		grid-area: article;
-	}
+ .product_2_image {
+  grid-column: 1 / 5;
+  grid-row-start: 4;
+ }
 
-	address {
-		grid-area: address;
-	}
+ .product_2_copy {
+  grid-column: 1 / 5;
+ }
 
-	footer {
-		grid-area: footer;
-	}
+ .services_title {
+  grid-column: 1 / 5;
+ }
 
-	.header {
-		height: 640px;
+ .services_list_1 {
+  grid-column: 1 / 5;
+ }
 
-		.menu {
-			width: 48px;
-			height: 21px;
-			font-family: Raleway;
-			font-size: 18px;
-			font-weight: 500;
-			font-stretch: normal;
-			font-style: normal;
-			line-height: normal;
-			letter-spacing: normal;
-			color: $background-color-primary;
-			position: absolute !important;
-			top: 25px;
-			bottom: 594px;
-			left: 80px;
-			right: 232px;
-			width: 100%;
-			z-index: 2;
-		}
+ .services_list_2 {
+  grid-column: 1 / 5;
+ }
 
-		.hamburger {
-			display: grid;
-			width: 35px;
-			height: 20px;
-			top: 25px;
-			bottom: 595px;
-			left: 30px;
-			right: 295px;
-			object-fit: contain;
-			position: absolute;
-			z-index: 2;
-		}
+ .services_list_3 {
+  grid-column: 1 / 5;
+ }
 
-		.img-header {
-			object-fit: fill;
-			max-width: 100%;
-			width: 360px;
-			height: 640px;
-			left: 0;
-			right: 0;
-			top: 0;
-			bottom: 0;
-			margin: 0;
-			background-color: $background-color-primary;
-			background-size: cover;
-			background-position: center center;
-			background-repeat: no-repeat;
-			object-fit: contain;
-		}
+ .logos {
+  grid-column: 1 / 5;
+ }
 
-		.Rectangle {
-			width: 130px;
-			height: 44px;
-			background-color: $background-color-primary;
-			top: 341px;
-			right: 115px;
-			bottom: 255px;
-			left: 115px;
-			z-index: 2;
-			position: absolute;
-		}
+ .contact_title {
+  grid-column: 1 / 5;
+ }
 
-		.Consectetur-Elit-Ips {
-			width: 320px;
-			height: 92px;
-			font-family: Raleway;
-			font-size: 36px;
-			font-weight: bold;
-			font-stretch: normal;
-			font-style: normal;
-			line-height: 1.28;
-			letter-spacing: normal;
-			text-align: center;
-			color: $background-color-primary;
-			top: 219px;
-			right: 20px;
-			bottom: 329px;
-			left: 20px;
-			z-index: 2;
-			position: absolute;
-		}
+ .contact_copy {
+  grid-column: 1 / 5;
+ }
 
-		.CTA {
-			width: 83px;
-			height: 19px;
-			font-family: Raleway;
-			font-size: 16px;
-			font-weight: 500;
-			font-stretch: normal;
-			font-style: normal;
-			line-height: normal;
-			letter-spacing: normal;
-			text-align: center;
-			color: $black;
-			top: 12px;
-			right: 23px;
-			bottom: 13px;
-			left: 24px;
-			position: absolute;
-			z-index: 2;
-		}
-	}
+ .contact_actions {
+  grid-column: 1 / 5;
+ }
 
-	.main {
-		background-color: $background-color-primary;
+ .contact_write {
+  grid-column: 1 / 5;
+ }
 
-		.img-1-mobile {
-			width: 320px;
-			height: 177px;
-			border-radius: 6px;
-			margin-top: 20px;
-			margin-right: 20px;
-			margin-left: 20px;
-			margin-bottom: 10px;
-		}
+ .footer_title {
+  grid-column: 1 / 5;
+ }
 
-		.Ullamcorper-Sem-Port {
-			width: 264px;
-			height: 29px;
-			font-family: Raleway;
-			font-size: 23px;
-			font-weight: 500;
-			font-stretch: normal;
-			font-style: normal;
-			line-height: normal;
-			letter-spacing: normal;
-			color: $porta-c;
-			margin-left: 20px;
-			margin-right: 76px;
-			margin-top: 20px;
-			margin-bottom: 10px;
-		}
+ .footer_social_icons_1 {
+  grid-column: 1 / 5;
+ }
 
-		.text-copy {
-			width: 300px;
-			height: 120px;
-			font-family: Raleway;
-			font-size: 16px;
-			font-weight: normal;
-			font-stretch: normal;
-			font-style: normal;
-			line-height: 1.5;
-			letter-spacing: normal;
-			color: $text-c;
-			margin-left: 20px;
-			margin-right: 40px;
-			margin-top: 0;
-			margin-bottom: 20px;
-		}
+ .footer_social_icons_2 {
+  grid-column: 1 / 5;
+ }
 
-		.Read-more {
-			width: 82px;
-			height: 16px;
-			font-family: Raleway;
-			font-size: 14px;
-			font-weight: bold;
-			margin-top: 0;
-			margin-left: 19px;
-			margin-right: 259px;
-			color: $porta-c;
-			text-transform: uppercase;
-			white-space: nowrap;
-			margin-bottom: 40px !important;
-		}
-	}
+ .footer_newsletter_title {
+  grid-column: 1 / 5;
+ }
 
-	.section {
-		background-color: $whitey;
-		height: 462px;
-
-		.img-2-mobile {
-			width: 319px;
-			height: 177px;
-			object-fit: contain;
-			border-radius: 6px;
-			margin-top: 30px;
-			margin-right: 21px;
-			margin-bottom: 20px;
-			margin-left: 20px;
-		}
-
-		.Ullamcorper-Sem-Port {
-			width: 264px;
-			height: 29px;
-			font-family: Raleway;
-			font-size: 23px;
-			font-weight: 500;
-			font-stretch: normal;
-			font-style: normal;
-			line-height: normal;
-			letter-spacing: normal;
-			color: $porta-c;
-			margin-left: 20px;
-			margin-right: 76px;
-			margin-top: 0;
-			margin-bottom: 20px;
-		}
-
-		.text-copy {
-			width: 300px;
-			height: 120px;
-			font-family: Raleway;
-			font-size: 16px;
-			font-weight: normal;
-			font-stretch: normal;
-			font-style: normal;
-			line-height: 1.5;
-			letter-spacing: normal;
-			color: $text-c;
-			margin-left: 20px;
-			margin-right: 40px;
-			margin-top: 0;
-			margin-bottom: 20px;
-		}
-
-		.Read-more {
-			width: 82px;
-			height: 16px;
-			font-family: Raleway;
-			font-size: 14px;
-			font-weight: bold;
-			margin-top: 0;
-			margin-right: 259px;
-			margin-left: 19px;
-			color: $porta-c;
-			text-transform: uppercase;
-			white-space: nowrap;
-			margin-bottom: 40px !important;
-		}
-	}
-
-	.aside {
-		background-color: $black;
-
-		.Services {
-			width: 143px;
-			height: 42px;
-			font-family: Raleway;
-			font-size: 36px;
-			font-weight: 500;
-			margin-top: 60px !important;
-			margin-right: 197px;
-			margin-left: 20px;
-			margin-bottom: 0px;
-			font-stretch: normal;
-			font-style: normal;
-			line-height: normal;
-			letter-spacing: normal;
-			color: $background-color-primary;
-		}
-
-		.-Lorem-ipsum-dolor {
-			width: 320px;
-			font-family: Raleway;
-			font-size: 16px;
-			font-weight: 400;
-			font-stretch: normal;
-			font-style: normal;
-			line-height: 21px;
-			letter-spacing: 0px;
-			color: $gray-lorem;
-			margin-top: 20px;
-			margin-right: 40px;
-			margin-left: 50px;
-			margin-bottom: 10px;
-		}
-	}
-
-	.article {
-		background-color: $whitey;
-		height: 260px;
-	}
-
-	.address {
-		background-color: $background-color-primary;
-
-		.contact-title {
-			width: 133px;
-			height: 42px;
-			font-family: Raleway;
-			font-size: 36px;
-			font-weight: 500;
-			font-stretch: normal;
-			font-style: normal;
-			line-height: normal;
-			letter-spacing: normal;
-			color: $porta-c;
-			margin-left: 20px;
-			margin-right: 207px;
-			margin-top: 60px;
-			margin-bottom: 10px;
-		}
-
-		.text-copy-2 {
-			width: 320px;
-			height: 90px;
-			font-family: Raleway;
-			font-size: 16px;
-			font-weight: normal;
-			font-stretch: normal;
-			font-style: normal;
-			line-height: 1.44;
-			letter-spacing: normal;
-			margin-left: 20px;
-			margin-right: 20px;
-			margin-top: 0;
-			margin-bottom: 30px;
-			color: $text-c;
-		}
-
-		.Nivas-doo-Drakov {
-			width: 151px;
-			height: 63px;
-			font-family: Avenir Medium;
-			font-size: 15px;
-			font-weight: 500;
-			font-stretch: normal;
-			font-style: normal;
-			line-height: 1.4;
-			letter-spacing: normal;
-			color: $color-drakov;
-			margin-top: 0;
-			margin-right: 188px;
-			margin-bottom: 10px;
-			margin-left: 21px;
-		}
-
-		.map {
-			width: 95px;
-			height: 18px;
-			font-family: Raleway;
-			font-size: 15px;
-			font-weight: 500;
-			font-stretch: normal;
-			font-style: normal;
-			line-height: normal;
-			letter-spacing: normal;
-			text-align: center;
-			color: $black;
-			margin-top: 0;
-			margin-right: 244px;
-			margin-bottom: 45px;
-			margin-left: 21px;
-		}
-
-		.contact_actions {
-			width: 45px;
-			height: 75px;
-			font-family: Raleway;
-			font-size: 12px;
-			font-weight: normal;
-			font-stretch: normal;
-			font-style: normal;
-			line-height: 2.08;
-			letter-spacing: normal;
-			margin-top: 0;
-			margin-right: 29px;
-			margin-bottom: 45px;
-			margin-left: 20px;
-			color: $color-callme;
-			white-space: nowrap;
-		}
-
-		table.contact_actions {
-			text-align: left;
-		}
-
-		table.contact_actions th {
-			text-transform: uppercase;
-			font-weight: normal;
-		}
-
-		table.contact_actions td {
-			text-decoration: none;
-		}
-
-		.tel {
-			width: 133px;
-			height: 15px;
-			font-family: Avenir Medium;
-			font-size: 15px;
-			font-weight: 500;
-			font-stretch: normal;
-			font-style: normal;
-			line-height: normal;
-			letter-spacing: normal;
-			color: $color-drakov;
-			margin-top: 0;
-			margin-right: 133px;
-			margin-bottom: 10px;
-			margin-left: 29px;
-		}
-
-		.e-mail {
-			width: 124px;
-			height: 15px;
-			font-family: Avenir Medium;
-			font-size: 15px;
-			font-weight: 500;
-			font-stretch: normal;
-			font-style: normal;
-			line-height: normal;
-			letter-spacing: normal;
-			color: $color-drakov;
-			margin-top: 8px;
-			margin-bottom: 8px;
-			margin-left: 30px;
-		}
-
-		.webmail {
-			width: 98px;
-			height: 15px;
-			font-family: Avenir Medium;
-			font-size: 15px;
-			font-weight: 500;
-			font-stretch: normal;
-			font-style: normal;
-			line-height: normal;
-			letter-spacing: normal;
-			color: $color-drakov;
-			margin-top: 8px;
-			margin-bottom: 8px;
-			margin-left: 30px;
-		}
-
-		form.contact_form > * {
-			display: block;
-		}
-
-		input[type=name],
-		input[type=email] {
-			width: 320px;
-			height: 32px;
-			border: solid 1px $grey-softy;
-			margin-right: 20px;
-			margin-bottom: 10px;
-			margin-left: 20px;
-			font-family: Raleway;
-			font-size: 14px;
-			font-weight: 300;
-			font-stretch: normal;
-			font-style: normal;
-			line-height: 1.79;
-			letter-spacing: normal;
-			color: $color-input;
-			padding-top: 4px;
-			padding-bottom: 3px;
-			padding-left: 17px;
-		}
-
-		.question {
-			width: 320px;
-			height: 171px;
-			border: solid 1px $grey-softy;
-			margin-top: 0;
-			margin-right: 20px;
-			margin-bottom: 10px;
-			margin-left: 20px;
-			font-family: Raleway;
-			font-size: 14px;
-			font-weight: 300;
-			font-stretch: normal;
-			font-style: normal;
-			line-height: 1.79;
-			letter-spacing: normal;
-			color: $color-input;
-			padding-top: 4px;
-			padding-left: 14px;
-			resize: none;
-		}
-
-		input[type=submit] {
-			width: 96px;
-			height: 32px;
-			background-color: $black;
-			margin-top: 0;
-			margin-right: 20px;
-			margin-bottom: 60px;
-			margin-left: 244px;
-			font-family: Raleway;
-			font-size: 16px;
-			font-weight: 500;
-			font-stretch: normal;
-			font-style: normal;
-			line-height: normal;
-			letter-spacing: normal;
-			text-align: center;
-			color: $background-color-primary;
-			padding-top: 6px;
-			padding-right: 6px;
-			padding-bottom: 7px;
-			padding-left: 7px;
-		}
-	}
-
-	.footer {
-		grid-template-columns: unset;
-		background-color: $black !important;
-		height: 285px;
-		z-index: 1;
-
-		.follow {
-			grid-row: row 1 / span 3;
-			width: 82px;
-			height: 21px;
-			font-family: Raleway;
-			font-size: 18px;
-			font-weight: 500;
-			font-stretch: normal;
-			font-style: normal;
-			line-height: normal;
-			letter-spacing: normal;
-			color: $color-follow;
-			margin-left: 139px;
-			margin-right: 139px;
-			margin-top: 30px !important;
-			margin-bottom: 18px;
-			white-space: nowrap;
-			z-index: 2;
-		}
-
-		.social_icons > * {
-			color: $whitey;
-		}
-
-		.fa-facebook-square {
-			margin-left: 81px;
-			margin-right: 56px;
-			margin-bottom: 19px;
-			margin-top: 15px;
-		}
-
-		.fa-twitter,
-		.fa-pinterest {
-			margin-right: 23px;
-			margin-bottom: 0px;
-			margin-right: 65px;
-		}
-
-		.fa-instagram {
-			margin-right: 84px;
-			margin-bottom: 19px;
-		}
-
-		.fa-snapchat-ghost {
-			margin-left: 80px;
-			margin-right: 54px;
-			margin-bottom: 0;
-			margin-top: 15px;
-		}
-
-		.Newsletter {
-			width: 94px;
-			height: 21px;
-			font-family: Raleway;
-			font-size: 18px;
-			font-weight: 500;
-			font-stretch: normal;
-			font-style: normal;
-			line-height: normal;
-			letter-spacing: normal;
-			color: $color-follow;
-			margin-top: 48px;
-			margin-right: 133px;
-			margin-bottom: 0;
-			margin-left: 133px;
-		}
-
-		.newsletter_signup .email {
-			background-color: black;
-			border: solid 1px $grey-softy;
-			width: 208px;
-			height: 32px;
-			margin-top: 21px;
-			margin-right: 16px;
-			margin-bottom: 30px;
-			margin-left: 20px;
-			font-family: Raleway;
-			font-size: 14px;
-			font-weight: 300;
-			font-stretch: normal;
-			font-style: normal;
-			line-height: 1.79;
-			letter-spacing: normal;
-			color: $y-gmail-color;
-			padding-left: 14px;
-			padding-top: 4px;
-			padding-bottom: 3px;
-		}
-
-		.newsletter_signup .signup_submit {
-			border: solid 1px $grey-softy;
-			width: 96px;
-			height: 32px;
-			background-color: $background-color-primary;
-			margin-bottom: 30px;
-			font-family: Raleway;
-			font-size: 16px;
-			font-weight: 500;
-			font-stretch: normal;
-			font-style: normal;
-			line-height: normal;
-			letter-spacing: normal;
-			text-align: center;
-			color: $black;
-			padding-top: 6px;
-			padding-right: 6px;
-			padding-bottom: 7px;
-			padding-left: 7px;
-		}
-	}
+ .footer_newsletter_write {
+  grid-column: 1 / 5;
+ }
 }
 
-// ---for Desktop- +860 --- //
-@media screen and (min-width: 860px) {
-	#content {
+@media (min-width: 800px) {
+ #content {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  // grid-auto-columns: minmax(100px, auto);
+  // grid-auto-rows: minmax(120px, auto);
+  // max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+ }
+
+ #content>* {
+  background: $background-color-primary;
+ }
+
+ header {
+  grid-column: 1 / 13;
+  // grid-row: 1 / 2;
+ }
+
+ .header {
+  height: 640px;
+
+  .menu {
+   width: 48px;
+   height: 21px;
+   font-family: Raleway;
+   font-size: 18px;
+   font-weight: 500;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: normal;
+   color: $background-color-primary;
+  }
+
+  /*.hamburger {
 		display: grid;
-		grid-template-columns: repeat(12, 1fr);
-		grid-auto-rows: minmax(50px, auto);
-		grid-gap: 20px;
-		// max-width: 1440px;
-		margin: 0 auto;
-		position: relative;
-	}
+		width: 35px;
+		height: 20px;
+		top: 25px;
+		bottom: 595px;
+		left: 30px;
+		right: 295px;
+		object-fit: contain;
+		position: absolute;
+		z-index: 2;
+	} */
+  .img-header {
+   // object-fit: fill;
+   max-width: 100%;
+   // width: 360px;
+   height: 640px;
+   margin: 0;
+   background-color: $background-color-primary;
+   background-size: cover;
+   // object-fit: contain;
+  }
 
-	#content > * {
-		background: $background-color-primary;
-	}
+  .cta_rectangle {
+   width: 130px;
+   height: 44px;
+   background-color: $background-color-primary;
+  }
 
-	header {
-		grid-column: 1 / 13;
-		grid-row: 1 / 2;
-	}
+  .cta {
+   width: 83px;
+   height: 19px;
+   font-family: Raleway;
+   font-size: 16px;
+   font-weight: 500;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: normal;
+   text-align: center;
+   color: $black;
+  }
+ }
 
-	main {
-		grid-gap: 10px;
-		grid-column: 3 / 10;
-		grid-row: 2 / 4;
-	}
+ .product_1_image {
+  grid-column: 1 / 7;
+  grid-row-start: 2;
+ }
 
-	section {
-		grid-gap: 10px;
-		grid-column: 3 / 10;
-		grid-row: 4 / 6;
-	}
+ .product_1_copy {
+  grid-column: 8 / 13;
+  grid-row-start: 2;
+ }
 
-	aside {
-		grid-column: 1 / 13;
-	}
+ .product_2_copy {
+  grid-column: 1 / 5;
+  grid-row-start: 3;
+ }
 
-	article {
-		grid-column: 1 / 13;
-	}
+ .product_2_image {
+  grid-column: 6 / 13;
+  grid-row-start: 3;
+ }
 
-	address {
-		grid-column: 1 / 13;
-	}
+ .services_title {
+  grid-column: 1 / 13;
+ }
 
-	footer {
-		grid-column: 1 / 13;
-	}
+ .services_list_1 {
+  grid-column: 1 / 5;
+ }
+
+ .services_list_2 {
+  grid-column: 6 / 9;
+ }
+
+ .services_list_3 {
+  grid-column: 10 / 13;
+ }
+
+ .logos {
+  grid-column: 1 / 13;
+ }
+
+ .contact_title {
+  grid-column: 1 / 13;
+ }
+
+ .contact_copy {
+  grid-column: 1 / 13;
+ }
+
+ .contact_actions {
+  grid-column: 1 / 13;
+ }
+
+ .contact_write {
+  grid-column: 1 / 13;
+ }
+
+ .footer_title {
+  grid-column: 1 / 13;
+ }
+
+ .footer_social_icons_1 {
+  grid-column: 1 / 7;
+ }
+
+ .footer_social_icons_2 {
+  grid-column: 8 / 13;
+ }
+
+ .footer_newsletter_title {
+  grid-column: 1 / 13;
+ }
+
+ .footer_newsletter_write {
+  grid-column: 1 / 13;
+ }
 }
+
+/*
+.product_1_copy {  // main block original styling
+ grid-column: 8 / 13;
+ /* height: 92px;
+	font-family: Raleway;
+	font-size: 36px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.28;
+	letter-spacing: normal;
+	text-align: center;
+	color: $background-color-primary;
+}
+
+.main {
+ background-color: $background-color-primary;
+
+ .img-1-mobile {
+  width: 320px;
+  height: 177px;
+  border-radius: 6px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+ }
+
+ .Ullamcorper-Sem-Port {
+  width: 264px;
+  height: 29px;
+  font-family: Raleway;
+  font-size: 23px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $porta-c;
+  margin-left: 20px;
+  margin-right: 76px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+ }
+
+ .text-copy {
+  width: 300px;
+  height: 120px;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: $text-c;
+  margin-left: 20px;
+  margin-right: 40px;
+  margin-top: 0;
+  margin-bottom: 20px;
+ }
+
+ .Read-more {
+  width: 82px;
+  height: 16px;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-left: 19px;
+  margin-right: 259px;
+  color: $porta-c;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-bottom: 40px !important;
+ }
+}
+
+.section {
+ background-color: $whitey;
+ height: 462px;
+
+ .img-2-mobile {
+  width: 319px;
+  height: 177px;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-top: 30px;
+  margin-right: 21px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+ }
+
+ .Ullamcorper-Sem-Port {
+  width: 264px;
+  height: 29px;
+  font-family: Raleway;
+  font-size: 23px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $porta-c;
+  margin-left: 20px;
+  margin-right: 76px;
+  margin-top: 0;
+  margin-bottom: 20px;
+ }
+
+ .text-copy {
+  width: 300px;
+  height: 120px;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: $text-c;
+  margin-left: 20px;
+  margin-right: 40px;
+  margin-top: 0;
+  margin-bottom: 20px;
+ }
+
+ .Read-more {
+  width: 82px;
+  height: 16px;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-right: 259px;
+  margin-left: 19px;
+  color: $porta-c;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-bottom: 40px !important;
+ }
+
+ .aside {
+  background-color: $black;
+
+  .Services {
+   width: 143px;
+   height: 42px;
+   font-family: Raleway;
+   font-size: 36px;
+   font-weight: 500;
+   margin-top: 60px !important;
+   margin-right: 197px;
+   margin-left: 20px;
+   margin-bottom: 0px;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: normal;
+   color: $background-color-primary;
+  }
+
+  .-Lorem-ipsum-dolor {
+   width: 320px;
+   font-family: Raleway;
+   font-size: 16px;
+   font-weight: 400;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: 21px;
+   letter-spacing: 0px;
+   color: $gray-lorem;
+   margin-top: 20px;
+   margin-right: 40px;
+   margin-left: 50px;
+   margin-bottom: 10px;
+  }
+ }
+
+ .article {
+  background-color: $whitey;
+  height: 260px;
+ }
+
+ .address {
+  background-color: $background-color-primary;
+
+  .contact-title {
+   width: 133px;
+   height: 42px;
+   font-family: Raleway;
+   font-size: 36px;
+   font-weight: 500;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: normal;
+   color: $porta-c;
+   margin-left: 20px;
+   margin-right: 207px;
+   margin-top: 60px;
+   margin-bottom: 10px;
+  }
+
+  .text-copy-2 {
+   width: 320px;
+   height: 90px;
+   font-family: Raleway;
+   font-size: 16px;
+   font-weight: normal;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: 1.44;
+   letter-spacing: normal;
+   margin-left: 20px;
+   margin-right: 20px;
+   margin-top: 0;
+   margin-bottom: 30px;
+   color: $text-c;
+  }
+
+  .Nivas-doo-Drakov {
+   width: 151px;
+   height: 63px;
+   font-family: Avenir Medium;
+   font-size: 15px;
+   font-weight: 500;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: 1.4;
+   letter-spacing: normal;
+   color: $color-drakov;
+   margin-top: 0;
+   margin-right: 188px;
+   margin-bottom: 10px;
+   margin-left: 21px;
+  }
+
+  .map {
+   width: 95px;
+   height: 18px;
+   font-family: Raleway;
+   font-size: 15px;
+   font-weight: 500;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: normal;
+   text-align: center;
+   color: $black;
+   margin-top: 0;
+   margin-right: 244px;
+   margin-bottom: 45px;
+   margin-left: 21px;
+  }
+
+  .contact_actions {
+   width: 45px;
+   height: 75px;
+   font-family: Raleway;
+   font-size: 12px;
+   font-weight: normal;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: 2.08;
+   letter-spacing: normal;
+   margin-top: 0;
+   margin-right: 29px;
+   margin-bottom: 45px;
+   margin-left: 20px;
+   color: $color-callme;
+   white-space: nowrap;
+  }
+
+  table.contact_actions {
+   text-align: left;
+  }
+
+  table.contact_actions th {
+   text-transform: uppercase;
+   font-weight: normal;
+  }
+
+  table.contact_actions td {
+   text-decoration: none;
+  }
+
+  .tel {
+   width: 133px;
+   height: 15px;
+   font-family: Avenir Medium;
+   font-size: 15px;
+   font-weight: 500;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: normal;
+   color: $color-drakov;
+   margin-top: 0;
+   margin-right: 133px;
+   margin-bottom: 10px;
+   margin-left: 29px;
+  }
+
+  .e-mail {
+   width: 124px;
+   height: 15px;
+   font-family: Avenir Medium;
+   font-size: 15px;
+   font-weight: 500;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: normal;
+   color: $color-drakov;
+   margin-top: 8px;
+   margin-bottom: 8px;
+   margin-left: 30px;
+  }
+
+  .webmail {
+   width: 98px;
+   height: 15px;
+   font-family: Avenir Medium;
+   font-size: 15px;
+   font-weight: 500;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: normal;
+   color: $color-drakov;
+   margin-top: 8px;
+   margin-bottom: 8px;
+   margin-left: 30px;
+  }
+
+  form.contact_form>* {
+   display: block;
+  }
+
+  input[type=name],
+  input[type=email] {
+   width: 320px;
+   height: 32px;
+   border: solid 1px $grey-softy;
+   margin-right: 20px;
+   margin-bottom: 10px;
+   margin-left: 20px;
+   font-family: Raleway;
+   font-size: 14px;
+   font-weight: 300;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: 1.79;
+   letter-spacing: normal;
+   color: $color-input;
+   padding-top: 4px;
+   padding-bottom: 3px;
+   padding-left: 17px;
+  }
+
+  .question {
+   width: 320px;
+   height: 171px;
+   border: solid 1px $grey-softy;
+   margin-top: 0;
+   margin-right: 20px;
+   margin-bottom: 10px;
+   margin-left: 20px;
+   font-family: Raleway;
+   font-size: 14px;
+   font-weight: 300;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: 1.79;
+   letter-spacing: normal;
+   color: $color-input;
+   padding-top: 4px;
+   padding-left: 14px;
+   resize: none;
+  }
+
+  input[type=submit] {
+   width: 96px;
+   height: 32px;
+   background-color: $black;
+   margin-top: 0;
+   margin-right: 20px;
+   margin-bottom: 60px;
+   margin-left: 244px;
+   font-family: Raleway;
+   font-size: 16px;
+   font-weight: 500;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: normal;
+   text-align: center;
+   color: $background-color-primary;
+   padding-top: 6px;
+   padding-right: 6px;
+   padding-bottom: 7px;
+   padding-left: 7px;
+  }
+ }
+
+ .footer {
+  grid-template-columns: unset;
+  background-color: $black !important;
+  height: 285px;
+  z-index: 1;
+
+  .follow {
+   grid-row: row 1 / span 3;
+   width: 82px;
+   height: 21px;
+   font-family: Raleway;
+   font-size: 18px;
+   font-weight: 500;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: normal;
+   color: $color-follow;
+   margin-left: 139px;
+   margin-right: 139px;
+   margin-top: 30px !important;
+   margin-bottom: 18px;
+   white-space: nowrap;
+   z-index: 2;
+  }
+
+  .footer_social_icons>* {
+   color: $whitey;
+  }
+
+  .fa-facebook-square {
+   margin-left: 81px;
+   margin-right: 56px;
+   margin-bottom: 19px;
+   margin-top: 15px;
+  }
+
+  .fa-twitter,
+  .fa-pinterest {
+   margin-right: 23px;
+   margin-bottom: 0px;
+   margin-right: 65px;
+  }
+
+  .fa-instagram {
+   margin-right: 84px;
+   margin-bottom: 19px;
+  }
+
+  .fa-snapchat-ghost {
+   margin-left: 80px;
+   margin-right: 54px;
+   margin-bottom: 0;
+   margin-top: 15px;
+  }
+
+  .Newsletter {
+   width: 94px;
+   height: 21px;
+   font-family: Raleway;
+   font-size: 18px;
+   font-weight: 500;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: normal;
+   color: $color-follow;
+   margin-top: 48px;
+   margin-right: 133px;
+   margin-bottom: 0;
+   margin-left: 133px;
+  }
+
+  .newsletter_signup .email {
+   background-color: black;
+   border: solid 1px $grey-softy;
+   width: 208px;
+   height: 32px;
+   margin-top: 21px;
+   margin-right: 16px;
+   margin-bottom: 30px;
+   margin-left: 20px;
+   font-family: Raleway;
+   font-size: 14px;
+   font-weight: 300;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: 1.79;
+   letter-spacing: normal;
+   color: $y-gmail-color;
+   padding-left: 14px;
+   padding-top: 4px;
+   padding-bottom: 3px;
+  }
+
+  .newsletter_signup .signup_submit {
+   border: solid 1px $grey-softy;
+   width: 96px;
+   height: 32px;
+   background-color: $background-color-primary;
+   margin-bottom: 30px;
+   font-family: Raleway;
+   font-size: 16px;
+   font-weight: 500;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: normal;
+   text-align: center;
+   color: $black;
+   padding-top: 6px;
+   padding-right: 6px;
+   padding-bottom: 7px;
+   padding-left: 7px;
+  }
+ }
+}
+
+*/

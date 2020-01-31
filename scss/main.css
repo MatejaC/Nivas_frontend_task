@@ -24,62 +24,39 @@ body {
   font-family: "Avenir Medium", sans-serif;
 }
 
-@media screen and (min-width: 360px) {
+@media (min-width: 360px) {
   #content {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[6];
-        grid-template-columns: repeat(6, 1fr);
-    -ms-grid-rows: minmax(50px, auto);
-        grid-template-rows: minmax(50px, auto);
-    grid-gap: 16px;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
     margin: 0 auto;
-        grid-template-areas: "header header header header header header" "main main main main main main" "section section section section section section" "aside aside aside aside aside aside" "article article article article article article" "address address address address address address" "footer footer footer footer footer footer";
+    position: relative;
+  }
+  #content > * {
+    background: #ffffff;
   }
   header {
-    -ms-grid-row: 1;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-    grid-area: header;
-  }
-  main {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-    grid-area: main;
-  }
-  section {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-    grid-area: section;
-  }
-  aside {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-    grid-area: aside;
-  }
-  article {
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-    grid-area: article;
-  }
-  address {
-    -ms-grid-row: 6;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-    grid-area: address;
-  }
-  footer {
-    -ms-grid-row: 7;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-    grid-area: footer;
+    -ms-grid-column-span: 4;
+    grid-column: 1 / 5;
   }
   .header {
     height: 640px;
+    /*.hamburger {
+		display: grid;
+		width: 35px;
+		height: 20px;
+		top: 25px;
+		bottom: 595px;
+		left: 30px;
+		right: 295px;
+		object-fit: contain;
+		position: absolute;
+		z-index: 2;
+	} */
   }
   .header .menu {
     width: 48px;
@@ -92,77 +69,20 @@ body {
     line-height: normal;
     letter-spacing: normal;
     color: #ffffff;
-    position: absolute !important;
-    top: 25px;
-    bottom: 594px;
-    left: 80px;
-    right: 232px;
-    width: 100%;
-    z-index: 2;
-  }
-  .header .hamburger {
-    display: -ms-grid;
-    display: grid;
-    width: 35px;
-    height: 20px;
-    top: 25px;
-    bottom: 595px;
-    left: 30px;
-    right: 295px;
-    -o-object-fit: contain;
-       object-fit: contain;
-    position: absolute;
-    z-index: 2;
   }
   .header .img-header {
-    -o-object-fit: fill;
-       object-fit: fill;
     max-width: 100%;
-    width: 360px;
     height: 640px;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
     margin: 0;
     background-color: #ffffff;
     background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    -o-object-fit: contain;
-       object-fit: contain;
   }
-  .header .Rectangle {
+  .header .cta_rectangle {
     width: 130px;
     height: 44px;
     background-color: #ffffff;
-    top: 341px;
-    right: 115px;
-    bottom: 255px;
-    left: 115px;
-    z-index: 2;
-    position: absolute;
   }
-  .header .Consectetur-Elit-Ips {
-    width: 320px;
-    height: 92px;
-    font-family: Raleway;
-    font-size: 36px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.28;
-    letter-spacing: normal;
-    text-align: center;
-    color: #ffffff;
-    top: 219px;
-    right: 20px;
-    bottom: 329px;
-    left: 20px;
-    z-index: 2;
-    position: absolute;
-  }
-  .header .CTA {
+  .header .cta {
     width: 83px;
     height: 19px;
     font-family: Raleway;
@@ -174,494 +94,107 @@ body {
     letter-spacing: normal;
     text-align: center;
     color: #000000;
-    top: 12px;
-    right: 23px;
-    bottom: 13px;
-    left: 24px;
-    position: absolute;
-    z-index: 2;
   }
-  .main {
-    background-color: #ffffff;
+  .product_1_image {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1 / 5;
   }
-  .main .img-1-mobile {
-    width: 320px;
-    height: 177px;
-    border-radius: 6px;
-    margin-top: 20px;
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-bottom: 10px;
+  .product_1_copy {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1 / 5;
   }
-  .main .Ullamcorper-Sem-Port {
-    width: 264px;
-    height: 29px;
-    font-family: Raleway;
-    font-size: 23px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #464646;
-    margin-left: 20px;
-    margin-right: 76px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+  .product_2_image {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1 / 5;
+    -ms-grid-row: 4;
+        grid-row-start: 4;
   }
-  .main .text-copy {
-    width: 300px;
-    height: 120px;
-    font-family: Raleway;
-    font-size: 16px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    color: #414141;
-    margin-left: 20px;
-    margin-right: 40px;
-    margin-top: 0;
-    margin-bottom: 20px;
+  .product_2_copy {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1 / 5;
   }
-  .main .Read-more {
-    width: 82px;
-    height: 16px;
-    font-family: Raleway;
-    font-size: 14px;
-    font-weight: bold;
-    margin-top: 0;
-    margin-left: 19px;
-    margin-right: 259px;
-    color: #464646;
-    text-transform: uppercase;
-    white-space: nowrap;
-    margin-bottom: 40px !important;
+  .services_title {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1 / 5;
   }
-  .section {
-    background-color: #f8f8f8;
-    height: 462px;
+  .services_list_1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1 / 5;
   }
-  .section .img-2-mobile {
-    width: 319px;
-    height: 177px;
-    -o-object-fit: contain;
-       object-fit: contain;
-    border-radius: 6px;
-    margin-top: 30px;
-    margin-right: 21px;
-    margin-bottom: 20px;
-    margin-left: 20px;
+  .services_list_2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1 / 5;
   }
-  .section .Ullamcorper-Sem-Port {
-    width: 264px;
-    height: 29px;
-    font-family: Raleway;
-    font-size: 23px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #464646;
-    margin-left: 20px;
-    margin-right: 76px;
-    margin-top: 0;
-    margin-bottom: 20px;
+  .services_list_3 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1 / 5;
   }
-  .section .text-copy {
-    width: 300px;
-    height: 120px;
-    font-family: Raleway;
-    font-size: 16px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    color: #414141;
-    margin-left: 20px;
-    margin-right: 40px;
-    margin-top: 0;
-    margin-bottom: 20px;
+  .logos {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1 / 5;
   }
-  .section .Read-more {
-    width: 82px;
-    height: 16px;
-    font-family: Raleway;
-    font-size: 14px;
-    font-weight: bold;
-    margin-top: 0;
-    margin-right: 259px;
-    margin-left: 19px;
-    color: #464646;
-    text-transform: uppercase;
-    white-space: nowrap;
-    margin-bottom: 40px !important;
+  .contact_title {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1 / 5;
   }
-  .aside {
-    background-color: #000000;
+  .contact_copy {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1 / 5;
   }
-  .aside .Services {
-    width: 143px;
-    height: 42px;
-    font-family: Raleway;
-    font-size: 36px;
-    font-weight: 500;
-    margin-top: 60px !important;
-    margin-right: 197px;
-    margin-left: 20px;
-    margin-bottom: 0px;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #ffffff;
+  .contact_actions {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1 / 5;
   }
-  .aside .-Lorem-ipsum-dolor {
-    width: 320px;
-    font-family: Raleway;
-    font-size: 16px;
-    font-weight: 400;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 21px;
-    letter-spacing: 0px;
-    color: #999999;
-    margin-top: 20px;
-    margin-right: 40px;
-    margin-left: 50px;
-    margin-bottom: 10px;
+  .contact_write {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1 / 5;
   }
-  .article {
-    background-color: #f8f8f8;
-    height: 260px;
+  .footer_title {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1 / 5;
   }
-  .address {
-    background-color: #ffffff;
+  .footer_social_icons_1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1 / 5;
   }
-  .address .contact-title {
-    width: 133px;
-    height: 42px;
-    font-family: Raleway;
-    font-size: 36px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #464646;
-    margin-left: 20px;
-    margin-right: 207px;
-    margin-top: 60px;
-    margin-bottom: 10px;
+  .footer_social_icons_2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1 / 5;
   }
-  .address .text-copy-2 {
-    width: 320px;
-    height: 90px;
-    font-family: Raleway;
-    font-size: 16px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.44;
-    letter-spacing: normal;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 0;
-    margin-bottom: 30px;
-    color: #414141;
+  .footer_newsletter_title {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1 / 5;
   }
-  .address .Nivas-doo-Drakov {
-    width: 151px;
-    height: 63px;
-    font-family: Avenir Medium;
-    font-size: 15px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.4;
-    letter-spacing: normal;
-    color: #323232;
-    margin-top: 0;
-    margin-right: 188px;
-    margin-bottom: 10px;
-    margin-left: 21px;
-  }
-  .address .map {
-    width: 95px;
-    height: 18px;
-    font-family: Raleway;
-    font-size: 15px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000000;
-    margin-top: 0;
-    margin-right: 244px;
-    margin-bottom: 45px;
-    margin-left: 21px;
-  }
-  .address .contact_actions {
-    width: 45px;
-    height: 75px;
-    font-family: Raleway;
-    font-size: 12px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 2.08;
-    letter-spacing: normal;
-    margin-top: 0;
-    margin-right: 29px;
-    margin-bottom: 45px;
-    margin-left: 20px;
-    color: #3d3d3d;
-    white-space: nowrap;
-  }
-  .address table.contact_actions {
-    text-align: left;
-  }
-  .address table.contact_actions th {
-    text-transform: uppercase;
-    font-weight: normal;
-  }
-  .address table.contact_actions td {
-    text-decoration: none;
-  }
-  .address .tel {
-    width: 133px;
-    height: 15px;
-    font-family: Avenir Medium;
-    font-size: 15px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #323232;
-    margin-top: 0;
-    margin-right: 133px;
-    margin-bottom: 10px;
-    margin-left: 29px;
-  }
-  .address .e-mail {
-    width: 124px;
-    height: 15px;
-    font-family: Avenir Medium;
-    font-size: 15px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #323232;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    margin-left: 30px;
-  }
-  .address .webmail {
-    width: 98px;
-    height: 15px;
-    font-family: Avenir Medium;
-    font-size: 15px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #323232;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    margin-left: 30px;
-  }
-  .address form.contact_form > * {
-    display: block;
-  }
-  .address input[type=name],
-  .address input[type=email] {
-    width: 320px;
-    height: 32px;
-    border: solid 1px #979797;
-    margin-right: 20px;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    font-family: Raleway;
-    font-size: 14px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.79;
-    letter-spacing: normal;
-    color: #303030;
-    padding-top: 4px;
-    padding-bottom: 3px;
-    padding-left: 17px;
-  }
-  .address .question {
-    width: 320px;
-    height: 171px;
-    border: solid 1px #979797;
-    margin-top: 0;
-    margin-right: 20px;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    font-family: Raleway;
-    font-size: 14px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.79;
-    letter-spacing: normal;
-    color: #303030;
-    padding-top: 4px;
-    padding-left: 14px;
-    resize: none;
-  }
-  .address input[type=submit] {
-    width: 96px;
-    height: 32px;
-    background-color: #000000;
-    margin-top: 0;
-    margin-right: 20px;
-    margin-bottom: 60px;
-    margin-left: 244px;
-    font-family: Raleway;
-    font-size: 16px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: center;
-    color: #ffffff;
-    padding-top: 6px;
-    padding-right: 6px;
-    padding-bottom: 7px;
-    padding-left: 7px;
-  }
-  .footer {
-    -ms-grid-columns: unset;
-        grid-template-columns: unset;
-    background-color: #000000 !important;
-    height: 285px;
-    z-index: 1;
-  }
-  .footer .follow {
-    grid-row: row 1 / span 3;
-    width: 82px;
-    height: 21px;
-    font-family: Raleway;
-    font-size: 18px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #7a7a7a;
-    margin-left: 139px;
-    margin-right: 139px;
-    margin-top: 30px !important;
-    margin-bottom: 18px;
-    white-space: nowrap;
-    z-index: 2;
-  }
-  .footer .social_icons > * {
-    color: #f8f8f8;
-  }
-  .footer .fa-facebook-square {
-    margin-left: 81px;
-    margin-right: 56px;
-    margin-bottom: 19px;
-    margin-top: 15px;
-  }
-  .footer .fa-twitter,
-  .footer .fa-pinterest {
-    margin-right: 23px;
-    margin-bottom: 0px;
-    margin-right: 65px;
-  }
-  .footer .fa-instagram {
-    margin-right: 84px;
-    margin-bottom: 19px;
-  }
-  .footer .fa-snapchat-ghost {
-    margin-left: 80px;
-    margin-right: 54px;
-    margin-bottom: 0;
-    margin-top: 15px;
-  }
-  .footer .Newsletter {
-    width: 94px;
-    height: 21px;
-    font-family: Raleway;
-    font-size: 18px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #7a7a7a;
-    margin-top: 48px;
-    margin-right: 133px;
-    margin-bottom: 0;
-    margin-left: 133px;
-  }
-  .footer .newsletter_signup .email {
-    background-color: black;
-    border: solid 1px #979797;
-    width: 208px;
-    height: 32px;
-    margin-top: 21px;
-    margin-right: 16px;
-    margin-bottom: 30px;
-    margin-left: 20px;
-    font-family: Raleway;
-    font-size: 14px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.79;
-    letter-spacing: normal;
-    color: #737373;
-    padding-left: 14px;
-    padding-top: 4px;
-    padding-bottom: 3px;
-  }
-  .footer .newsletter_signup .signup_submit {
-    border: solid 1px #979797;
-    width: 96px;
-    height: 32px;
-    background-color: #ffffff;
-    margin-bottom: 30px;
-    font-family: Raleway;
-    font-size: 16px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000000;
-    padding-top: 6px;
-    padding-right: 6px;
-    padding-bottom: 7px;
-    padding-left: 7px;
+  .footer_newsletter_write {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1 / 5;
   }
 }
 
-@media screen and (min-width: 860px) {
+@media (min-width: 800px) {
   #content {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[12];
         grid-template-columns: repeat(12, 1fr);
-    grid-auto-rows: minmax(50px, auto);
-    grid-gap: 20px;
     margin: 0 auto;
     position: relative;
   }
@@ -672,47 +205,682 @@ body {
     -ms-grid-column: 1;
     -ms-grid-column-span: 12;
     grid-column: 1 / 13;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1 / 2;
   }
-  main {
-    grid-gap: 10px;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 7;
-    grid-column: 3 / 10;
+  .header {
+    height: 640px;
+    /*.hamburger {
+		display: grid;
+		width: 35px;
+		height: 20px;
+		top: 25px;
+		bottom: 595px;
+		left: 30px;
+		right: 295px;
+		object-fit: contain;
+		position: absolute;
+		z-index: 2;
+	} */
+  }
+  .header .menu {
+    width: 48px;
+    height: 21px;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+  }
+  .header .img-header {
+    max-width: 100%;
+    height: 640px;
+    margin: 0;
+    background-color: #ffffff;
+    background-size: cover;
+  }
+  .header .cta_rectangle {
+    width: 130px;
+    height: 44px;
+    background-color: #ffffff;
+  }
+  .header .cta {
+    width: 83px;
+    height: 19px;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+  }
+  .product_1_image {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1 / 7;
     -ms-grid-row: 2;
-    -ms-grid-row-span: 2;
-    grid-row: 2 / 4;
+        grid-row-start: 2;
   }
-  section {
-    grid-gap: 10px;
-    -ms-grid-column: 3;
+  .product_1_copy {
+    -ms-grid-column: 8;
+    -ms-grid-column-span: 5;
+    grid-column: 8 / 13;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+  }
+  .product_2_copy {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1 / 5;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+  }
+  .product_2_image {
+    -ms-grid-column: 6;
     -ms-grid-column-span: 7;
-    grid-column: 3 / 10;
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 2;
-    grid-row: 4 / 6;
+    grid-column: 6 / 13;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
   }
-  aside {
+  .services_title {
     -ms-grid-column: 1;
     -ms-grid-column-span: 12;
     grid-column: 1 / 13;
   }
-  article {
+  .services_list_1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1 / 5;
+  }
+  .services_list_2 {
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 3;
+    grid-column: 6 / 9;
+  }
+  .services_list_3 {
+    -ms-grid-column: 10;
+    -ms-grid-column-span: 3;
+    grid-column: 10 / 13;
+  }
+  .logos {
     -ms-grid-column: 1;
     -ms-grid-column-span: 12;
     grid-column: 1 / 13;
   }
-  address {
+  .contact_title {
     -ms-grid-column: 1;
     -ms-grid-column-span: 12;
     grid-column: 1 / 13;
   }
-  footer {
+  .contact_copy {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-column: 1 / 13;
+  }
+  .contact_actions {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-column: 1 / 13;
+  }
+  .contact_write {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-column: 1 / 13;
+  }
+  .footer_title {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-column: 1 / 13;
+  }
+  .footer_social_icons_1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1 / 7;
+  }
+  .footer_social_icons_2 {
+    -ms-grid-column: 8;
+    -ms-grid-column-span: 5;
+    grid-column: 8 / 13;
+  }
+  .footer_newsletter_title {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-column: 1 / 13;
+  }
+  .footer_newsletter_write {
     -ms-grid-column: 1;
     -ms-grid-column-span: 12;
     grid-column: 1 / 13;
   }
 }
+
+/*
+.product_1_copy {  // main block original styling
+ grid-column: 8 / 13;
+ /* height: 92px;
+	font-family: Raleway;
+	font-size: 36px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.28;
+	letter-spacing: normal;
+	text-align: center;
+	color: $background-color-primary;
+}
+
+.main {
+ background-color: $background-color-primary;
+
+ .img-1-mobile {
+  width: 320px;
+  height: 177px;
+  border-radius: 6px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+ }
+
+ .Ullamcorper-Sem-Port {
+  width: 264px;
+  height: 29px;
+  font-family: Raleway;
+  font-size: 23px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $porta-c;
+  margin-left: 20px;
+  margin-right: 76px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+ }
+
+ .text-copy {
+  width: 300px;
+  height: 120px;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: $text-c;
+  margin-left: 20px;
+  margin-right: 40px;
+  margin-top: 0;
+  margin-bottom: 20px;
+ }
+
+ .Read-more {
+  width: 82px;
+  height: 16px;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-left: 19px;
+  margin-right: 259px;
+  color: $porta-c;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-bottom: 40px !important;
+ }
+}
+
+.section {
+ background-color: $whitey;
+ height: 462px;
+
+ .img-2-mobile {
+  width: 319px;
+  height: 177px;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-top: 30px;
+  margin-right: 21px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+ }
+
+ .Ullamcorper-Sem-Port {
+  width: 264px;
+  height: 29px;
+  font-family: Raleway;
+  font-size: 23px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $porta-c;
+  margin-left: 20px;
+  margin-right: 76px;
+  margin-top: 0;
+  margin-bottom: 20px;
+ }
+
+ .text-copy {
+  width: 300px;
+  height: 120px;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: $text-c;
+  margin-left: 20px;
+  margin-right: 40px;
+  margin-top: 0;
+  margin-bottom: 20px;
+ }
+
+ .Read-more {
+  width: 82px;
+  height: 16px;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-right: 259px;
+  margin-left: 19px;
+  color: $porta-c;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-bottom: 40px !important;
+ }
+
+ .aside {
+  background-color: $black;
+
+  .Services {
+   width: 143px;
+   height: 42px;
+   font-family: Raleway;
+   font-size: 36px;
+   font-weight: 500;
+   margin-top: 60px !important;
+   margin-right: 197px;
+   margin-left: 20px;
+   margin-bottom: 0px;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: normal;
+   color: $background-color-primary;
+  }
+
+  .-Lorem-ipsum-dolor {
+   width: 320px;
+   font-family: Raleway;
+   font-size: 16px;
+   font-weight: 400;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: 21px;
+   letter-spacing: 0px;
+   color: $gray-lorem;
+   margin-top: 20px;
+   margin-right: 40px;
+   margin-left: 50px;
+   margin-bottom: 10px;
+  }
+ }
+
+ .article {
+  background-color: $whitey;
+  height: 260px;
+ }
+
+ .address {
+  background-color: $background-color-primary;
+
+  .contact-title {
+   width: 133px;
+   height: 42px;
+   font-family: Raleway;
+   font-size: 36px;
+   font-weight: 500;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: normal;
+   color: $porta-c;
+   margin-left: 20px;
+   margin-right: 207px;
+   margin-top: 60px;
+   margin-bottom: 10px;
+  }
+
+  .text-copy-2 {
+   width: 320px;
+   height: 90px;
+   font-family: Raleway;
+   font-size: 16px;
+   font-weight: normal;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: 1.44;
+   letter-spacing: normal;
+   margin-left: 20px;
+   margin-right: 20px;
+   margin-top: 0;
+   margin-bottom: 30px;
+   color: $text-c;
+  }
+
+  .Nivas-doo-Drakov {
+   width: 151px;
+   height: 63px;
+   font-family: Avenir Medium;
+   font-size: 15px;
+   font-weight: 500;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: 1.4;
+   letter-spacing: normal;
+   color: $color-drakov;
+   margin-top: 0;
+   margin-right: 188px;
+   margin-bottom: 10px;
+   margin-left: 21px;
+  }
+
+  .map {
+   width: 95px;
+   height: 18px;
+   font-family: Raleway;
+   font-size: 15px;
+   font-weight: 500;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: normal;
+   text-align: center;
+   color: $black;
+   margin-top: 0;
+   margin-right: 244px;
+   margin-bottom: 45px;
+   margin-left: 21px;
+  }
+
+  .contact_actions {
+   width: 45px;
+   height: 75px;
+   font-family: Raleway;
+   font-size: 12px;
+   font-weight: normal;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: 2.08;
+   letter-spacing: normal;
+   margin-top: 0;
+   margin-right: 29px;
+   margin-bottom: 45px;
+   margin-left: 20px;
+   color: $color-callme;
+   white-space: nowrap;
+  }
+
+  table.contact_actions {
+   text-align: left;
+  }
+
+  table.contact_actions th {
+   text-transform: uppercase;
+   font-weight: normal;
+  }
+
+  table.contact_actions td {
+   text-decoration: none;
+  }
+
+  .tel {
+   width: 133px;
+   height: 15px;
+   font-family: Avenir Medium;
+   font-size: 15px;
+   font-weight: 500;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: normal;
+   color: $color-drakov;
+   margin-top: 0;
+   margin-right: 133px;
+   margin-bottom: 10px;
+   margin-left: 29px;
+  }
+
+  .e-mail {
+   width: 124px;
+   height: 15px;
+   font-family: Avenir Medium;
+   font-size: 15px;
+   font-weight: 500;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: normal;
+   color: $color-drakov;
+   margin-top: 8px;
+   margin-bottom: 8px;
+   margin-left: 30px;
+  }
+
+  .webmail {
+   width: 98px;
+   height: 15px;
+   font-family: Avenir Medium;
+   font-size: 15px;
+   font-weight: 500;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: normal;
+   color: $color-drakov;
+   margin-top: 8px;
+   margin-bottom: 8px;
+   margin-left: 30px;
+  }
+
+  form.contact_form>* {
+   display: block;
+  }
+
+  input[type=name],
+  input[type=email] {
+   width: 320px;
+   height: 32px;
+   border: solid 1px $grey-softy;
+   margin-right: 20px;
+   margin-bottom: 10px;
+   margin-left: 20px;
+   font-family: Raleway;
+   font-size: 14px;
+   font-weight: 300;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: 1.79;
+   letter-spacing: normal;
+   color: $color-input;
+   padding-top: 4px;
+   padding-bottom: 3px;
+   padding-left: 17px;
+  }
+
+  .question {
+   width: 320px;
+   height: 171px;
+   border: solid 1px $grey-softy;
+   margin-top: 0;
+   margin-right: 20px;
+   margin-bottom: 10px;
+   margin-left: 20px;
+   font-family: Raleway;
+   font-size: 14px;
+   font-weight: 300;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: 1.79;
+   letter-spacing: normal;
+   color: $color-input;
+   padding-top: 4px;
+   padding-left: 14px;
+   resize: none;
+  }
+
+  input[type=submit] {
+   width: 96px;
+   height: 32px;
+   background-color: $black;
+   margin-top: 0;
+   margin-right: 20px;
+   margin-bottom: 60px;
+   margin-left: 244px;
+   font-family: Raleway;
+   font-size: 16px;
+   font-weight: 500;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: normal;
+   text-align: center;
+   color: $background-color-primary;
+   padding-top: 6px;
+   padding-right: 6px;
+   padding-bottom: 7px;
+   padding-left: 7px;
+  }
+ }
+
+ .footer {
+  grid-template-columns: unset;
+  background-color: $black !important;
+  height: 285px;
+  z-index: 1;
+
+  .follow {
+   grid-row: row 1 / span 3;
+   width: 82px;
+   height: 21px;
+   font-family: Raleway;
+   font-size: 18px;
+   font-weight: 500;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: normal;
+   color: $color-follow;
+   margin-left: 139px;
+   margin-right: 139px;
+   margin-top: 30px !important;
+   margin-bottom: 18px;
+   white-space: nowrap;
+   z-index: 2;
+  }
+
+  .footer_social_icons>* {
+   color: $whitey;
+  }
+
+  .fa-facebook-square {
+   margin-left: 81px;
+   margin-right: 56px;
+   margin-bottom: 19px;
+   margin-top: 15px;
+  }
+
+  .fa-twitter,
+  .fa-pinterest {
+   margin-right: 23px;
+   margin-bottom: 0px;
+   margin-right: 65px;
+  }
+
+  .fa-instagram {
+   margin-right: 84px;
+   margin-bottom: 19px;
+  }
+
+  .fa-snapchat-ghost {
+   margin-left: 80px;
+   margin-right: 54px;
+   margin-bottom: 0;
+   margin-top: 15px;
+  }
+
+  .Newsletter {
+   width: 94px;
+   height: 21px;
+   font-family: Raleway;
+   font-size: 18px;
+   font-weight: 500;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: normal;
+   color: $color-follow;
+   margin-top: 48px;
+   margin-right: 133px;
+   margin-bottom: 0;
+   margin-left: 133px;
+  }
+
+  .newsletter_signup .email {
+   background-color: black;
+   border: solid 1px $grey-softy;
+   width: 208px;
+   height: 32px;
+   margin-top: 21px;
+   margin-right: 16px;
+   margin-bottom: 30px;
+   margin-left: 20px;
+   font-family: Raleway;
+   font-size: 14px;
+   font-weight: 300;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: 1.79;
+   letter-spacing: normal;
+   color: $y-gmail-color;
+   padding-left: 14px;
+   padding-top: 4px;
+   padding-bottom: 3px;
+  }
+
+  .newsletter_signup .signup_submit {
+   border: solid 1px $grey-softy;
+   width: 96px;
+   height: 32px;
+   background-color: $background-color-primary;
+   margin-bottom: 30px;
+   font-family: Raleway;
+   font-size: 16px;
+   font-weight: 500;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: normal;
+   text-align: center;
+   color: $black;
+   padding-top: 6px;
+   padding-right: 6px;
+   padding-bottom: 7px;
+   padding-left: 7px;
+  }
+ }
+}
+
+*/
 /*# sourceMappingURL=main.css.map */
