@@ -37,62 +37,53 @@ $y-gmail-color: #737373;
 	zoom: 1;
 }
 
-.clearfix:after {
-	content: ".";
-	clear: both;
-	display: block;
-	height: 0;
-	visibility: hidden;
+body {
+	background-color: $background-color-primary;
+	font-family: "Raleway", sans-serif;
+	font-family: "Avenir Medium", sans-serif;
 }
 
-// ---for Mmobile S - 320px --- //
-
-.wrapper > * {
-	display: grid;
-}
-
-img {
-	max-width: 100%;
-	height: auto;
-}
-
-@media (min-width: 360px) {
-	.wrapper {
+// ---for Mobile - 360px --- //
+@media screen and (min-width: 360px) {
+	#content {
 		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: minmax(50px, auto);
 		grid-gap: 16px;
-		background-color: $background-color-primary;
+		margin: 0 auto;
+		grid-template-areas: "header header header header header header""main main main main main main""section section section section section section""aside aside aside aside aside aside""article article article article article article""address address address address address address""footer footer footer footer footer footer";
 	}
 
-	html,
-	body {
-		background-color: $background-color-primary;
-		color: $black;
-		font-family: "Raleway", sans-serif;
-		font-family: "AvenirNextLTPro", Fallback, sans-serif;
-		width: 360px;
+	header {
+		grid-area: header;
+	}
+
+	main {
+		grid-area: main;
+	}
+
+	section {
+		grid-area: section;
+	}
+
+	aside {
+		grid-area: aside;
+	}
+
+	article {
+		grid-area: article;
+	}
+
+	address {
+		grid-area: address;
+	}
+
+	footer {
+		grid-area: footer;
 	}
 
 	.header {
-		grid-row: 1;
-
-		.img-header {
-			object-fit: fill;
-			justify-items: stretch;
-			justify-items: start;
-			max-width: 100%;
-			width: 360px;
-			height: 640px;
-			left: 0;
-			right: 0;
-			top: 0;
-			bottom: 0;
-			margin: 0;
-			background-color: $background-color-primary;
-			background-size: cover;
-			background-position: center center;
-			background-repeat: no-repeat;
-			object-fit: contain;
-		}
+		height: 640px;
 
 		.menu {
 			width: 48px;
@@ -125,6 +116,23 @@ img {
 			object-fit: contain;
 			position: absolute;
 			z-index: 2;
+		}
+
+		.img-header {
+			object-fit: fill;
+			max-width: 100%;
+			width: 360px;
+			height: 640px;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: 0;
+			background-color: $background-color-primary;
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+			object-fit: contain;
 		}
 
 		.Rectangle {
@@ -180,11 +188,8 @@ img {
 		}
 	}
 
-	.article {
-		display: grid;
-		width: 360px;
+	.main {
 		background-color: $background-color-primary;
-		grid-row: 2;
 
 		.img-1-mobile {
 			width: 320px;
@@ -199,7 +204,7 @@ img {
 		.Ullamcorper-Sem-Port {
 			width: 264px;
 			height: 29px;
-			font-family: "Raleway";
+			font-family: Raleway;
 			font-size: 23px;
 			font-weight: 500;
 			font-stretch: normal;
@@ -232,24 +237,22 @@ img {
 
 		.Read-more {
 			width: 82px;
-			height: 14px;
+			height: 16px;
 			font-family: Raleway;
-			font-size: 16px;
+			font-size: 14px;
 			font-weight: bold;
 			margin-top: 0;
-			margin-right: 259px;
-			margin-bottom: 40px;
 			margin-left: 19px;
+			margin-right: 259px;
 			color: $porta-c;
 			text-transform: uppercase;
 			white-space: nowrap;
+			margin-bottom: 40px !important;
 		}
 	}
 
-	.aside {
-		display: grid;
+	.section {
 		background-color: $whitey;
-		grid-row: 3;
 		height: 462px;
 
 		.img-2-mobile {
@@ -276,8 +279,8 @@ img {
 			color: $porta-c;
 			margin-left: 20px;
 			margin-right: 76px;
-			margin-top: 0px;
-			margin-bottom: 10px;
+			margin-top: 0;
+			margin-bottom: 20px;
 		}
 
 		.text-copy {
@@ -299,26 +302,22 @@ img {
 
 		.Read-more {
 			width: 82px;
-			height: 14px;
+			height: 16px;
 			font-family: Raleway;
-			font-size: 16px;
+			font-size: 14px;
 			font-weight: bold;
 			margin-top: 0;
 			margin-right: 259px;
-			margin-bottom: 40px;
 			margin-left: 19px;
 			color: $porta-c;
 			text-transform: uppercase;
 			white-space: nowrap;
+			margin-bottom: 40px !important;
 		}
 	}
 
-	.services {
-		display: grid;
-		grid-row: 4;
+	.aside {
 		background-color: $black;
-		width: 360px;
-		height: 612px;
 
 		.Services {
 			width: 143px;
@@ -326,7 +325,7 @@ img {
 			font-family: Raleway;
 			font-size: 36px;
 			font-weight: 500;
-			margin-top: 60px;
+			margin-top: 60px !important;
 			margin-right: 197px;
 			margin-left: 20px;
 			margin-bottom: 0px;
@@ -340,11 +339,11 @@ img {
 		.-Lorem-ipsum-dolor {
 			width: 320px;
 			font-family: Raleway;
-			font-size: 17px;
-			font-weight: 500;
+			font-size: 16px;
+			font-weight: 400;
 			font-stretch: normal;
 			font-style: normal;
-			line-height: 26px;
+			line-height: 21px;
 			letter-spacing: 0px;
 			color: $gray-lorem;
 			margin-top: 20px;
@@ -354,18 +353,13 @@ img {
 		}
 	}
 
-	.logo {
-		display: grid;
+	.article {
 		background-color: $whitey;
-		width: 360px;
 		height: 260px;
-		grid-row: 5;
 	}
 
-	.contact {
-		display: grid;
+	.address {
 		background-color: $background-color-primary;
-		grid-row: 6;
 
 		.contact-title {
 			width: 133px;
@@ -587,11 +581,13 @@ img {
 	}
 
 	.footer {
-		display: grid;
-		background-color: $black;
-		grid-row: 7;
+		grid-template-columns: unset;
+		background-color: $black !important;
+		height: 285px;
+		z-index: 1;
 
 		.follow {
+			grid-row: row 1 / span 3;
 			width: 82px;
 			height: 21px;
 			font-family: Raleway;
@@ -604,9 +600,10 @@ img {
 			color: $color-follow;
 			margin-left: 139px;
 			margin-right: 139px;
-			margin-top: 30px;
+			margin-top: 30px !important;
 			margin-bottom: 18px;
 			white-space: nowrap;
+			z-index: 2;
 		}
 
 		.social_icons > * {
@@ -615,7 +612,7 @@ img {
 
 		.fa-facebook-square {
 			margin-left: 81px;
-			margin-right: 65px;
+			margin-right: 56px;
 			margin-bottom: 19px;
 			margin-top: 15px;
 		}
@@ -623,7 +620,7 @@ img {
 		.fa-twitter,
 		.fa-pinterest {
 			margin-right: 23px;
-			margin-bottom: 19px;
+			margin-bottom: 0px;
 			margin-right: 65px;
 		}
 
@@ -634,8 +631,8 @@ img {
 
 		.fa-snapchat-ghost {
 			margin-left: 80px;
-			margin-right: 64px;
-			margin-bottom: 19px;
+			margin-right: 54px;
+			margin-bottom: 0;
 			margin-top: 15px;
 		}
 
@@ -684,7 +681,6 @@ img {
 			height: 32px;
 			background-color: $background-color-primary;
 			margin-bottom: 30px;
-			margin-right: 20px;
 			font-family: Raleway;
 			font-size: 16px;
 			font-weight: 500;
@@ -699,5 +695,55 @@ img {
 			padding-bottom: 7px;
 			padding-left: 7px;
 		}
+	}
+}
+
+// ---for Desktop- +860 --- //
+@media screen and (min-width: 860px) {
+	#content {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-auto-rows: minmax(50px, auto);
+		grid-gap: 20px;
+		// max-width: 1440px;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	#content > * {
+		background: $background-color-primary;
+	}
+
+	header {
+		grid-column: 1 / 13;
+		grid-row: 1 / 2;
+	}
+
+	main {
+		grid-gap: 10px;
+		grid-column: 3 / 10;
+		grid-row: 2 / 4;
+	}
+
+	section {
+		grid-gap: 10px;
+		grid-column: 3 / 10;
+		grid-row: 4 / 6;
+	}
+
+	aside {
+		grid-column: 1 / 13;
+	}
+
+	article {
+		grid-column: 1 / 13;
+	}
+
+	address {
+		grid-column: 1 / 13;
+	}
+
+	footer {
+		grid-column: 1 / 13;
 	}
 }
