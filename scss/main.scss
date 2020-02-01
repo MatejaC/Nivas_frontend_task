@@ -725,6 +725,13 @@ $z-nav: 20;
  .social_icons_allign_2 {
   text-align: left;
  }
+
+ table.contact_actions th {
+  text-transform: uppercase;
+  font-weight: normal;
+  text-align: left;
+  margin-top: 0px;
+ }
 }
 
 .bg_color_white {
@@ -773,8 +780,6 @@ $z-nav: 20;
 }
 
 .Read-more {
- width: 82px;
- height: 16px;
  font-family: Raleway;
  font-size: 14px;
  font-weight: bold;
@@ -847,10 +852,13 @@ $z-nav: 20;
  line-height: normal;
  letter-spacing: normal;
  color: $porta-c;
- margin-top: 30px;
- margin-bottom: 0;
+ margin-top: 100px;
+ margin-bottom: 43px;
 }
 
+.contact_text {
+ margin-bottom: 40px;
+}
 
 .Nivas-doo-Drakov {
  height: 63px;
@@ -881,7 +889,7 @@ $z-nav: 20;
  color: $black;
  margin-top: 0;
  margin-right: 244px;
- margin-bottom: 45px;
+ margin-bottom: 35px;
  margin-left: 21px;
  white-space: nowrap;
 }
@@ -891,7 +899,6 @@ $z-nav: 20;
 } */
 
 .contact_actions_table {
- width: 45px;
  height: 75px;
  font-family: Raleway;
  font-size: 12px;
@@ -900,7 +907,7 @@ $z-nav: 20;
  font-style: normal;
  line-height: 2.08;
  letter-spacing: normal;
- margin-top: 20px;
+ margin-top: 10px;
  margin-bottom: 30px;
  margin-left: 20px;
  color: $color-callme;
@@ -915,12 +922,12 @@ table.contact_actions th,
  text-align: left;
 }
 
+
 table.contact_actions td {
  text-decoration: none;
 }
 
 .tel {
- height: 15px;
  font-family: Avenir Medium;
  font-size: 15px;
  font-weight: 500;
@@ -931,7 +938,7 @@ table.contact_actions td {
  color: $color-drakov;
  margin-top: 0;
  margin-right: 133px;
- margin-bottom: 10px;
+ margin-bottom: 9px;
  margin-left: 29px;
 }
 
