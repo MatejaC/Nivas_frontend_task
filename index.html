@@ -12,25 +12,68 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/siema@1.5.1/dist/siema.min.js"></script>
     <link rel="stylesheet" type="text/css" href="scss/main.css" />
     <title>Nivas Frontend task</title>
   </head>
 
   <body>
+    <div class="nav-toggle">
+      <div class="nav-toggle-bar"></div>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
     <div id="content">
       <header class="header">
-        <img class="hamburger" src="dist/img/hamburger.png" alt="hamburger" />
-        <div class="menu">Menu</div>
-        <img
-          srcset="dist/img/img-header@2x.jpg 2x, dist/img/img-header@3x.jpg 3x"
-          src="dist/img/img-header.jpg"
-          class="img-header"
-          alt="hamburger-pic"
-        />
-        <h1 class="Consectetur-Elit-Ips">Consectetur Elit Ipsum Risus</h1>
-        <div class="cta_rectangle">
-          <a href="#" class="cta">Read more</a>
+        <a class="hero_controls hero_controls_prev"
+          ><i class="fas fa-chevron-left"></i
+        ></a>
+        <div class="hero_siema">
+          <div class="hero_slide">
+            <img
+              srcset="
+                dist/img/header-img@2x.jpg 2x,
+                dist/img/header-img@3x.jpg 3x
+              "
+              src="dist/img/header-img.jpg"
+              class="header-img hero_img"
+              alt="hamburger-pic"
+            />
+            <div class="hero_combined">
+              <div class="hero_text">Consectetur Elit <br />Ipsum Risus</div>
+              <div class="hero_cta_rectangle">
+                <a href="#" class="hero_cta">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="hero_slide">
+            <img
+              srcset="
+                dist/img/header-img@2x.jpg 2x,
+                dist/img/header-img@3x.jpg 3x
+              "
+              src="dist/img/header-img.jpg"
+              class="header-img hero_img"
+              alt="hamburger-pic"
+            />
+            <div class="hero_combined">
+              <div class="hero_text">Consectetur Elit <br />Ipsum Risus</div>
+              <div class="hero_cta_rectangle">
+                <a href="#" class="hero_cta">Read more</a>
+              </div>
+            </div>
+          </div>
         </div>
+        <a class="hero_controls hero_controls_next"
+          ><i class="fas fa-chevron-right"></i
+        ></a>
       </header>
 
       <div
@@ -114,10 +157,32 @@
       </div>
 
       <div class="logos bg_color_whitey">
-        <img src="dist/img/logo-7.png" class="Logo7" />
-        <br />
-        <br />
-        <br />
+        <a class="logos_controls logos_controls_prev"
+          ><i class="fas fa-chevron-left"></i
+        ></a>
+        <div class="logos_siema">
+          <div class="logos_slide">
+            <figure><img src="dist/img/logo-6.png" class="logos_img" /></figure>
+          </div>
+          <div class="logos_slide">
+            <figure><img src="dist/img/logo-6.png" class="logos_img" /></figure>
+          </div>
+          <div class="logos_slide">
+            <figure><img src="dist/img/logo-7.png" class="logos_img" /></figure>
+          </div>
+          <div class="logos_slide">
+            <figure><img src="dist/img/logo-8.png" class="logos_img" /></figure>
+          </div>
+          <div class="logos_slide">
+            <figure><img src="dist/img/logo-9.png" class="logos_img" /></figure>
+          </div>
+          <div class="logos_slide">
+            <figure><img src="dist/img/logo-9.png" class="logos_img" /></figure>
+          </div>
+        </div>
+        <a class="logos_controls logos_controls_next"
+          ><i class="fas fa-chevron-right"></i
+        ></a>
       </div>
 
       <div class="contact_title contact_copy_allign bg_color_white">
@@ -231,4 +296,54 @@
       </div>
     </div>
   </body>
+
+  <script>
+    // hero carousel
+    const heroSiema = new Siema({
+      selector: ".hero_siema",
+      draggable: true,
+      loop: true
+    });
+    document
+      .querySelector(".hero_controls_prev")
+      .addEventListener("click", () => heroSiema.prev());
+    document
+      .querySelector(".hero_controls_next")
+      .addEventListener("click", () => heroSiema.next());
+
+    // logos carousel
+    const logosSiema = new Siema({
+      selector: ".logos_siema",
+      draggable: true,
+      loop: true,
+      perPage: {
+        360: 2,
+        800: 5
+      }
+    });
+    document
+      .querySelector(".logos_controls_prev")
+      .addEventListener("click", () => logosSiema.prev());
+    document
+      .querySelector(".logos_controls_next")
+      .addEventListener("click", () => logosSiema.next());
+
+    // navigation
+    (function() {
+      var hamburger = {
+        navToggle: document.querySelector(".nav-toggle"),
+        nav: document.querySelector("nav"),
+
+        doToggle: function(e) {
+          e.preventDefault();
+          this.navToggle.classList.toggle("expanded");
+          this.nav.classList.toggle("expanded");
+        }
+      };
+
+      hamburger.navToggle.addEventListener("click", function(e) {
+        hamburger.doToggle(e);
+      });
+    })();
+  </script>
 </html>

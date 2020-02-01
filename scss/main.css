@@ -35,6 +35,252 @@ h3 {
   font-family: "Avenir Medium", sans-serif;
 }
 
+/* colors */
+/* variables */
+/* mixins */
+/* resets and base styles */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+*:focus {
+  outline: none;
+}
+
+/* nav toggle */
+.nav-toggle {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+  cursor: pointer;
+  height: 2rem;
+  left: 2rem;
+  position: fixed;
+  top: 2rem;
+  width: 3.6rem;
+  z-index: 30;
+}
+
+.nav-toggle:hover {
+  opacity: 0.8;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.nav-toggle .nav-toggle-bar,
+.nav-toggle .nav-toggle-bar::after,
+.nav-toggle .nav-toggle-bar::before {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background: white;
+  content: '';
+  height: 0.4rem;
+  width: 100%;
+}
+
+.nav-toggle .nav-toggle-bar {
+  margin-top: 0;
+}
+
+.nav-toggle .nav-toggle-bar::after {
+  margin-top: 0.8rem;
+}
+
+.nav-toggle .nav-toggle-bar::before {
+  margin-top: -0.8rem;
+}
+
+.nav-toggle.expanded .nav-toggle-bar {
+  background: transparent;
+}
+
+.nav-toggle.expanded .nav-toggle-bar::after,
+.nav-toggle.expanded .nav-toggle-bar::before {
+  background: white;
+  margin-top: 0;
+}
+
+.nav-toggle.expanded .nav-toggle-bar::after {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.nav-toggle.expanded .nav-toggle-bar::before {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* nav */
+.nav {
+  -webkit-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+  background: #1e1e1e;
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+  height: 100vh;
+  left: -100%;
+  padding: 6rem 2rem 2rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+}
+
+.nav.expanded {
+  left: 0;
+}
+
+.nav ul {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding-top: 200px;
+  position: relative;
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li {
+  margin: 30px;
+}
+
+.nav ul a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav ul a:hover {
+  color: #a1baf4;
+}
+
+.hero_slide {
+  position: relative;
+}
+
+.hero_text {
+  font-size: 4.5rem;
+  font-weight: 1000;
+}
+
+.hero_img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero_combined {
+  position: absolute;
+  top: 35%;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  color: black;
+  z-index: 10;
+  color: #f8f8f8;
+}
+
+.hero_cta {
+  padding: 10px;
+  background-color: #ffffff;
+  text-decoration: none;
+  font-family: Raleway;
+  font-size: 1.35rem;
+  text-align: center;
+  color: #000000;
+}
+
+.hero_cta:hover {
+  color: white;
+  background-color: #a1baf4;
+}
+
+.hero_controls {
+  font-size: 4rem;
+  position: absolute;
+  top: 15%;
+  z-index: 10;
+  color: white;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.hero_controls:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.hero_controls_prev {
+  left: 50px;
+}
+
+.hero_controls_next {
+  right: 50px;
+}
+
+.logos_siema {
+  text-align: center;
+  position: relative;
+  left: 75px;
+  right: 75px;
+  width: 85%;
+}
+
+.logos_siema figure img {
+  opacity: 1;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.logos_siema figure:hover img {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+.logos_controls {
+  font-size: 2.5rem;
+  position: relative;
+  z-index: 10;
+  color: #4f4f4f;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.logos_controls:hover {
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
+}
+
+.logos_controls_prev {
+  top: 45px;
+  left: 5%;
+}
+
+.logos_controls_next {
+  top: -60px;
+  left: 90%;
+}
+
 .header_white {
   color: #ffffff;
 }
@@ -60,7 +306,6 @@ h3 {
     grid-column: 1 / 5;
   }
   .header {
-    height: 640px;
     /*.hamburger {
 		display: grid;
 		width: 35px;
@@ -241,7 +486,6 @@ h3 {
     grid-column: 1 / 13;
   }
   .header {
-    height: 640px;
     /*.hamburger {
 		display: grid;
 		width: 35px;
@@ -269,7 +513,6 @@ h3 {
   }
   .header .img-header {
     max-width: 100%;
-    height: 640px;
     margin: 0;
     background-color: #ffffff;
     background-size: cover;
