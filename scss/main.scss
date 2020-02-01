@@ -237,7 +237,8 @@ $z-nav: 20;
 
 .hero_text {
  font-size: 4.5rem;
- font-weight: 1000;
+ font-weight: 900;
+ margin-bottom: 40px;
 }
 
 .hero_img {
@@ -255,6 +256,10 @@ $z-nav: 20;
  color: black;
  z-index: 10;
  color: $whitey;
+}
+
+.hero_rectangle {
+ margin-top: 100px;
 }
 
 .hero_cta {
@@ -557,7 +562,7 @@ $z-nav: 20;
  .header {
   // height: 640px;
 
-  .menu {
+  /*  .menu {
    width: 48px;
    height: 21px;
    font-family: Raleway;
@@ -569,7 +574,7 @@ $z-nav: 20;
    letter-spacing: normal;
    color: $background-color-primary;
   }
-
+ */
   /*.hamburger {
 		display: grid;
 		width: 35px;
@@ -582,6 +587,8 @@ $z-nav: 20;
 		position: absolute;
 		z-index: 2;
 	} */
+
+
   .img-header {
    // object-fit: fill;
    max-width: 100%;
@@ -597,6 +604,10 @@ $z-nav: 20;
    width: 130px;
    height: 44px;
    background-color: $background-color-primary;
+  }
+
+  .hero_rectangle {
+   margin-top: 100px;
   }
 
   .cta {

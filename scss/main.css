@@ -173,7 +173,8 @@ h3 {
 
 .hero_text {
   font-size: 4.5rem;
-  font-weight: 1000;
+  font-weight: 900;
+  margin-bottom: 40px;
 }
 
 .hero_img {
@@ -190,6 +191,10 @@ h3 {
   color: black;
   z-index: 10;
   color: #f8f8f8;
+}
+
+.hero_rectangle {
+  margin-top: 100px;
 }
 
 .hero_cta {
@@ -488,6 +493,19 @@ h3 {
     grid-column: 1 / 13;
   }
   .header {
+    /*  .menu {
+   width: 48px;
+   height: 21px;
+   font-family: Raleway;
+   font-size: 18px;
+   font-weight: 500;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: normal;
+   color: $background-color-primary;
+  }
+ */
     /*.hamburger {
 		display: grid;
 		width: 35px;
@@ -501,18 +519,6 @@ h3 {
 		z-index: 2;
 	} */
   }
-  .header .menu {
-    width: 48px;
-    height: 21px;
-    font-family: Raleway;
-    font-size: 18px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #ffffff;
-  }
   .header .img-header {
     max-width: 100%;
     margin: 0;
@@ -523,6 +529,9 @@ h3 {
     width: 130px;
     height: 44px;
     background-color: #ffffff;
+  }
+  .header .hero_rectangle {
+    margin-top: 100px;
   }
   .header .cta {
     width: 83px;
