@@ -240,6 +240,8 @@ h3 {
   left: 75px;
   right: 75px;
   width: 85%;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .logos_siema figure img {
@@ -272,12 +274,12 @@ h3 {
 }
 
 .logos_controls_prev {
-  top: 45px;
+  top: 80px;
   left: 5%;
 }
 
 .logos_controls_next {
-  top: -60px;
+  top: -65px;
   left: 90%;
 }
 
