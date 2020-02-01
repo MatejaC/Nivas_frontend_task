@@ -60,7 +60,7 @@ h3 {
 }
 
 .header_white {
- color: $white;
+ color: $background-color-primary;
 }
 
 .header_black {
@@ -382,32 +382,147 @@ h3 {
  background-color: $whitey;
 }
 
-.icecream {
- border-radius: 6px;
+.Ullamcorper {
+ height: 29px;
+ font-family: Raleway;
+ font-size: 23px;
+ font-weight: 500;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ color: $porta-c;
  margin-top: 20px;
  margin-bottom: 10px;
+ margin-left: 20px;
+ text-align: left;
 }
 
-/*
-.product_1_copy {  // main block original styling
- grid-column: 8 / 13;
- /* height: 92px;
-	font-family: Raleway;
-	font-size: 36px;
-	font-weight: bold;
-	font-stretch: normal;
-	font-style: normal;
-	line-height: 1.28;
-	letter-spacing: normal;
-	text-align: center;
-	color: $background-color-primary;
+
+.text-copy {
+ height: 120px;
+ font-family: Raleway;
+ font-size: 16px;
+ font-weight: normal;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: 1.5;
+ letter-spacing: normal;
+ color: $text-c;
+ margin-top: 0;
+ margin-bottom: 20px;
 }
 
- .Ullamcorper-Sem-Port {
-  width: 264px;
-  height: 29px;
+.Read-more {
+ width: 82px;
+ height: 16px;
+ font-family: Raleway;
+ font-size: 14px;
+ font-weight: bold;
+ margin-top: 0;
+ color: $porta-c;
+ text-transform: uppercase;
+ white-space: nowrap;
+ margin-bottom: 40px !important;
+ margin-left: 20px;
+ text-decoration: none;
+}
+
+
+.img-2-mobile,
+.img-1-mobile {
+ height: 177px;
+ object-fit: contain;
+ border-radius: 6px;
+ margin-top: 30px;
+ margin-right: 21px;
+ margin-bottom: 20px;
+ margin-left: 20px;
+}
+
+.text-copy {
+ width: 300px;
+ height: 120px;
+ font-family: Raleway;
+ font-size: 16px;
+ font-weight: normal;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: 1.5;
+ letter-spacing: normal;
+ color: $text-c;
+ margin-left: 20px;
+ margin-right: 40px;
+ margin-top: 0;
+ margin-bottom: 20px;
+ text-align: left;
+}
+
+.Read-more {
+ width: 82px;
+ height: 16px;
+ font-family: Raleway;
+ font-size: 14px;
+ font-weight: bold;
+ margin-top: 0;
+ margin-right: 259px;
+ margin-left: 19px;
+ color: $porta-c;
+ text-transform: uppercase;
+ white-space: nowrap;
+ margin-bottom: 40px !important;
+}
+
+.aside {
+ background-color: $black;
+
+ .Services {
+  width: 143px;
+  height: 42px;
   font-family: Raleway;
-  font-size: 23px;
+  font-size: 36px;
+  font-weight: 500;
+  margin-top: 60px !important;
+  margin-right: 197px;
+  margin-left: 20px;
+  margin-bottom: 0px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $background-color-primary;
+ }
+
+ .-Lorem-ipsum-dolor {
+  width: 320px;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 21px;
+  letter-spacing: 0px;
+  color: $gray-lorem;
+  margin-top: 20px;
+  margin-right: 40px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+ }
+}
+
+.article {
+ background-color: $whitey;
+ height: 260px;
+}
+
+.address {
+ background-color: $background-color-primary;
+
+ .contact-title {
+  width: 133px;
+  height: 42px;
+  font-family: Raleway;
+  font-size: 36px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -415,488 +530,326 @@ h3 {
   letter-spacing: normal;
   color: $porta-c;
   margin-left: 20px;
-  margin-right: 76px;
-  margin-top: 20px;
+  margin-right: 207px;
+  margin-top: 60px;
   margin-bottom: 10px;
  }
 
- .text-copy {
-  width: 300px;
-  height: 120px;
+ .text-copy-2 {
+  width: 320px;
+  height: 90px;
   font-family: Raleway;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.5;
+  line-height: 1.44;
   letter-spacing: normal;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 0;
+  margin-bottom: 30px;
   color: $text-c;
-  margin-left: 20px;
-  margin-right: 40px;
+ }
+
+ .Nivas-doo-Drakov {
+  width: 151px;
+  height: 63px;
+  font-family: Avenir Medium;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  color: $color-drakov;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-right: 188px;
+  margin-bottom: 10px;
+  margin-left: 21px;
  }
 
- .Read-more {
-  width: 82px;
-  height: 16px;
+ .map {
+  width: 95px;
+  height: 18px;
   font-family: Raleway;
-  font-size: 14px;
-  font-weight: bold;
-  margin-top: 0;
-  margin-left: 19px;
-  margin-right: 259px;
-  color: $porta-c;
-  text-transform: uppercase;
-  white-space: nowrap;
-  margin-bottom: 40px !important;
- }
-}
-
-.section {
- background-color: $whitey;
- height: 462px;
-
- .img-2-mobile {
-  width: 319px;
-  height: 177px;
-  object-fit: contain;
-  border-radius: 6px;
-  margin-top: 30px;
-  margin-right: 21px;
-  margin-bottom: 20px;
-  margin-left: 20px;
- }
-
- .Ullamcorper-Sem-Port {
-  width: 264px;
-  height: 29px;
-  font-family: Raleway;
-  font-size: 23px;
+  font-size: 15px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: $porta-c;
-  margin-left: 20px;
-  margin-right: 76px;
+  text-align: center;
+  color: $black;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-right: 244px;
+  margin-bottom: 45px;
+  margin-left: 21px;
  }
 
- .text-copy {
-  width: 300px;
-  height: 120px;
+ .contact_actions {
+  width: 45px;
+  height: 75px;
   font-family: Raleway;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.5;
+  line-height: 2.08;
   letter-spacing: normal;
-  color: $text-c;
-  margin-left: 20px;
-  margin-right: 40px;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-right: 29px;
+  margin-bottom: 45px;
+  margin-left: 20px;
+  color: $color-callme;
+  white-space: nowrap;
  }
 
- .Read-more {
-  width: 82px;
-  height: 16px;
+ table.contact_actions {
+  text-align: left;
+ }
+
+ table.contact_actions th {
+  text-transform: uppercase;
+  font-weight: normal;
+ }
+
+ table.contact_actions td {
+  text-decoration: none;
+ }
+
+ .tel {
+  width: 133px;
+  height: 15px;
+  font-family: Avenir Medium;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $color-drakov;
+  margin-top: 0;
+  margin-right: 133px;
+  margin-bottom: 10px;
+  margin-left: 29px;
+ }
+
+ .e-mail {
+  width: 124px;
+  height: 15px;
+  font-family: Avenir Medium;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $color-drakov;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 30px;
+ }
+
+ .webmail {
+  width: 98px;
+  height: 15px;
+  font-family: Avenir Medium;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $color-drakov;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 30px;
+ }
+
+ form.contact_form>* {
+  display: block;
+ }
+
+ input[type=name],
+ input[type=email] {
+  width: 320px;
+  height: 32px;
+  border: solid 1px $grey-softy;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
   font-family: Raleway;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.79;
+  letter-spacing: normal;
+  color: $color-input;
+  padding-top: 4px;
+  padding-bottom: 3px;
+  padding-left: 17px;
+ }
+
+ .question {
+  width: 320px;
+  height: 171px;
+  border: solid 1px $grey-softy;
   margin-top: 0;
-  margin-right: 259px;
-  margin-left: 19px;
-  color: $porta-c;
-  text-transform: uppercase;
-  white-space: nowrap;
-  margin-bottom: 40px !important;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.79;
+  letter-spacing: normal;
+  color: $color-input;
+  padding-top: 4px;
+  padding-left: 14px;
+  resize: none;
  }
 
- .aside {
+ input[type=submit] {
+  width: 96px;
+  height: 32px;
   background-color: $black;
-
-  .Services {
-   width: 143px;
-   height: 42px;
-   font-family: Raleway;
-   font-size: 36px;
-   font-weight: 500;
-   margin-top: 60px !important;
-   margin-right: 197px;
-   margin-left: 20px;
-   margin-bottom: 0px;
-   font-stretch: normal;
-   font-style: normal;
-   line-height: normal;
-   letter-spacing: normal;
-   color: $background-color-primary;
-  }
-
-  .-Lorem-ipsum-dolor {
-   width: 320px;
-   font-family: Raleway;
-   font-size: 16px;
-   font-weight: 400;
-   font-stretch: normal;
-   font-style: normal;
-   line-height: 21px;
-   letter-spacing: 0px;
-   color: $gray-lorem;
-   margin-top: 20px;
-   margin-right: 40px;
-   margin-left: 50px;
-   margin-bottom: 10px;
-  }
- }
-
- .article {
-  background-color: $whitey;
-  height: 260px;
- }
-
- .address {
-  background-color: $background-color-primary;
-
-  .contact-title {
-   width: 133px;
-   height: 42px;
-   font-family: Raleway;
-   font-size: 36px;
-   font-weight: 500;
-   font-stretch: normal;
-   font-style: normal;
-   line-height: normal;
-   letter-spacing: normal;
-   color: $porta-c;
-   margin-left: 20px;
-   margin-right: 207px;
-   margin-top: 60px;
-   margin-bottom: 10px;
-  }
-
-  .text-copy-2 {
-   width: 320px;
-   height: 90px;
-   font-family: Raleway;
-   font-size: 16px;
-   font-weight: normal;
-   font-stretch: normal;
-   font-style: normal;
-   line-height: 1.44;
-   letter-spacing: normal;
-   margin-left: 20px;
-   margin-right: 20px;
-   margin-top: 0;
-   margin-bottom: 30px;
-   color: $text-c;
-  }
-
-  .Nivas-doo-Drakov {
-   width: 151px;
-   height: 63px;
-   font-family: Avenir Medium;
-   font-size: 15px;
-   font-weight: 500;
-   font-stretch: normal;
-   font-style: normal;
-   line-height: 1.4;
-   letter-spacing: normal;
-   color: $color-drakov;
-   margin-top: 0;
-   margin-right: 188px;
-   margin-bottom: 10px;
-   margin-left: 21px;
-  }
-
-  .map {
-   width: 95px;
-   height: 18px;
-   font-family: Raleway;
-   font-size: 15px;
-   font-weight: 500;
-   font-stretch: normal;
-   font-style: normal;
-   line-height: normal;
-   letter-spacing: normal;
-   text-align: center;
-   color: $black;
-   margin-top: 0;
-   margin-right: 244px;
-   margin-bottom: 45px;
-   margin-left: 21px;
-  }
-
-  .contact_actions {
-   width: 45px;
-   height: 75px;
-   font-family: Raleway;
-   font-size: 12px;
-   font-weight: normal;
-   font-stretch: normal;
-   font-style: normal;
-   line-height: 2.08;
-   letter-spacing: normal;
-   margin-top: 0;
-   margin-right: 29px;
-   margin-bottom: 45px;
-   margin-left: 20px;
-   color: $color-callme;
-   white-space: nowrap;
-  }
-
-  table.contact_actions {
-   text-align: left;
-  }
-
-  table.contact_actions th {
-   text-transform: uppercase;
-   font-weight: normal;
-  }
-
-  table.contact_actions td {
-   text-decoration: none;
-  }
-
-  .tel {
-   width: 133px;
-   height: 15px;
-   font-family: Avenir Medium;
-   font-size: 15px;
-   font-weight: 500;
-   font-stretch: normal;
-   font-style: normal;
-   line-height: normal;
-   letter-spacing: normal;
-   color: $color-drakov;
-   margin-top: 0;
-   margin-right: 133px;
-   margin-bottom: 10px;
-   margin-left: 29px;
-  }
-
-  .e-mail {
-   width: 124px;
-   height: 15px;
-   font-family: Avenir Medium;
-   font-size: 15px;
-   font-weight: 500;
-   font-stretch: normal;
-   font-style: normal;
-   line-height: normal;
-   letter-spacing: normal;
-   color: $color-drakov;
-   margin-top: 8px;
-   margin-bottom: 8px;
-   margin-left: 30px;
-  }
-
-  .webmail {
-   width: 98px;
-   height: 15px;
-   font-family: Avenir Medium;
-   font-size: 15px;
-   font-weight: 500;
-   font-stretch: normal;
-   font-style: normal;
-   line-height: normal;
-   letter-spacing: normal;
-   color: $color-drakov;
-   margin-top: 8px;
-   margin-bottom: 8px;
-   margin-left: 30px;
-  }
-
-  form.contact_form>* {
-   display: block;
-  }
-
-  input[type=name],
-  input[type=email] {
-   width: 320px;
-   height: 32px;
-   border: solid 1px $grey-softy;
-   margin-right: 20px;
-   margin-bottom: 10px;
-   margin-left: 20px;
-   font-family: Raleway;
-   font-size: 14px;
-   font-weight: 300;
-   font-stretch: normal;
-   font-style: normal;
-   line-height: 1.79;
-   letter-spacing: normal;
-   color: $color-input;
-   padding-top: 4px;
-   padding-bottom: 3px;
-   padding-left: 17px;
-  }
-
-  .question {
-   width: 320px;
-   height: 171px;
-   border: solid 1px $grey-softy;
-   margin-top: 0;
-   margin-right: 20px;
-   margin-bottom: 10px;
-   margin-left: 20px;
-   font-family: Raleway;
-   font-size: 14px;
-   font-weight: 300;
-   font-stretch: normal;
-   font-style: normal;
-   line-height: 1.79;
-   letter-spacing: normal;
-   color: $color-input;
-   padding-top: 4px;
-   padding-left: 14px;
-   resize: none;
-  }
-
-  input[type=submit] {
-   width: 96px;
-   height: 32px;
-   background-color: $black;
-   margin-top: 0;
-   margin-right: 20px;
-   margin-bottom: 60px;
-   margin-left: 244px;
-   font-family: Raleway;
-   font-size: 16px;
-   font-weight: 500;
-   font-stretch: normal;
-   font-style: normal;
-   line-height: normal;
-   letter-spacing: normal;
-   text-align: center;
-   color: $background-color-primary;
-   padding-top: 6px;
-   padding-right: 6px;
-   padding-bottom: 7px;
-   padding-left: 7px;
-  }
- }
-
- .footer {
-  grid-template-columns: unset;
-  background-color: $black !important;
-  height: 285px;
-  z-index: 1;
-
-  .follow {
-   grid-row: row 1 / span 3;
-   width: 82px;
-   height: 21px;
-   font-family: Raleway;
-   font-size: 18px;
-   font-weight: 500;
-   font-stretch: normal;
-   font-style: normal;
-   line-height: normal;
-   letter-spacing: normal;
-   color: $color-follow;
-   margin-left: 139px;
-   margin-right: 139px;
-   margin-top: 30px !important;
-   margin-bottom: 18px;
-   white-space: nowrap;
-   z-index: 2;
-  }
-
-  .footer_social_icons>* {
-   color: $whitey;
-  }
-
-  .fa-facebook-square {
-   margin-left: 81px;
-   margin-right: 56px;
-   margin-bottom: 19px;
-   margin-top: 15px;
-  }
-
-  .fa-twitter,
-  .fa-pinterest {
-   margin-right: 23px;
-   margin-bottom: 0px;
-   margin-right: 65px;
-  }
-
-  .fa-instagram {
-   margin-right: 84px;
-   margin-bottom: 19px;
-  }
-
-  .fa-snapchat-ghost {
-   margin-left: 80px;
-   margin-right: 54px;
-   margin-bottom: 0;
-   margin-top: 15px;
-  }
-
-  .Newsletter {
-   width: 94px;
-   height: 21px;
-   font-family: Raleway;
-   font-size: 18px;
-   font-weight: 500;
-   font-stretch: normal;
-   font-style: normal;
-   line-height: normal;
-   letter-spacing: normal;
-   color: $color-follow;
-   margin-top: 48px;
-   margin-right: 133px;
-   margin-bottom: 0;
-   margin-left: 133px;
-  }
-
-  .newsletter_signup .email {
-   background-color: black;
-   border: solid 1px $grey-softy;
-   width: 208px;
-   height: 32px;
-   margin-top: 21px;
-   margin-right: 16px;
-   margin-bottom: 30px;
-   margin-left: 20px;
-   font-family: Raleway;
-   font-size: 14px;
-   font-weight: 300;
-   font-stretch: normal;
-   font-style: normal;
-   line-height: 1.79;
-   letter-spacing: normal;
-   color: $y-gmail-color;
-   padding-left: 14px;
-   padding-top: 4px;
-   padding-bottom: 3px;
-  }
-
-  .newsletter_signup .signup_submit {
-   border: solid 1px $grey-softy;
-   width: 96px;
-   height: 32px;
-   background-color: $background-color-primary;
-   margin-bottom: 30px;
-   font-family: Raleway;
-   font-size: 16px;
-   font-weight: 500;
-   font-stretch: normal;
-   font-style: normal;
-   line-height: normal;
-   letter-spacing: normal;
-   text-align: center;
-   color: $black;
-   padding-top: 6px;
-   padding-right: 6px;
-   padding-bottom: 7px;
-   padding-left: 7px;
-  }
+  margin-top: 0;
+  margin-right: 20px;
+  margin-bottom: 60px;
+  margin-left: 244px;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $background-color-primary;
+  padding-top: 6px;
+  padding-right: 6px;
+  padding-bottom: 7px;
+  padding-left: 7px;
  }
 }
 
-*/
+.footer {
+ grid-template-columns: unset;
+ background-color: $black !important;
+ height: 285px;
+ z-index: 1;
+
+ .follow {
+  grid-row: row 1 / span 3;
+  width: 82px;
+  height: 21px;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $color-follow;
+  margin-left: 139px;
+  margin-right: 139px;
+  margin-top: 30px !important;
+  margin-bottom: 18px;
+  white-space: nowrap;
+  z-index: 2;
+ }
+
+ .footer_social_icons>* {
+  color: $whitey;
+ }
+
+ .fa-facebook-square {
+  margin-left: 81px;
+  margin-right: 56px;
+  margin-bottom: 19px;
+  margin-top: 15px;
+ }
+
+ .fa-twitter,
+ .fa-pinterest {
+  margin-right: 23px;
+  margin-bottom: 0px;
+  margin-right: 65px;
+ }
+
+ .fa-instagram {
+  margin-right: 84px;
+  margin-bottom: 19px;
+ }
+
+ .fa-snapchat-ghost {
+  margin-left: 80px;
+  margin-right: 54px;
+  margin-bottom: 0;
+  margin-top: 15px;
+ }
+
+ .Newsletter {
+  width: 94px;
+  height: 21px;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $color-follow;
+  margin-top: 48px;
+  margin-right: 133px;
+  margin-bottom: 0;
+  margin-left: 133px;
+ }
+
+ .newsletter_signup .email {
+  background-color: black;
+  border: solid 1px $grey-softy;
+  width: 208px;
+  height: 32px;
+  margin-top: 21px;
+  margin-right: 16px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.79;
+  letter-spacing: normal;
+  color: $y-gmail-color;
+  padding-left: 14px;
+  padding-top: 4px;
+  padding-bottom: 3px;
+ }
+
+ .newsletter_signup .signup_submit {
+  border: solid 1px $grey-softy;
+  width: 96px;
+  height: 32px;
+  background-color: $background-color-primary;
+  margin-bottom: 30px;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $black;
+  padding-top: 6px;
+  padding-right: 6px;
+  padding-bottom: 7px;
+  padding-left: 7px;
+ }
+}
