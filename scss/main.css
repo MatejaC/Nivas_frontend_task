@@ -201,7 +201,7 @@ h3 {
   padding: 10px;
   background-color: #ffffff;
   text-decoration: none;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 1.35rem;
   text-align: center;
   color: #000000;
@@ -329,7 +329,7 @@ h3 {
   .header .menu {
     width: 48px;
     height: 21px;
-    font-family: Raleway;
+    font-family: "Raleway", sans-serif;
     font-size: 18px;
     font-weight: 500;
     font-stretch: normal;
@@ -351,7 +351,7 @@ h3 {
   }
   .header .cta {
     height: 19px;
-    font-family: Raleway;
+    font-family: "Raleway", sans-serif;
     font-size: 16px;
     font-weight: 500;
     font-stretch: normal;
@@ -363,7 +363,7 @@ h3 {
   }
   .-Lorem-ipsum-dolor {
     width: 320px;
-    font-family: Raleway;
+    font-family: "Raleway", sans-serif;
     font-size: 16px;
     font-weight: 400;
     font-stretch: normal;
@@ -492,7 +492,7 @@ h3 {
     padding-right: 25px;
   }
   .Services {
-    font-family: Raleway;
+    font-family: "Raleway", sans-serif;
     font-size: 36px;
     font-weight: 400;
     margin-top: 80px;
@@ -505,7 +505,7 @@ h3 {
   }
   .-Lorem-ipsum-dolor_2 {
     width: 320px;
-    font-family: Raleway;
+    font-family: "Raleway", sans-serif;
     font-size: 16px;
     font-weight: 400;
     font-stretch: normal;
@@ -537,7 +537,7 @@ h3 {
     /*  .menu {
    width: 48px;
    height: 21px;
-   font-family: Raleway;
+   font-family: $primary-font;
    font-size: 18px;
    font-weight: 500;
    font-stretch: normal;
@@ -577,7 +577,7 @@ h3 {
   .header .cta {
     width: 83px;
     height: 19px;
-    font-family: Raleway;
+    font-family: "Raleway", sans-serif;
     font-size: 16px;
     font-weight: 500;
     font-stretch: normal;
@@ -738,7 +738,7 @@ h3 {
     margin-top: 0px;
   }
   .services_title {
-    font-family: Raleway;
+    font-family: "Raleway", sans-serif;
     font-size: 36px;
     font-weight: 400;
     margin-top: 80px;
@@ -752,7 +752,7 @@ h3 {
   }
   .-Lorem-ipsum-dolor_2 {
     width: 320px;
-    font-family: Raleway;
+    font-family: "Raleway", sans-serif;
     font-size: 16px;
     font-weight: 400;
     font-stretch: normal;
