@@ -656,23 +656,24 @@ $z-nav: 20;
  }
 
  // grid definitions
+
  .product_1_image {
-  grid-column: 1 / 7;
+  grid-column: 2 / 7;
   grid-row-start: 2;
  }
 
  .product_1_copy {
-  grid-column: 8 / 13;
+  grid-column: 7 / 12;
   grid-row-start: 2;
  }
 
  .product_2_copy {
-  grid-column: 1 / 5;
+  grid-column: 2 / 5;
   grid-row-start: 3;
  }
 
  .product_2_image {
-  grid-column: 6 / 13;
+  grid-column: 5 / 12;
   grid-row-start: 3;
  }
 
@@ -700,21 +701,23 @@ $z-nav: 20;
  }
 
  .contact_title {
-  grid-column: 1 / 13;
+  grid-column: 3 / 10;
+  grid-row-start: 7;
+  ;
  }
 
  .contact_copy {
-  grid-column: 1 / 13;
-  // grid-row-start: 8;
+  grid-column: 3 / 10;
+  grid-row-start: 8;
  }
 
  .contact_location {
-  grid-column: 1 / 6;
+  grid-column: 3 / 6;
   grid-row-start: 9;
  }
 
  .contact_actions {
-  grid-column: 1 / 6;
+  grid-column: 3 / 6;
   grid-row-start: 10;
  }
 
