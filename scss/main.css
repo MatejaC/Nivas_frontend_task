@@ -407,8 +407,10 @@ h3 {
   line-height: 1.5;
   letter-spacing: normal;
   color: #414141;
-  margin-top: 0;
+  margin-top: 20px;
+  margin-left: 20px;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .Read-more {
@@ -421,9 +423,9 @@ h3 {
   color: #464646;
   text-transform: uppercase;
   white-space: nowrap;
-  margin-bottom: 40px !important;
   margin-left: 20px;
   text-decoration: none;
+  margin-bottom: 40px !important;
 }
 
 .img-2-mobile,
@@ -438,53 +440,15 @@ h3 {
   margin-left: 20px;
 }
 
-.text-copy {
-  width: 300px;
-  height: 120px;
-  font-family: Raleway;
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  color: #414141;
-  margin-left: 20px;
-  margin-right: 40px;
-  margin-top: 0;
-  margin-bottom: 20px;
-  text-align: left;
-}
-
-.Read-more {
-  width: 82px;
-  height: 16px;
-  font-family: Raleway;
-  font-size: 14px;
-  font-weight: bold;
-  margin-top: 0;
-  margin-right: 259px;
-  margin-left: 19px;
-  color: #464646;
-  text-transform: uppercase;
-  white-space: nowrap;
-  margin-bottom: 40px !important;
-}
-
-.aside {
-  background-color: #000000;
-}
-
-.aside .Services {
-  width: 143px;
+.Services {
   height: 42px;
   font-family: Raleway;
   font-size: 36px;
-  font-weight: 500;
-  margin-top: 60px !important;
+  font-weight: 400;
+  margin-top: 40px !important;
   margin-right: 197px;
   margin-left: 20px;
-  margin-bottom: 0px;
+  margin-bottom: 10px !important;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -492,7 +456,7 @@ h3 {
   color: #ffffff;
 }
 
-.aside .-Lorem-ipsum-dolor {
+.-Lorem-ipsum-dolor {
   width: 320px;
   font-family: Raleway;
   font-size: 16px;
@@ -502,23 +466,18 @@ h3 {
   line-height: 21px;
   letter-spacing: 0px;
   color: #999999;
-  margin-top: 20px;
+  margin-top: 8px;
   margin-right: 40px;
   margin-left: 50px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-.article {
-  background-color: #f8f8f8;
-  height: 260px;
+.contact-title {
+  margin-left: 20px;
+  margin-bottom: 0;
 }
 
-.address {
-  background-color: #ffffff;
-}
-
-.address .contact-title {
-  width: 133px;
+.contact_titleL {
   height: 42px;
   font-family: Raleway;
   font-size: 36px;
@@ -528,31 +487,12 @@ h3 {
   line-height: normal;
   letter-spacing: normal;
   color: #464646;
-  margin-left: 20px;
-  margin-right: 207px;
-  margin-top: 60px;
-  margin-bottom: 10px;
+  margin-left: 20px !important;
+  margin-top: 30px;
+  margin-bottom: 0;
 }
 
-.address .text-copy-2 {
-  width: 320px;
-  height: 90px;
-  font-family: Raleway;
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.44;
-  letter-spacing: normal;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 0;
-  margin-bottom: 30px;
-  color: #414141;
-}
-
-.address .Nivas-doo-Drakov {
-  width: 151px;
+.Nivas-doo-Drakov {
   height: 63px;
   font-family: Avenir Medium;
   font-size: 15px;
@@ -563,12 +503,11 @@ h3 {
   letter-spacing: normal;
   color: #323232;
   margin-top: 0;
-  margin-right: 188px;
   margin-bottom: 10px;
   margin-left: 21px;
 }
 
-.address .map {
+.map {
   width: 95px;
   height: 18px;
   font-family: Raleway;
@@ -584,9 +523,14 @@ h3 {
   margin-right: 244px;
   margin-bottom: 45px;
   margin-left: 21px;
+  white-space: nowrap;
 }
 
-.address .contact_actions {
+.contact_location {
+  margin-top: -28px;
+}
+
+.contact_actions_table {
   width: 45px;
   height: 75px;
   font-family: Raleway;
@@ -596,29 +540,26 @@ h3 {
   font-style: normal;
   line-height: 2.08;
   letter-spacing: normal;
-  margin-top: 0;
-  margin-right: 29px;
-  margin-bottom: 45px;
+  margin-top: 20px;
+  margin-bottom: 30px;
   margin-left: 20px;
   color: #3d3d3d;
   white-space: nowrap;
-}
-
-.address table.contact_actions {
   text-align: left;
 }
 
-.address table.contact_actions th {
+table.contact_actions th,
+.scope {
   text-transform: uppercase;
   font-weight: normal;
+  text-align: left;
 }
 
-.address table.contact_actions td {
+table.contact_actions td {
   text-decoration: none;
 }
 
-.address .tel {
-  width: 133px;
+.tel {
   height: 15px;
   font-family: Avenir Medium;
   font-size: 15px;
@@ -634,7 +575,7 @@ h3 {
   margin-left: 29px;
 }
 
-.address .e-mail {
+.e-mail {
   width: 124px;
   height: 15px;
   font-family: Avenir Medium;
@@ -650,7 +591,7 @@ h3 {
   margin-left: 30px;
 }
 
-.address .webmail {
+.webmail {
   width: 98px;
   height: 15px;
   font-family: Avenir Medium;
@@ -666,12 +607,12 @@ h3 {
   margin-left: 30px;
 }
 
-.address form.contact_form > * {
+form.contact_form > * {
   display: block;
 }
 
-.address input[type=name],
-.address input[type=email] {
+input[type=name],
+input[type=email] {
   width: 320px;
   height: 32px;
   border: solid 1px #979797;
@@ -691,7 +632,7 @@ h3 {
   padding-left: 17px;
 }
 
-.address .question {
+.question {
   width: 320px;
   height: 171px;
   border: solid 1px #979797;
@@ -712,13 +653,13 @@ h3 {
   resize: none;
 }
 
-.address input[type=submit] {
+input[type=submit] {
   width: 96px;
   height: 32px;
   background-color: #000000;
   margin-top: 0;
   margin-right: 20px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   margin-left: 244px;
   font-family: Raleway;
   font-size: 16px;
@@ -736,16 +677,12 @@ h3 {
 }
 
 .footer {
-  -ms-grid-columns: unset;
-      grid-template-columns: unset;
   background-color: #000000 !important;
   height: 285px;
   z-index: 1;
 }
 
 .footer .follow {
-  grid-row: row 1 / span 3;
-  width: 82px;
   height: 21px;
   font-family: Raleway;
   font-size: 18px;
@@ -755,12 +692,10 @@ h3 {
   line-height: normal;
   letter-spacing: normal;
   color: #7a7a7a;
-  margin-left: 139px;
-  margin-right: 139px;
+  text-align: center;
   margin-top: 30px !important;
   margin-bottom: 18px;
   white-space: nowrap;
-  z-index: 2;
 }
 
 .footer .footer_social_icons > * {
@@ -777,7 +712,7 @@ h3 {
 .footer .fa-twitter,
 .footer .fa-pinterest {
   margin-right: 23px;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
   margin-right: 65px;
 }
 

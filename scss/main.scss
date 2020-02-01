@@ -409,8 +409,10 @@ h3 {
  line-height: 1.5;
  letter-spacing: normal;
  color: $text-c;
- margin-top: 0;
+ margin-top: 20px;
+ margin-left: 20px;
  margin-bottom: 20px;
+ text-align: left;
 }
 
 .Read-more {
@@ -423,9 +425,9 @@ h3 {
  color: $porta-c;
  text-transform: uppercase;
  white-space: nowrap;
- margin-bottom: 40px !important;
  margin-left: 20px;
  text-decoration: none;
+ margin-bottom: 40px !important;
 }
 
 
@@ -440,312 +442,251 @@ h3 {
  margin-left: 20px;
 }
 
-.text-copy {
- width: 300px;
- height: 120px;
+.Services {
+ height: 42px;
+ font-family: Raleway;
+ font-size: 36px;
+ font-weight: 400;
+ margin-top: 40px !important;
+ margin-right: 197px;
+ margin-left: 20px;
+ margin-bottom: 10px !important;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ color: $background-color-primary;
+}
+
+.-Lorem-ipsum-dolor {
+ width: 320px;
  font-family: Raleway;
  font-size: 16px;
+ font-weight: 400;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: 21px;
+ letter-spacing: 0px;
+ color: $gray-lorem;
+ margin-top: 8px;
+ margin-right: 40px;
+ margin-left: 50px;
+ margin-bottom: 20px;
+}
+
+
+.contact-title {
+ margin-left: 20px;
+ margin-bottom: 0;
+}
+
+.contact_titleL {
+ height: 42px;
+ font-family: Raleway;
+ font-size: 36px;
+ font-weight: 500;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ color: $porta-c;
+ margin-left: 20px !important;
+ margin-top: 30px;
+ margin-bottom: 0;
+}
+
+
+.Nivas-doo-Drakov {
+ height: 63px;
+ font-family: Avenir Medium;
+ font-size: 15px;
+ font-weight: 500;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: 1.4;
+ letter-spacing: normal;
+ color: $color-drakov;
+ margin-top: 0;
+ margin-bottom: 10px;
+ margin-left: 21px;
+}
+
+.map {
+ width: 95px;
+ height: 18px;
+ font-family: Raleway;
+ font-size: 15px;
+ font-weight: 500;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ text-align: center;
+ color: $black;
+ margin-top: 0;
+ margin-right: 244px;
+ margin-bottom: 45px;
+ margin-left: 21px;
+ white-space: nowrap;
+}
+
+.contact_location {
+ margin-top: -28px;
+}
+
+.contact_actions_table {
+ width: 45px;
+ height: 75px;
+ font-family: Raleway;
+ font-size: 12px;
  font-weight: normal;
  font-stretch: normal;
  font-style: normal;
- line-height: 1.5;
+ line-height: 2.08;
  letter-spacing: normal;
- color: $text-c;
+ margin-top: 20px;
+ margin-bottom: 30px;
  margin-left: 20px;
- margin-right: 40px;
- margin-top: 0;
- margin-bottom: 20px;
+ color: $color-callme;
+ white-space: nowrap;
  text-align: left;
 }
 
-.Read-more {
- width: 82px;
- height: 16px;
+table.contact_actions th,
+.scope {
+ text-transform: uppercase;
+ font-weight: normal;
+ text-align: left;
+}
+
+table.contact_actions td {
+ text-decoration: none;
+}
+
+.tel {
+ height: 15px;
+ font-family: Avenir Medium;
+ font-size: 15px;
+ font-weight: 500;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ color: $color-drakov;
+ margin-top: 0;
+ margin-right: 133px;
+ margin-bottom: 10px;
+ margin-left: 29px;
+}
+
+.e-mail {
+ width: 124px;
+ height: 15px;
+ font-family: Avenir Medium;
+ font-size: 15px;
+ font-weight: 500;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ color: $color-drakov;
+ margin-top: 8px;
+ margin-bottom: 8px;
+ margin-left: 30px;
+}
+
+.webmail {
+ width: 98px;
+ height: 15px;
+ font-family: Avenir Medium;
+ font-size: 15px;
+ font-weight: 500;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ color: $color-drakov;
+ margin-top: 8px;
+ margin-bottom: 8px;
+ margin-left: 30px;
+}
+
+form.contact_form>* {
+ display: block;
+}
+
+input[type=name],
+input[type=email] {
+ width: 320px;
+ height: 32px;
+ border: solid 1px $grey-softy;
+ margin-right: 20px;
+ margin-bottom: 10px;
+ margin-left: 20px;
  font-family: Raleway;
  font-size: 14px;
- font-weight: bold;
+ font-weight: 300;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: 1.79;
+ letter-spacing: normal;
+ color: $color-input;
+ padding-top: 4px;
+ padding-bottom: 3px;
+ padding-left: 17px;
+}
+
+.question {
+ width: 320px;
+ height: 171px;
+ border: solid 1px $grey-softy;
  margin-top: 0;
- margin-right: 259px;
- margin-left: 19px;
- color: $porta-c;
- text-transform: uppercase;
- white-space: nowrap;
- margin-bottom: 40px !important;
+ margin-right: 20px;
+ margin-bottom: 10px;
+ margin-left: 20px;
+ font-family: Raleway;
+ font-size: 14px;
+ font-weight: 300;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: 1.79;
+ letter-spacing: normal;
+ color: $color-input;
+ padding-top: 4px;
+ padding-left: 14px;
+ resize: none;
 }
 
-.aside {
+input[type=submit] {
+ width: 96px;
+ height: 32px;
  background-color: $black;
-
- .Services {
-  width: 143px;
-  height: 42px;
-  font-family: Raleway;
-  font-size: 36px;
-  font-weight: 500;
-  margin-top: 60px !important;
-  margin-right: 197px;
-  margin-left: 20px;
-  margin-bottom: 0px;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: $background-color-primary;
- }
-
- .-Lorem-ipsum-dolor {
-  width: 320px;
-  font-family: Raleway;
-  font-size: 16px;
-  font-weight: 400;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 21px;
-  letter-spacing: 0px;
-  color: $gray-lorem;
-  margin-top: 20px;
-  margin-right: 40px;
-  margin-left: 50px;
-  margin-bottom: 10px;
- }
+ margin-top: 0;
+ margin-right: 20px;
+ margin-bottom: 40px;
+ margin-left: 244px;
+ font-family: Raleway;
+ font-size: 16px;
+ font-weight: 500;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ text-align: center;
+ color: $background-color-primary;
+ padding-top: 6px;
+ padding-right: 6px;
+ padding-bottom: 7px;
+ padding-left: 7px;
 }
 
-.article {
- background-color: $whitey;
- height: 260px;
-}
-
-.address {
- background-color: $background-color-primary;
-
- .contact-title {
-  width: 133px;
-  height: 42px;
-  font-family: Raleway;
-  font-size: 36px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: $porta-c;
-  margin-left: 20px;
-  margin-right: 207px;
-  margin-top: 60px;
-  margin-bottom: 10px;
- }
-
- .text-copy-2 {
-  width: 320px;
-  height: 90px;
-  font-family: Raleway;
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.44;
-  letter-spacing: normal;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 0;
-  margin-bottom: 30px;
-  color: $text-c;
- }
-
- .Nivas-doo-Drakov {
-  width: 151px;
-  height: 63px;
-  font-family: Avenir Medium;
-  font-size: 15px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.4;
-  letter-spacing: normal;
-  color: $color-drakov;
-  margin-top: 0;
-  margin-right: 188px;
-  margin-bottom: 10px;
-  margin-left: 21px;
- }
-
- .map {
-  width: 95px;
-  height: 18px;
-  font-family: Raleway;
-  font-size: 15px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: $black;
-  margin-top: 0;
-  margin-right: 244px;
-  margin-bottom: 45px;
-  margin-left: 21px;
- }
-
- .contact_actions {
-  width: 45px;
-  height: 75px;
-  font-family: Raleway;
-  font-size: 12px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.08;
-  letter-spacing: normal;
-  margin-top: 0;
-  margin-right: 29px;
-  margin-bottom: 45px;
-  margin-left: 20px;
-  color: $color-callme;
-  white-space: nowrap;
- }
-
- table.contact_actions {
-  text-align: left;
- }
-
- table.contact_actions th {
-  text-transform: uppercase;
-  font-weight: normal;
- }
-
- table.contact_actions td {
-  text-decoration: none;
- }
-
- .tel {
-  width: 133px;
-  height: 15px;
-  font-family: Avenir Medium;
-  font-size: 15px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: $color-drakov;
-  margin-top: 0;
-  margin-right: 133px;
-  margin-bottom: 10px;
-  margin-left: 29px;
- }
-
- .e-mail {
-  width: 124px;
-  height: 15px;
-  font-family: Avenir Medium;
-  font-size: 15px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: $color-drakov;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  margin-left: 30px;
- }
-
- .webmail {
-  width: 98px;
-  height: 15px;
-  font-family: Avenir Medium;
-  font-size: 15px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: $color-drakov;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  margin-left: 30px;
- }
-
- form.contact_form>* {
-  display: block;
- }
-
- input[type=name],
- input[type=email] {
-  width: 320px;
-  height: 32px;
-  border: solid 1px $grey-softy;
-  margin-right: 20px;
-  margin-bottom: 10px;
-  margin-left: 20px;
-  font-family: Raleway;
-  font-size: 14px;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.79;
-  letter-spacing: normal;
-  color: $color-input;
-  padding-top: 4px;
-  padding-bottom: 3px;
-  padding-left: 17px;
- }
-
- .question {
-  width: 320px;
-  height: 171px;
-  border: solid 1px $grey-softy;
-  margin-top: 0;
-  margin-right: 20px;
-  margin-bottom: 10px;
-  margin-left: 20px;
-  font-family: Raleway;
-  font-size: 14px;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.79;
-  letter-spacing: normal;
-  color: $color-input;
-  padding-top: 4px;
-  padding-left: 14px;
-  resize: none;
- }
-
- input[type=submit] {
-  width: 96px;
-  height: 32px;
-  background-color: $black;
-  margin-top: 0;
-  margin-right: 20px;
-  margin-bottom: 60px;
-  margin-left: 244px;
-  font-family: Raleway;
-  font-size: 16px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: $background-color-primary;
-  padding-top: 6px;
-  padding-right: 6px;
-  padding-bottom: 7px;
-  padding-left: 7px;
- }
-}
 
 .footer {
- grid-template-columns: unset;
  background-color: $black !important;
  height: 285px;
  z-index: 1;
 
  .follow {
-  grid-row: row 1 / span 3;
-  width: 82px;
   height: 21px;
   font-family: Raleway;
   font-size: 18px;
@@ -755,12 +696,11 @@ h3 {
   line-height: normal;
   letter-spacing: normal;
   color: $color-follow;
-  margin-left: 139px;
-  margin-right: 139px;
+  text-align: center;
   margin-top: 30px !important;
   margin-bottom: 18px;
   white-space: nowrap;
-  z-index: 2;
+
  }
 
  .footer_social_icons>* {
@@ -777,7 +717,7 @@ h3 {
  .fa-twitter,
  .fa-pinterest {
   margin-right: 23px;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
   margin-right: 65px;
  }
 
