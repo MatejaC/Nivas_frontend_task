@@ -439,6 +439,22 @@ $z-nav: 20;
   }
  }
 
+ .-Lorem-ipsum-dolor {
+  width: 320px;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 21px;
+  letter-spacing: 0px;
+  color: $gray-lorem;
+  margin-top: 8px;
+  margin-right: 40px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+ }
+
  // grid definitions
  .product_1_image {
   grid-column: 1 / 5;
@@ -540,6 +556,20 @@ $z-nav: 20;
    padding-right: 25px;
   }
  }
+
+ .Services {
+  font-family: Raleway;
+  font-size: 36px;
+  font-weight: 400;
+  margin-top: 80px;
+  margin-bottom: 25px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $background-color-primary;
+ }
+
 
 }
 
@@ -743,6 +773,20 @@ $z-nav: 20;
   text-align: left;
   margin-top: 0px;
  }
+
+ .services_title {
+  font-family: Raleway;
+  font-size: 36px;
+  font-weight: 400;
+  margin-top: 80px;
+  padding-bottom: 55px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $background-color-primary;
+ }
 }
 
 .bg_color_white {
@@ -816,14 +860,12 @@ $z-nav: 20;
 }
 
 .Services {
- height: 42px;
  font-family: Raleway;
  font-size: 36px;
  font-weight: 400;
- margin-top: 40px !important;
- margin-right: 197px;
+ margin-top: 80px;
  margin-left: 20px;
- margin-bottom: 10px !important;
+ margin-bottom: 15px;
  font-stretch: normal;
  font-style: normal;
  line-height: normal;
@@ -831,7 +873,36 @@ $z-nav: 20;
  color: $background-color-primary;
 }
 
-.-Lorem-ipsum-dolor {
+.services_title {
+ font-family: Raleway;
+ font-size: 36px;
+ font-weight: 400;
+ margin-top: 0;
+ margin-left: 0;
+ margin-right: 0;
+ margin-bottom: 0;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ color: $background-color-primary;
+}
+
+.Services_large {
+ font-family: Raleway;
+ font-size: 36px;
+ font-weight: 400;
+ margin-top: 80px;
+ margin-bottom: 25px;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ color: $background-color-primary;
+}
+
+
+.-Lorem-ipsum-dolor_2 {
  width: 320px;
  font-family: Raleway;
  font-size: 16px;
@@ -844,7 +915,7 @@ $z-nav: 20;
  margin-top: 8px;
  margin-right: 40px;
  margin-left: 50px;
- margin-bottom: 20px;
+ margin-bottom: 150px;
 }
 
 
