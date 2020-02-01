@@ -21,7 +21,26 @@
 body {
   background-color: #ffffff;
   font-family: "Raleway", sans-serif;
+}
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+h3 {
   font-family: "Avenir Medium", sans-serif;
+}
+
+.header_white {
+  color: #f8f8f8;
+}
+
+.header_black {
+  color: #000000;
 }
 
 @media (min-width: 360px) {
@@ -34,9 +53,6 @@ body {
         grid-template-rows: auto;
     margin: 0 auto;
     position: relative;
-  }
-  #content > * {
-    background: #ffffff;
   }
   header {
     -ms-grid-column: 1;
@@ -72,7 +88,6 @@ body {
   }
   .header .img-header {
     max-width: 100%;
-    height: 640px;
     margin: 0;
     background-color: #ffffff;
     background-size: cover;
@@ -83,7 +98,6 @@ body {
     background-color: #ffffff;
   }
   .header .cta {
-    width: 83px;
     height: 19px;
     font-family: Raleway;
     font-size: 16px;
@@ -197,9 +211,6 @@ body {
         grid-template-columns: repeat(12, 1fr);
     margin: 0 auto;
     position: relative;
-  }
-  #content > * {
-    background: #ffffff;
   }
   header {
     -ms-grid-column: 1;
@@ -358,6 +369,20 @@ body {
   }
 }
 
+.bg_color_white {
+  background-color: #ffffff;
+}
+
+.bg_color_black {
+  background-color: #000000;
+}
+
+.icecream {
+  border-radius: 6px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
 /*
 .product_1_copy {  // main block original styling
  grid-column: 8 / 13;
@@ -376,15 +401,7 @@ body {
 .main {
  background-color: $background-color-primary;
 
- .img-1-mobile {
-  width: 320px;
-  height: 177px;
-  border-radius: 6px;
-  margin-top: 20px;
-  margin-right: 20px;
-  margin-left: 20px;
-  margin-bottom: 10px;
- }
+
 
  .Ullamcorper-Sem-Port {
   width: 264px;

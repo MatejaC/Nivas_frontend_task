@@ -26,6 +26,11 @@ $gray-lorem: #999999;
 $color-input: #303030;
 $color-follow: #7a7a7a;
 $y-gmail-color: #737373;
+$primary-font: "Raleway",
+sans-serif;
+$secondary-font: "Avenir Medium",
+sans-serif;
+
 
 * {
  box-sizing: border-box;
@@ -39,8 +44,27 @@ $y-gmail-color: #737373;
 
 body {
  background-color: $background-color-primary;
- font-family: "Raleway", sans-serif;
- font-family: "Avenir Medium", sans-serif;
+ font-family: $primary-font;
+}
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+ font-family: $primary-font;
+}
+
+h3 {
+ font-family: $secondary-font;
+}
+
+.header_white {
+ color: $white;
+}
+
+.header_black {
+ color: $black;
 }
 
 @media (min-width: 360px) {
@@ -53,10 +77,6 @@ body {
   // max-width: 1440px;
   margin: 0 auto;
   position: relative;
- }
-
- #content>* {
-  background: $background-color-primary;
  }
 
  header {
@@ -96,7 +116,7 @@ body {
    // object-fit: fill;
    max-width: 100%;
    // width: 360px;
-   height: 640px;
+   //height: 640px;
    margin: 0;
    background-color: $background-color-primary;
    background-size: cover;
@@ -110,7 +130,6 @@ body {
   }
 
   .cta {
-   width: 83px;
    height: 19px;
    font-family: Raleway;
    font-size: 16px;
@@ -207,10 +226,6 @@ body {
   // max-width: 1440px;
   margin: 0 auto;
   position: relative;
- }
-
- #content>* {
-  background: $background-color-primary;
  }
 
  header {
@@ -355,6 +370,24 @@ body {
  }
 }
 
+.bg_color_white {
+ background-color: $background-color-primary;
+}
+
+.bg_color_black {
+ background-color: $black;
+}
+
+.bg.color_whitey {
+ background-color: $whitey;
+}
+
+.icecream {
+ border-radius: 6px;
+ margin-top: 20px;
+ margin-bottom: 10px;
+}
+
 /*
 .product_1_copy {  // main block original styling
  grid-column: 8 / 13;
@@ -369,19 +402,6 @@ body {
 	text-align: center;
 	color: $background-color-primary;
 }
-
-.main {
- background-color: $background-color-primary;
-
- .img-1-mobile {
-  width: 320px;
-  height: 177px;
-  border-radius: 6px;
-  margin-top: 20px;
-  margin-right: 20px;
-  margin-left: 20px;
-  margin-bottom: 10px;
- }
 
  .Ullamcorper-Sem-Port {
   width: 264px;
