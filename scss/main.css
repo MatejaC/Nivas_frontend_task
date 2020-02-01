@@ -166,6 +166,11 @@ h3 {
     -ms-grid-column-span: 4;
     grid-column: 1 / 5;
   }
+  .contact_location {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1 / 5;
+  }
   .contact_actions {
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
@@ -200,6 +205,24 @@ h3 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
     grid-column: 1 / 5;
+  }
+  .contact_copy_allign {
+    text-align: left;
+    margin-left: 20px !important;
+  }
+  .follow_allign {
+    text-align: center;
+  }
+  .newsletter_allign {
+    text-align: center;
+  }
+  .social_icons_allign {
+    text-align: center;
+    padding: 12px;
+  }
+  .social_icons_allign i {
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 
@@ -306,16 +329,22 @@ h3 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
     grid-column: 1 / 5;
+    -ms-grid-row: 5;
+        grid-row-start: 5;
   }
   .services_list_2 {
-    -ms-grid-column: 6;
-    -ms-grid-column-span: 3;
-    grid-column: 6 / 9;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 4;
+    grid-column: 5 / 9;
+    -ms-grid-row: 5;
+        grid-row-start: 5;
   }
   .services_list_3 {
-    -ms-grid-column: 10;
-    -ms-grid-column-span: 3;
-    grid-column: 10 / 13;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 4;
+    grid-column: 9 / 13;
+    -ms-grid-row: 5;
+        grid-row-start: 5;
   }
   .logos {
     -ms-grid-column: 1;
@@ -332,15 +361,27 @@ h3 {
     -ms-grid-column-span: 12;
     grid-column: 1 / 13;
   }
+  .contact_location {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-column: 1 / 6;
+    -ms-grid-row: 9;
+        grid-row-start: 9;
+  }
   .contact_actions {
     -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
-    grid-column: 1 / 13;
+    -ms-grid-column-span: 5;
+    grid-column: 1 / 6;
+    -ms-grid-row: 10;
+        grid-row-start: 10;
   }
   .contact_write {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
-    grid-column: 1 / 13;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 5;
+    grid-column: 7 / 12;
+    -ms-grid-row: 9;
+    -ms-grid-row-span: 2;
+    grid-row: 9 / 11;
   }
   .footer_title {
     -ms-grid-column: 1;
@@ -351,11 +392,15 @@ h3 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 6;
     grid-column: 1 / 7;
+    -ms-grid-row: 12;
+        grid-row-start: 12;
   }
   .footer_social_icons_2 {
-    -ms-grid-column: 8;
-    -ms-grid-column-span: 5;
-    grid-column: 8 / 13;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 6;
+    grid-column: 7 / 13;
+    -ms-grid-row: 12;
+        grid-row-start: 12;
   }
   .footer_newsletter_title {
     -ms-grid-column: 1;
@@ -367,6 +412,22 @@ h3 {
     -ms-grid-column-span: 12;
     grid-column: 1 / 13;
   }
+  .product_box {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .product_image_center {
+    text-align: center;
+  }
+  .contact_copy_allign {
+    text-align: center;
+  }
+  .social_icons_allign_1 {
+    text-align: right;
+  }
+  .social_icons_allign_2 {
+    text-align: left;
+  }
 }
 
 .bg_color_white {
@@ -377,7 +438,7 @@ h3 {
   background-color: #000000;
 }
 
-.bg.color_whitey {
+.bg_color_whitey {
   background-color: #f8f8f8;
 }
 
@@ -398,8 +459,7 @@ h3 {
 }
 
 .text-copy {
-  height: 120px;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -487,7 +547,6 @@ h3 {
   line-height: normal;
   letter-spacing: normal;
   color: #464646;
-  margin-left: 20px !important;
   margin-top: 30px;
   margin-bottom: 0;
 }
@@ -526,10 +585,9 @@ h3 {
   white-space: nowrap;
 }
 
-.contact_location {
-  margin-top: -28px;
-}
-
+/* .contact_location {
+ margin-top: -28px;
+} */
 .contact_actions_table {
   width: 45px;
   height: 75px;
@@ -676,14 +734,7 @@ input[type=submit] {
   padding-left: 7px;
 }
 
-.footer {
-  background-color: #000000 !important;
-  height: 285px;
-  z-index: 1;
-}
-
-.footer .follow {
-  height: 21px;
+.follow {
   font-family: Raleway;
   font-size: 18px;
   font-weight: 500;
@@ -692,45 +743,12 @@ input[type=submit] {
   line-height: normal;
   letter-spacing: normal;
   color: #7a7a7a;
-  text-align: center;
   margin-top: 30px !important;
-  margin-bottom: 18px;
+  margin-bottom: 25px;
   white-space: nowrap;
 }
 
-.footer .footer_social_icons > * {
-  color: #f8f8f8;
-}
-
-.footer .fa-facebook-square {
-  margin-left: 81px;
-  margin-right: 56px;
-  margin-bottom: 19px;
-  margin-top: 15px;
-}
-
-.footer .fa-twitter,
-.footer .fa-pinterest {
-  margin-right: 23px;
-  margin-bottom: 20px;
-  margin-right: 65px;
-}
-
-.footer .fa-instagram {
-  margin-right: 84px;
-  margin-bottom: 19px;
-}
-
-.footer .fa-snapchat-ghost {
-  margin-left: 80px;
-  margin-right: 54px;
-  margin-bottom: 0;
-  margin-top: 15px;
-}
-
-.footer .Newsletter {
-  width: 94px;
-  height: 21px;
+.Newsletter {
   font-family: Raleway;
   font-size: 18px;
   font-weight: 500;
@@ -740,12 +758,14 @@ input[type=submit] {
   letter-spacing: normal;
   color: #7a7a7a;
   margin-top: 48px;
-  margin-right: 133px;
   margin-bottom: 0;
-  margin-left: 133px;
 }
 
-.footer .newsletter_signup .email {
+.newsletter_signup {
+  text-align: center;
+}
+
+.newsletter_signup .email {
   background-color: black;
   border: solid 1px #979797;
   width: 208px;
@@ -767,7 +787,7 @@ input[type=submit] {
   padding-bottom: 3px;
 }
 
-.footer .newsletter_signup .signup_submit {
+.newsletter_signup .signup_submit {
   border: solid 1px #979797;
   width: 96px;
   height: 32px;

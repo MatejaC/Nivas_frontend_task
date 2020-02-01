@@ -143,6 +143,7 @@ h3 {
   }
  }
 
+ // grid definitions
  .product_1_image {
   grid-column: 1 / 5;
  }
@@ -188,6 +189,10 @@ h3 {
   grid-column: 1 / 5;
  }
 
+ .contact_location {
+  grid-column: 1 / 5;
+ }
+
  .contact_actions {
   grid-column: 1 / 5;
  }
@@ -215,6 +220,31 @@ h3 {
  .footer_newsletter_write {
   grid-column: 1 / 5;
  }
+
+ // screen specific
+ .contact_copy_allign {
+  text-align: left;
+  margin-left: 20px !important;
+ }
+
+ .follow_allign {
+  text-align: center;
+ }
+
+ .newsletter_allign {
+  text-align: center;
+ }
+
+ .social_icons_allign {
+  text-align: center;
+  padding: 12px;
+
+  i {
+   padding-left: 25px;
+   padding-right: 25px;
+  }
+ }
+
 }
 
 @media (min-width: 800px) {
@@ -293,6 +323,7 @@ h3 {
   }
  }
 
+ // grid definitions
  .product_1_image {
   grid-column: 1 / 7;
   grid-row-start: 2;
@@ -319,14 +350,17 @@ h3 {
 
  .services_list_1 {
   grid-column: 1 / 5;
+  grid-row-start: 5;
  }
 
  .services_list_2 {
-  grid-column: 6 / 9;
+  grid-column: 5 / 9;
+  grid-row-start: 5;
  }
 
  .services_list_3 {
-  grid-column: 10 / 13;
+  grid-column: 9 / 13;
+  grid-row-start: 5;
  }
 
  .logos {
@@ -339,14 +373,22 @@ h3 {
 
  .contact_copy {
   grid-column: 1 / 13;
+  // grid-row-start: 8;
+ }
+
+ .contact_location {
+  grid-column: 1 / 6;
+  grid-row-start: 9;
  }
 
  .contact_actions {
-  grid-column: 1 / 13;
+  grid-column: 1 / 6;
+  grid-row-start: 10;
  }
 
  .contact_write {
-  grid-column: 1 / 13;
+  grid-column: 7 / 12;
+  grid-row: 9 / 11;
  }
 
  .footer_title {
@@ -355,10 +397,12 @@ h3 {
 
  .footer_social_icons_1 {
   grid-column: 1 / 7;
+  grid-row-start: 12;
  }
 
  .footer_social_icons_2 {
-  grid-column: 8 / 13;
+  grid-column: 7 / 13;
+  grid-row-start: 12;
  }
 
  .footer_newsletter_title {
@@ -367,6 +411,28 @@ h3 {
 
  .footer_newsletter_write {
   grid-column: 1 / 13;
+ }
+
+ // screen specific
+ .product_box {
+  padding-top: 20px;
+  padding-bottom: 20px
+ }
+
+ .product_image_center {
+  text-align: center;
+ }
+
+ .contact_copy_allign {
+  text-align: center;
+ }
+
+ .social_icons_allign_1 {
+  text-align: right;
+ }
+
+ .social_icons_allign_2 {
+  text-align: left;
  }
 }
 
@@ -378,7 +444,7 @@ h3 {
  background-color: $black;
 }
 
-.bg.color_whitey {
+.bg_color_whitey {
  background-color: $whitey;
 }
 
@@ -400,8 +466,8 @@ h3 {
 
 
 .text-copy {
- height: 120px;
- font-family: Raleway;
+ // height: 120px;
+ font-family: $primary-font;
  font-size: 16px;
  font-weight: normal;
  font-stretch: normal;
@@ -490,7 +556,6 @@ h3 {
  line-height: normal;
  letter-spacing: normal;
  color: $porta-c;
- margin-left: 20px !important;
  margin-top: 30px;
  margin-bottom: 0;
 }
@@ -530,9 +595,9 @@ h3 {
  white-space: nowrap;
 }
 
-.contact_location {
+/* .contact_location {
  margin-top: -28px;
-}
+} */
 
 .contact_actions_table {
  width: 45px;
@@ -681,115 +746,76 @@ input[type=submit] {
 }
 
 
-.footer {
- background-color: $black !important;
- height: 285px;
- z-index: 1;
+.follow {
+ font-family: Raleway;
+ font-size: 18px;
+ font-weight: 500;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ color: $color-follow;
+ margin-top: 30px !important;
+ margin-bottom: 25px;
+ white-space: nowrap;
+}
 
- .follow {
-  height: 21px;
-  font-family: Raleway;
-  font-size: 18px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: $color-follow;
-  text-align: center;
-  margin-top: 30px !important;
-  margin-bottom: 18px;
-  white-space: nowrap;
+.Newsletter {
+ font-family: Raleway;
+ font-size: 18px;
+ font-weight: 500;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ color: $color-follow;
+ margin-top: 48px;
+ margin-bottom: 0;
+}
 
- }
+.newsletter_signup {
+ text-align: center;
+}
 
- .footer_social_icons>* {
-  color: $whitey;
- }
+.newsletter_signup .email {
+ background-color: black;
+ border: solid 1px $grey-softy;
+ width: 208px;
+ height: 32px;
+ margin-top: 21px;
+ margin-right: 16px;
+ margin-bottom: 30px;
+ margin-left: 20px;
+ font-family: Raleway;
+ font-size: 14px;
+ font-weight: 300;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: 1.79;
+ letter-spacing: normal;
+ color: $y-gmail-color;
+ padding-left: 14px;
+ padding-top: 4px;
+ padding-bottom: 3px;
+}
 
- .fa-facebook-square {
-  margin-left: 81px;
-  margin-right: 56px;
-  margin-bottom: 19px;
-  margin-top: 15px;
- }
-
- .fa-twitter,
- .fa-pinterest {
-  margin-right: 23px;
-  margin-bottom: 20px;
-  margin-right: 65px;
- }
-
- .fa-instagram {
-  margin-right: 84px;
-  margin-bottom: 19px;
- }
-
- .fa-snapchat-ghost {
-  margin-left: 80px;
-  margin-right: 54px;
-  margin-bottom: 0;
-  margin-top: 15px;
- }
-
- .Newsletter {
-  width: 94px;
-  height: 21px;
-  font-family: Raleway;
-  font-size: 18px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: $color-follow;
-  margin-top: 48px;
-  margin-right: 133px;
-  margin-bottom: 0;
-  margin-left: 133px;
- }
-
- .newsletter_signup .email {
-  background-color: black;
-  border: solid 1px $grey-softy;
-  width: 208px;
-  height: 32px;
-  margin-top: 21px;
-  margin-right: 16px;
-  margin-bottom: 30px;
-  margin-left: 20px;
-  font-family: Raleway;
-  font-size: 14px;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.79;
-  letter-spacing: normal;
-  color: $y-gmail-color;
-  padding-left: 14px;
-  padding-top: 4px;
-  padding-bottom: 3px;
- }
-
- .newsletter_signup .signup_submit {
-  border: solid 1px $grey-softy;
-  width: 96px;
-  height: 32px;
-  background-color: $background-color-primary;
-  margin-bottom: 30px;
-  font-family: Raleway;
-  font-size: 16px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: $black;
-  padding-top: 6px;
-  padding-right: 6px;
-  padding-bottom: 7px;
-  padding-left: 7px;
- }
+.newsletter_signup .signup_submit {
+ border: solid 1px $grey-softy;
+ width: 96px;
+ height: 32px;
+ background-color: $background-color-primary;
+ margin-bottom: 30px;
+ font-family: Raleway;
+ font-size: 16px;
+ font-weight: 500;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ text-align: center;
+ color: $black;
+ padding-top: 6px;
+ padding-right: 6px;
+ padding-bottom: 7px;
+ padding-left: 7px;
 }
