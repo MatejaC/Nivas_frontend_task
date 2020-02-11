@@ -1,3 +1,7 @@
+@-ms-viewport {
+  width: device-width;
+}
+
 @font-face {
   font-family: "Avenir Medium";
   src: url("//db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.eot");
