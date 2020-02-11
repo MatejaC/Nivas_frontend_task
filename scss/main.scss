@@ -413,155 +413,156 @@ $z-nav: 20;
     background-size: cover;
 
   }
-}
 
-.-Lorem-ipsum-dolor {
-  width: 320px;
-  font-family: $primary-font;
-  font-size: 16px;
-  font-weight: 400;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 21px;
-  letter-spacing: 0px;
-  color: $gray-lorem;
-  margin-top: 8px;
-  margin-right: 40px;
-  margin-left: 50px;
-  margin-bottom: 30px;
-}
 
-// grid definitions
-.product_1_image {
-  grid-column: 1 / 5;
-}
 
-.product_1_copy {
-  grid-column: 1 / 5;
-}
-
-.product_2_image {
-  grid-column: 1 / 5;
-  grid-row-start: 4;
-}
-
-.product_2_copy {
-  grid-column: 1 / 5;
-}
-
-.services_title {
-  grid-column: 1 / 5;
-}
-
-.services_list_1 {
-  grid-column: 1 / 5;
-}
-
-.services_list_2 {
-  grid-column: 1 / 5;
-}
-
-.services_list_3 {
-  grid-column: 1 / 5;
-}
-
-.logos {
-  grid-column: 1 / 5;
-}
-
-.contact_title {
-  grid-column: 1 / 5;
-}
-
-.contact_copy {
-  grid-column: 1 / 5;
-}
-
-.contact_location {
-  grid-column: 1 / 5;
-}
-
-.contact_actions {
-  grid-column: 1 / 5;
-}
-
-.contact_write {
-  grid-column: 1 / 5;
-}
-
-.footer_title {
-  grid-column: 1 / 5;
-}
-
-.footer_social_icons_1 {
-  grid-column: 1 / 5;
-}
-
-.footer_social_icons_2 {
-  grid-column: 1 / 5;
-}
-
-.footer_newsletter_title {
-  grid-column: 1 / 5;
-}
-
-.footer_newsletter_write {
-  grid-column: 1 / 5;
-}
-
-// screen specific
-.contact_copy_allign {
-  text-align: left;
-  margin-left: 20px !important;
-}
-
-.follow_allign {
-  text-align: center;
-}
-
-.newsletter_allign {
-  text-align: center;
-}
-
-.social_icons_allign {
-  text-align: center;
-  padding: 12px;
-
-  i {
-    padding-left: 25px;
-    padding-right: 25px;
+  .-Lorem-ipsum-dolor {
+    width: 320px;
+    font-family: $primary-font;
+    font-size: 16px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 21px;
+    letter-spacing: 0px;
+    color: $gray-lorem;
+    margin-top: 8px;
+    margin-right: 40px;
+    margin-left: 50px;
+    margin-bottom: 30px;
   }
 
-}
+  // grid definitions
+  .product_1_image {
+    grid-column: 1 / 5;
+  }
 
-.services {
-  font-family: $primary-font;
-  font-size: 36px;
-  font-weight: 400;
-  margin-top: 80px;
-  margin-bottom: 25px;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: $background-color-primary;
-}
+  .product_1_copy {
+    grid-column: 1 / 5;
+  }
 
-.-Lorem-ipsum-dolor_2 {
-  width: 320px;
-  font-family: $primary-font;
-  font-size: 16px;
-  font-weight: 400;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 21px;
-  letter-spacing: 0px;
-  color: $gray-lorem;
-  margin-top: 8px;
-  margin-right: 40px;
-  margin-left: 50px;
-}
+  .product_2_image {
+    grid-column: 1 / 5;
+    grid-row-start: 4;
+  }
 
+  .product_2_copy {
+    grid-column: 1 / 5;
+  }
+
+  .services_title {
+    grid-column: 1 / 5;
+  }
+
+  .services_list_1 {
+    grid-column: 1 / 5;
+  }
+
+  .services_list_2 {
+    grid-column: 1 / 5;
+  }
+
+  .services_list_3 {
+    grid-column: 1 / 5;
+  }
+
+  .logos {
+    grid-column: 1 / 5;
+  }
+
+  .contact_title {
+    grid-column: 1 / 5;
+  }
+
+  .contact_copy {
+    grid-column: 1 / 5;
+  }
+
+  .contact_location {
+    grid-column: 1 / 5;
+  }
+
+  .contact_actions {
+    grid-column: 1 / 5;
+  }
+
+  .contact_write {
+    grid-column: 1 / 5;
+  }
+
+  .footer_title {
+    grid-column: 1 / 5;
+  }
+
+  .footer_social_icons_1 {
+    grid-column: 1 / 5;
+  }
+
+  .footer_social_icons_2 {
+    grid-column: 1 / 5;
+  }
+
+  .footer_newsletter_title {
+    grid-column: 1 / 5;
+  }
+
+  .footer_newsletter_write {
+    grid-column: 1 / 5;
+  }
+
+  // screen specific
+  .contact_copy_allign {
+    text-align: left;
+    margin-left: 20px !important;
+  }
+
+  .follow_allign {
+    text-align: center;
+  }
+
+  .newsletter_allign {
+    text-align: center;
+  }
+
+  .social_icons_allign {
+    text-align: center;
+    padding: 12px;
+
+    i {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
+  }
+
+  .services {
+    font-family: $primary-font;
+    font-size: 36px;
+    font-weight: 400;
+    margin-top: 80px;
+    margin-bottom: 25px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $background-color-primary;
+  }
+
+  .-Lorem-ipsum-dolor_2 {
+    width: 320px;
+    font-family: $primary-font;
+    font-size: 16px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 21px;
+    letter-spacing: 0px;
+    color: $gray-lorem;
+    margin-top: 8px;
+    margin-right: 40px;
+    margin-left: 50px;
+  }
+}
 
 @media (min-width: 800px) {
   #content {

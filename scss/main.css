@@ -317,21 +317,7 @@ h3 {
     -ms-grid-column-span: 4;
     grid-column: 1 / 5;
   }
-  .header {
-    /*.hamburger {
-		display: grid;
-		width: 35px;
-		height: 20px;
-		top: 25px;
-		bottom: 595px;
-		left: 30px;
-		right: 295px;
-		object-fit: contain;
-		position: absolute;
-		z-index: 2;
-	} */
-  }
-  .header .menu {
+  .menu {
     width: 48px;
     height: 21px;
     font-family: "Raleway", sans-serif;
@@ -343,7 +329,19 @@ h3 {
     letter-spacing: normal;
     color: #ffffff;
   }
-  .header .header_img {
+  /*.hamburger {
+		display: grid;
+		width: 35px;
+		height: 20px;
+		top: 25px;
+		bottom: 595px;
+		left: 30px;
+		right: 295px;
+		object-fit: contain;
+		position: absolute;
+		z-index: 2;
+	} */
+  .header_img {
     max-width: 100%;
     margin: 0;
     background-color: #ffffff;
