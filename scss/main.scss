@@ -262,7 +262,7 @@ $z-nav: 20;
   margin-top: 100px;
 }
 
-.hero_cta {
+.hero_link_rectangle {
   padding: 10px;
   background-color: $background-color-primary;
   text-decoration: none;
@@ -270,9 +270,14 @@ $z-nav: 20;
   font-size: 1.35rem;
   text-align: center;
   color: $black;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
 }
 
-.hero_cta:hover {
+.hero_link_rectangle:hover {
   color: white;
   background-color: #a1baf4;
 }
@@ -414,25 +419,6 @@ $z-nav: 20;
       background-color: $background-color-primary;
       background-size: cover;
 
-    }
-
-    .cta_rectangle {
-      width: 130px;
-      height: 44px;
-      background-color: $background-color-primary;
-    }
-
-    .cta {
-      height: 19px;
-      font-family: $primary-font;
-      font-size: 16px;
-      font-weight: 500;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: normal;
-      letter-spacing: normal;
-      text-align: center;
-      color: $black;
     }
   }
 
@@ -608,28 +594,13 @@ $z-nav: 20;
     background-size: cover;
   }
 
-  .cta_rectangle {
-    width: 130px;
-    height: 44px;
-    background-color: $background-color-primary;
+  .hero_link_rectangle_rectangle {
+    height: 0;
+    background-color: transparent;
   }
 
   .hero_rectangle {
     margin-top: 100px;
-  }
-
-  .cta {
-    width: 83px;
-    height: 19px;
-    font-family: $primary-font;
-    font-size: 16px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: center;
-    color: $black;
   }
 }
 

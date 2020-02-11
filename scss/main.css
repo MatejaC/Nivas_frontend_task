@@ -197,7 +197,7 @@ h3 {
   margin-top: 100px;
 }
 
-.hero_cta {
+.hero_link_rectangle {
   padding: 10px;
   background-color: #ffffff;
   text-decoration: none;
@@ -205,9 +205,14 @@ h3 {
   font-size: 1.35rem;
   text-align: center;
   color: #000000;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
 }
 
-.hero_cta:hover {
+.hero_link_rectangle:hover {
   color: white;
   background-color: #a1baf4;
 }
@@ -343,23 +348,6 @@ h3 {
     margin: 0;
     background-color: #ffffff;
     background-size: cover;
-  }
-  .header .cta_rectangle {
-    width: 130px;
-    height: 44px;
-    background-color: #ffffff;
-  }
-  .header .cta {
-    height: 19px;
-    font-family: "Raleway", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000000;
   }
   .-Lorem-ipsum-dolor {
     width: 320px;
@@ -539,26 +527,12 @@ h3 {
     background-color: #ffffff;
     background-size: cover;
   }
-  .cta_rectangle {
-    width: 130px;
-    height: 44px;
-    background-color: #ffffff;
+  .hero_link_rectangle_rectangle {
+    height: 0;
+    background-color: transparent;
   }
   .hero_rectangle {
     margin-top: 100px;
-  }
-  .cta {
-    width: 83px;
-    height: 19px;
-    font-family: "Raleway", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000000;
   }
 }
 
