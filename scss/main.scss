@@ -374,6 +374,19 @@ $z-nav: 20;
   color: $black;
 }
 
+.bg_color_white {
+  background-color: $background-color-primary;
+}
+
+.bg_color_black {
+  background-color: $black;
+}
+
+.bg_color_whitey {
+  background-color: $whitey;
+}
+
+
 .clearfix:after {
   content: ".";
   clear: both;
@@ -383,16 +396,6 @@ $z-nav: 20;
 }
 
 @media (min-width: 360px) {
-  .column {
-    width: 100%;
-  }
-
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
   #content {
     display: grid;
     grid-template-columns: 4;
@@ -439,7 +442,6 @@ $z-nav: 20;
     .services_title {
       grid-column: 2 / 3;
       grid-row: 7;
-
     }
 
     .services_list_1 {
@@ -465,52 +467,52 @@ $z-nav: 20;
 
     .contact_title {
       grid-column: col-start / span 4;
-      grid-row: 14 / 15;
+      grid-row: 13 / 14;
     }
 
     .contact_copy {
       grid-column: col-start / span 4;
-      grid-row: 16;
+      grid-row: 15;
     }
 
     .contact_location {
       grid-column: col-start / span 4;
-      grid-row: 17;
+      grid-row: 16;
     }
 
     .contact_actions {
       grid-column: col-start / span 4;
-      grid-row: 18;
+      grid-row: 17;
     }
 
     .contact_write {
       grid-column: col-start / span 4;
-      grid-row: 19;
+      grid-row: 18;
     }
 
     .footer_title {
       grid-column: col-start / span 4;
-      grid-row: 20;
+      grid-row: 23;
     }
 
     .footer_social_icons_1 {
       grid-column: col-start / span 4;
-      grid-row: 21;
+      grid-row: 20;
     }
 
     .footer_social_icons_2 {
       grid-column: col-start / span 4;
-      grid-row: 22;
+      grid-row: 21;
     }
 
     .footer_newsletter_title {
       grid-column: col-start / span 4;
-      grid-row: 23;
+      grid-row: 22;
     }
 
     .footer_newsletter_write {
       grid-column: col-start / span 4;
-      grid-row: 24;
+      grid-row: 23;
     }
 
 
@@ -558,7 +560,7 @@ $z-nav: 20;
 
 
 
-    .-Lorem-ipsum-dolor {
+    .services_text {
       font-family: $primary-font;
       font-size: 0.8rem;
       font-weight: 400;
@@ -621,7 +623,7 @@ $z-nav: 20;
       color: $background-color-primary;
     }
 
-    .-Lorem-ipsum-dolor_2 {
+    .servicess_text_2 {
       font-family: $primary-font;
       font-size: 16px;
       font-weight: 400;
@@ -792,6 +794,7 @@ $z-nav: 20;
       text-align: left;
     }
 
+
     table.contact_actions th {
       text-transform: uppercase;
       font-weight: normal;
@@ -813,7 +816,7 @@ $z-nav: 20;
       color: $background-color-primary;
     }
 
-    .-Lorem-ipsum-dolor_2 {
+    .servicess_text_2 {
       font-family: $primary-font;
       font-size: 16px;
       font-weight: 400;
@@ -826,19 +829,6 @@ $z-nav: 20;
       margin-right: 40px;
       margin-left: 50px;
       margin-bottom: 150px;
-    }
-
-
-    .bg_color_white {
-      background-color: $background-color-primary;
-    }
-
-    .bg_color_black {
-      background-color: $black;
-    }
-
-    .bg_color_whitey {
-      background-color: $whitey;
     }
 
     .product_title {
@@ -994,10 +984,6 @@ $z-nav: 20;
       margin-left: 21px;
       white-space: nowrap;
     }
-
-    /* .contact_location {
- margin-top: -28px;
-} */
 
     .contact_actions_table {
       height: 75px;
