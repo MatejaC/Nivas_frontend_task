@@ -797,8 +797,8 @@ table.contact_actions th {
   margin-bottom: 40px !important;
 }
 
-.img-2-mobile,
-.img-1-mobile {
+.img_2_mobile,
+.img_1_mobile {
   height: 177px;
   -o-object-fit: contain;
      object-fit: contain;
