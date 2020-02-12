@@ -1073,6 +1073,10 @@ input[type=submit] {
  padding-left: 14px;
  padding-top: 4px;
  padding-bottom: 3px;
+
+ &:focus {
+  border: solid 1px $hover-color;
+ }
 }
 
 .nws_signup {
