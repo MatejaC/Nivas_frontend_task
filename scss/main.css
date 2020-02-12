@@ -1043,6 +1043,11 @@ input[type=submit] {
   border: solid 1px #a1baf4;
 }
 
+.newsletter_signup .email:focus {
+  color: #ffffff;
+  font-weight: 500;
+}
+
 .nws_signup {
   margin-bottom: 60px;
 }

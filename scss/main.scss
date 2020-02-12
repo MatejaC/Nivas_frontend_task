@@ -1077,7 +1077,15 @@ input[type=submit] {
  &:focus {
   border: solid 1px $hover-color;
  }
+
+ &:focus {
+  color: $background-color-primary;
+  font-weight: 500;
+ }
+
 }
+
+
 
 .nws_signup {
  margin-bottom: 60px;
