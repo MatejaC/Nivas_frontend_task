@@ -383,22 +383,26 @@
       </div>
 
       <div class="footer_newsletter_write bg_color_black">
-        <div class="newsletter_signup nws_signup">
+        <form
+          class="newsletter_signup nws_signup"
+          id="newsletter_form"
+          action="#"
+          method="POST"
+        >
           <input
-            type="text"
+            type="email"
+            name="newsletter_email"
+            id="newsletter_email"
             class="email"
             placeholder="your@email.com"
-            <input
-            pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
-            required
           />
-
           <input
             type="button"
             class="signup_submit bg_color_white header_black"
             value="Sign up"
+            id="newsletter_submit"
           />
-        </div>
+        </form>
       </div>
     </div>
 
