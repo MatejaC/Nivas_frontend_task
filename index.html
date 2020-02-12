@@ -510,6 +510,33 @@
       };
       const contactForm = document.forms["contact_form"];
       contactForm.addEventListener("submit", handleContactFormSubmit);
+
+      // newletter form
+      const handleNewsletterFormSubmit = event => {
+        event.preventDefault();
+        form = document.forms["newsletter_form"];
+        newsletter_form_input_error_class = "newsletter_input_error";
+
+        // email check
+        if (form.newsletter_email.value == "") {
+          form.newsletter_email.classList.add(
+            newsletter_form_input_error_class
+          );
+        } else if (validator.isEmail(form.newsletter_email.value) == false) {
+          form.newsletter_email.classList.add(
+            newsletter_form_input_error_class
+          );
+        } else {
+          form.newsletter_email.classList.remove(
+            newsletter_form_input_error_class
+          );
+        }
+      };
+      const newsletterForm = document.forms["newsletter_form"];
+      newsletterForm.newsletter_submit.addEventListener(
+        "click",
+        handleNewsletterFormSubmit
+      );
     </script>
 
     <script>
