@@ -454,6 +454,57 @@
           hamburger.doToggle(e);
         });
       })();
+
+      // contact form
+      const handleContactFormSubmit = event => {
+        event.preventDefault();
+        errors = document.querySelector(".contact_form_message");
+        contact_form_input_error_class = "contact_input_error";
+        contact_form_success_class = "contact_form_success";
+        contact_form_fail_class = "contact_form_fail";
+        // cleanup existing validation
+        errors.classList.remove(contact_form_success_class);
+        errors.classList.remove(contact_form_fail_class);
+        form = document.forms["contact_form"];
+        // main form check
+        has_errors = false;
+        // name check
+        if (form.name.value == "") {
+          has_errors = true;
+          form.name.classList.add(contact_form_input_error_class);
+        } else {
+          form.name.classList.remove(contact_form_input_error_class);
+        }
+        // email check
+        if (form.email.value == "") {
+          has_errors = true;
+          form.email.classList.add(contact_form_input_error_class);
+        } else if (validator.isEmail(form.email.value) == false) {
+          has_errors = true;
+          form.email.classList.add(contact_form_input_error_class);
+        } else {
+          form.email.classList.remove(contact_form_input_error_class);
+        }
+        // question check
+        if (form.question.value == "") {
+          has_errors = true;
+          form.question.classList.add(contact_form_input_error_class);
+        } else {
+          form.question.classList.remove(contact_form_input_error_class);
+        }
+        if (has_errors == false) {
+          // on form success
+          errors.classList.add(contact_form_success_class);
+          errors.innerText = "Message sent succesfully!";
+        } else {
+          // on form error
+          errors.classList.add(contact_form_fail_class);
+          errors.innerText =
+            "There was an error. Please check the required fields.";
+        }
+      };
+      const contactForm = document.forms["contact_form"];
+      contactForm.addEventListener("submit", handleContactFormSubmit);
     </script>
 
     <script>
