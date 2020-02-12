@@ -462,12 +462,15 @@
         contact_form_input_error_class = "contact_input_error";
         contact_form_success_class = "contact_form_success";
         contact_form_fail_class = "contact_form_fail";
+
         // cleanup existing validation
         errors.classList.remove(contact_form_success_class);
         errors.classList.remove(contact_form_fail_class);
         form = document.forms["contact_form"];
+
         // main form check
         has_errors = false;
+
         // name check
         if (form.name.value == "") {
           has_errors = true;
@@ -475,6 +478,7 @@
         } else {
           form.name.classList.remove(contact_form_input_error_class);
         }
+
         // email check
         if (form.email.value == "") {
           has_errors = true;
@@ -485,6 +489,7 @@
         } else {
           form.email.classList.remove(contact_form_input_error_class);
         }
+
         // question check
         if (form.question.value == "") {
           has_errors = true;
@@ -522,6 +527,7 @@
 
           return elemBottom <= docViewBottom && elemTop >= docViewTop;
         }
+
         // If element is scrolled into view, slide it in
         $(window).scroll(function() {
           $(".scroll-animations .animated").each(function() {
