@@ -225,7 +225,7 @@ $z-nav: 20;
   text-decoration: none;
 
   &:hover {
-   color: #a1baf4;
+   color: $hover-color;
   }
  }
 }
@@ -272,7 +272,7 @@ $z-nav: 20;
 
 .hero_link_rectangle:hover {
  color: white;
- background-color: #a1baf4;
+ background-color: $hover-color;
 }
 
 .hero_controls {
@@ -370,21 +370,6 @@ $z-nav: 20;
   position: relative;
  }
 
- .services_text {
-  width: 320px;
-  font-family: $primary-font;
-  font-size: 16px;
-  font-weight: 400;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 21px;
-  letter-spacing: 0px;
-  color: $gray-lorem;
-  margin-top: 8px;
-  margin-right: 40px;
-  margin-left: 50px;
-  margin-bottom: 30px;
- }
 
  // grid definitions
  header {
@@ -466,6 +451,23 @@ $z-nav: 20;
 
  .footer_newsletter_write {
   grid-column: 1 / 5;
+ }
+
+
+ .services_text {
+  width: 320px;
+  font-family: $primary-font;
+  font-size: 16px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 21px;
+  letter-spacing: 0px;
+  color: $gray-lorem;
+  margin-top: 8px;
+  margin-right: 40px;
+  margin-left: 50px;
+  margin-bottom: 30px;
  }
 
  // screen specific
@@ -648,7 +650,7 @@ $z-nav: 20;
  }
 
  //screen specific
-/*  product_box {
+ /*  product_box {
   padding-top: 20px;
   padding-bottom: 20px
  }
