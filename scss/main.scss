@@ -259,9 +259,6 @@ $z-nav: 20;
  color: $whitey;
 }
 
-.hero_rectangle {
- margin-top: 100px;
-}
 
 .hero_link_rectangle {
  padding: 10px;
@@ -373,33 +370,6 @@ $z-nav: 20;
   position: relative;
  }
 
- header {
-  grid-column: 1 / 5;
- }
-
- .header {
-
-  .hero_link_rectangle_rectangle {
-   width: 130px;
-   height: 44px;
-   background-color: $background-color-primary;
-  }
-
-  .cta {
-   height: 19px;
-   font-family: $primary-font;
-   font-size: 16px;
-   font-weight: 500;
-   font-stretch: normal;
-   font-style: normal;
-   line-height: normal;
-   letter-spacing: normal;
-   text-align: center;
-   color: $black;
-  }
-
- }
-
  .services_text {
   width: 320px;
   font-family: $primary-font;
@@ -417,6 +387,10 @@ $z-nav: 20;
  }
 
  // grid definitions
+ header {
+  grid-column: 1 / 5;
+ }
+
  .product_1_image {
   grid-column: 1 / 5;
  }
@@ -517,6 +491,9 @@ $z-nav: 20;
    padding-right: 25px;
   }
 
+  &:hover {
+   color: $hover-color;
+  }
  }
 
  .services {
@@ -546,8 +523,8 @@ $z-nav: 20;
   margin-right: 40px;
   margin-left: 50px;
  }
-
 }
+
 
 @media (min-width: 800px) {
  #content {
@@ -561,33 +538,21 @@ $z-nav: 20;
   grid-column: 1 / 13;
  }
 
- .header {
 
-  .hero_link_rectangle_rectangle {
-   width: 130px;
-   height: 44px;
-   background-color: $background-color-primary;
-  }
-
-  .hero_rectangle {
-   margin-top: 100px;
-  }
-
-  .cta {
-   width: 83px;
-   height: 19px;
-   font-family: $primary-font;
-   font-size: 16px;
-   font-weight: 500;
-   font-stretch: normal;
-   font-style: normal;
-   line-height: normal;
-   letter-spacing: normal;
-   text-align: center;
-   color: $black;
-  }
-
+ .hero_rectangle {
+  margin-top: 100px;
+  height: 19px;
+  font-family: $primary-font;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
  }
+
+
 
  // grid definitions
 
