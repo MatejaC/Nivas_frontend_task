@@ -1107,3 +1107,13 @@ input[type=submit] {
   background-color: $hover-color;
  }
 }
+
+.footer_social_icons_1,
+.footer_social_icons_2 {
+ i {
+  &:hover {
+   color: $hover-color;
+  }
+ }
+
+}

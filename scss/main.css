@@ -1071,4 +1071,9 @@ input[type=submit] {
 .signup_submit:hover {
   background-color: #a1baf4;
 }
+
+.footer_social_icons_1 i:hover,
+.footer_social_icons_2 i:hover {
+  color: #a1baf4;
+}
 /*# sourceMappingURL=main.css.map */
