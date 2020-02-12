@@ -521,7 +521,7 @@ $z-nav: 20;
   color: $gray-lorem;
   margin-top: 8px;
   margin-right: 40px;
-  margin-left: 50px;
+  margin-left: 40px;
  }
 }
 
@@ -533,11 +533,6 @@ $z-nav: 20;
   margin: 0 auto;
   position: relative;
  }
-
- header {
-  grid-column: 1 / 13;
- }
-
 
  .hero_rectangle {
   margin-top: 100px;
@@ -552,27 +547,30 @@ $z-nav: 20;
   text-align: center;
  }
 
-
-
  // grid definitions
 
+ header {
+  grid-column: 1 / 13;
+  grid-row: 1;
+ }
+
  .product_1_image {
-  grid-column: 2 / 7;
+  grid-column: 3 / 7;
   grid-row-start: 2;
  }
 
  .product_1_copy {
-  grid-column: 7 / 12;
+  grid-column: 7 / 11;
   grid-row-start: 2;
  }
 
  .product_2_copy {
-  grid-column: 2 / 5;
+  grid-column: 3 / 7;
   grid-row-start: 3;
  }
 
  .product_2_image {
-  grid-column: 5 / 12;
+  grid-column: 7 / 11;
   grid-row-start: 3;
  }
 
@@ -649,8 +647,8 @@ $z-nav: 20;
   grid-column: 1 / 13;
  }
 
- // screen specific
- .product_box {
+ //screen specific
+/*  product_box {
   padding-top: 20px;
   padding-bottom: 20px
  }
@@ -661,7 +659,7 @@ $z-nav: 20;
 
  .contact_copy_allign {
   text-align: center;
- }
+ } */
 
  .social_icons_allign_1 {
   text-align: right;
@@ -703,8 +701,6 @@ $z-nav: 20;
   letter-spacing: 0px;
   color: $gray-lorem;
   margin-top: 8px;
-  margin-right: 40px;
-  margin-left: 50px;
   margin-bottom: 150px;
  }
 
@@ -770,13 +766,13 @@ $z-nav: 20;
 
 .img_2_mobile,
 .img_1_mobile {
- height: 177px;
  object-fit: contain;
+ object-fit: fill;
  border-radius: 6px;
  margin-top: 30px;
- margin-right: 21px;
  margin-bottom: 20px;
- margin-left: 20px;
+ animation-duration: 3s;
+ animation-delay: .5s;
 }
 
 .services {
@@ -1082,8 +1078,12 @@ input[type=submit] {
   color: $background-color-primary;
   font-weight: 500;
  }
-
 }
+
+.email input:invalid {
+ border-color: solid 1px #f08992;
+}
+
 
 
 

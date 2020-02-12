@@ -13,7 +13,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/siema@1.5.1/dist/siema.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="scss/main.css" />
+
+    <link rel="stylesheet" href="dist/css/animate.css" />
+
+    <link rel="stylesheet" href="scss/main.css" />
+
     <title>Nivas Frontend task</title>
   </head>
 
@@ -127,20 +131,17 @@
         ></a>
       </header>
 
-      <div
-        class="product_1_image product_image_center product_box bg_color_white"
-      >
+      <div class="product_1_image product_box bg_color_white">
         <img
+          class="img_1_mobile animated slideInLeft"
+          alt="Icecream"
           src="dist/img/img-1-mobile-icecream.png"
           srcset="
             dist/img/img-1-mobile-icecream@2x.png 2x,
             dist/img/img-1-mobile-icecream@3x.png 3x
           "
-          class="img_1_mobile"
-          alt="Icecream"
         />
       </div>
-
       <div class="product_1_copy product_box bg_color_white">
         <h3 class="product_title header_black">
           Ullamcorper Sem Porta
@@ -167,16 +168,15 @@
         class="product_2_image product_box product_image_center bg_color_whitey"
       >
         <img
+          class="img_2_mobile animated slideInRight"
+          alt="Bowl"
           src="dist/img/img-2-mobile-dish.png"
           srcset="
             dist/img/img-2-mobile-dish@2x.png 2x,
             dist/img/img-2-mobile-dish@3x.png 3x
           "
-          class="img_2_mobile"
-          alt="Bowl"
         />
       </div>
-
       <div class="services_title bg_color_black">
         <h2 class="services services_large header_white">Services</h2>
       </div>
@@ -377,7 +377,15 @@
 
       <div class="footer_newsletter_write bg_color_black">
         <div class="newsletter_signup nws_signup">
-          <input type="text" class="email" placeholder="your@email.com" />
+          <input
+            type="text"
+            class="email"
+            placeholder="your@email.com"
+            <input
+            pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+            required
+          />
+
           <input
             type="button"
             class="signup_submit bg_color_white header_black"
@@ -386,55 +394,109 @@
         </div>
       </div>
     </div>
-  </body>
 
-  <script>
-    // hero carousel
-    const heroSiema = new Siema({
-      selector: ".hero_siema",
-      draggable: true,
-      loop: true
-    });
-    document
-      .querySelector(".hero_controls_prev")
-      .addEventListener("click", () => heroSiema.prev());
-    document
-      .querySelector(".hero_controls_next")
-      .addEventListener("click", () => heroSiema.next());
-
-    // logos carousel
-    const logosSiema = new Siema({
-      selector: ".logos_siema",
-      draggable: true,
-      loop: true,
-      perPage: {
-        360: 2,
-        800: 5
-      }
-    });
-    document
-      .querySelector(".logos_controls_prev")
-      .addEventListener("click", () => logosSiema.prev());
-    document
-      .querySelector(".logos_controls_next")
-      .addEventListener("click", () => logosSiema.next());
-
-    // navigation
-    (function() {
-      var hamburger = {
-        navToggle: document.querySelector(".nav-toggle"),
-        nav: document.querySelector("nav"),
-
-        doToggle: function(e) {
-          e.preventDefault();
-          this.navToggle.classList.toggle("expanded");
-          this.nav.classList.toggle("expanded");
-        }
-      };
-
-      hamburger.navToggle.addEventListener("click", function(e) {
-        hamburger.doToggle(e);
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+      // hero carousel
+      const heroSiema = new Siema({
+        selector: ".hero_siema",
+        draggable: true,
+        loop: true
       });
-    })();
-  </script>
+      document
+        .querySelector(".hero_controls_prev")
+        .addEventListener("click", () => heroSiema.prev());
+      document
+        .querySelector(".hero_controls_next")
+        .addEventListener("click", () => heroSiema.next());
+
+      // logos carousel
+      const logosSiema = new Siema({
+        selector: ".logos_siema",
+        draggable: true,
+        loop: true,
+        perPage: {
+          360: 2,
+          800: 5
+        }
+      });
+      document
+        .querySelector(".logos_controls_prev")
+        .addEventListener("click", () => logosSiema.prev());
+      document
+        .querySelector(".logos_controls_next")
+        .addEventListener("click", () => logosSiema.next());
+
+      // navigation
+      (function() {
+        var hamburger = {
+          navToggle: document.querySelector(".nav-toggle"),
+          nav: document.querySelector("nav"),
+
+          doToggle: function(e) {
+            e.preventDefault();
+            this.navToggle.classList.toggle("expanded");
+            this.nav.classList.toggle("expanded");
+          }
+        };
+
+        hamburger.navToggle.addEventListener("click", function(e) {
+          hamburger.doToggle(e);
+        });
+      })();
+    </script>
+
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // Scroll function courtesy of Scott Dowding; http://stackoverflow.com/questions/487073/check-if-element-is-visible-after-scrolling
+
+      $(document).ready(function() {
+        // Check if element is scrolled into view
+        function isScrolledIntoView(elem) {
+          var docViewTop = $(window).scrollTop();
+          var docViewBottom = docViewTop + $(window).height();
+
+          var elemTop = $(elem).offset().top;
+          var elemBottom = elemTop + $(elem).height();
+
+          return elemBottom <= docViewBottom && elemTop >= docViewTop;
+        }
+        // If element is scrolled into view, slide it in
+        $(window).scroll(function() {
+          $(".scroll-animations .animated").each(function() {
+            if (isScrolledIntoView(this) === true) {
+              $(this).addClass("slideInLeft");
+            }
+          });
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function() {
+        // Check if element is scrolled into view
+        function isScrolledIntoView(elem) {
+          var docViewTop = $(window).scrollTop();
+          var docViewBottom = docViewTop + $(window).height();
+
+          var elemTop = $(elem).offset().top;
+          var elemBottom = elemTop + $(elem).height();
+
+          return elemBottom <= docViewBottom && elemTop >= docViewTop;
+        }
+        // If element is scrolled into view, slide it in
+        $(window).scroll(function() {
+          $(".scroll-animations .animated").each(function() {
+            if (isScrolledIntoView(this) === true) {
+              $(this).addClass("slideInRight");
+            }
+          });
+        });
+      });
+    </script>
+  </body>
 </html>
