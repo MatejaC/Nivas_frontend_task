@@ -1074,7 +1074,6 @@ input[type=submit] {
   border: solid 1px #979797;
   width: 96px;
   height: 32px;
-  background-color: #ffffff;
   margin-bottom: 30px;
   font-family: Raleway;
   font-size: 16px;
@@ -1084,10 +1083,19 @@ input[type=submit] {
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: #000000;
   padding-top: 6px;
   padding-right: 6px;
   padding-bottom: 7px;
   padding-left: 7px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.signup_submit {
+  background-color: #ffffff;
+}
+
+.signup_submit:hover {
+  background-color: #a1baf4;
 }
 /*# sourceMappingURL=main.css.map */

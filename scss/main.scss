@@ -26,10 +26,12 @@ $gray-lorem: #999999;
 $color-input: #303030;
 $color-follow: #7a7a7a;
 $y-gmail-color: #737373;
+$hover-color:#a1baf4;
 $primary-font: "Raleway",
 sans-serif;
 $secondary-font: "Avenir Medium",
 sans-serif;
+
 
 
 * {
@@ -1116,7 +1118,6 @@ input[type=submit] {
  border: solid 1px $grey-softy;
  width: 96px;
  height: 32px;
- background-color: $background-color-primary;
  margin-bottom: 30px;
  font-family: Raleway;
  font-size: 16px;
@@ -1126,9 +1127,18 @@ input[type=submit] {
  line-height: normal;
  letter-spacing: normal;
  text-align: center;
- color: $black;
  padding-top: 6px;
  padding-right: 6px;
  padding-bottom: 7px;
  padding-left: 7px;
+ color: $black;
+ background-color: $background-color-primary;
+}
+
+.signup_submit {
+ background-color: $background-color-primary;
+
+ &:hover {
+  background-color: $hover-color;
+ }
 }
