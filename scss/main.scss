@@ -364,6 +364,22 @@ $z-nav: 20;
  color: $black;
 }
 
+.bg_color_white {
+ background-color: $background-color-primary;
+}
+
+.bg_color_black {
+ background-color: $black;
+}
+
+.bg_color_whitey {
+ background-color: $whitey;
+}
+
+
+
+
+
 @media (min-width: 360px) {
  #content {
   display: grid;
@@ -711,17 +727,6 @@ $z-nav: 20;
 
 }
 
-.bg_color_white {
- background-color: $background-color-primary;
-}
-
-.bg_color_black {
- background-color: $black;
-}
-
-.bg_color_whitey {
- background-color: $whitey;
-}
 
 .product_title {
  height: 29px;
