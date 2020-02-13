@@ -396,16 +396,15 @@ $z-nav: 20;
  }
 
  .product_1_image {
-  grid-column: 4 / 8;
+  grid-column: 1 / 5;
  }
 
  .product_1_copy {
-  grid-column: 8 / 10;
+  grid-column: 1 / 5;
  }
 
  .product_2_image {
   grid-column: 1 / 5;
-  grid-row-start: 4;
  }
 
  .product_2_copy {
@@ -531,7 +530,6 @@ $z-nav: 20;
  }
 
  .services_text_2 {
-  width: 320px;
   font-family: $primary-font;
   font-size: 16px;
   font-weight: 400;
@@ -576,12 +574,12 @@ $z-nav: 20;
  }
 
  .product_1_image {
-  grid-column: 3 / 7;
+  grid-column: 3 / 6;
   grid-row-start: 2;
  }
 
  .product_1_copy {
-  grid-column: 8 / 11;
+  grid-column: 7 / 10;
   grid-row-start: 2;
  }
 
@@ -702,7 +700,7 @@ $z-nav: 20;
  .img_2_mobile {
   object-fit: contain;
   border-radius: 6px;
-  margin-top: 30px;
+  margin-top: 104px;
   margin-bottom: 20px;
   animation-duration: 3s;
   animation-delay: .5s;
@@ -719,7 +717,7 @@ $z-nav: 20;
   color: $porta-c;
   margin-top: 131px;
   margin-bottom: 10px;
-  margin-left: 30px;
+  margin-left: 60px;
  }
 
  .text_copy {
@@ -733,8 +731,9 @@ $z-nav: 20;
   letter-spacing: normal;
   color: $text-c;
   margin-bottom: 30px;
-  margin-left: 30px;
+  margin-left: 60px;
   text-align: left;
+  margin-top: 0;
  }
 
  .read_more {
@@ -745,51 +744,11 @@ $z-nav: 20;
   color: $porta-c;
   text-transform: uppercase;
   white-space: nowrap;
-  margin-left: 30px;
+  margin-left: 60px;
   text-decoration: none;
   margin-bottom: 40px !important;
  }
-
- .services_title {
-  font-family: $primary-font;
-  font-size: 36px;
-  font-weight: 400;
-  margin-top: 80px;
-  padding-bottom: 55px;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: $background-color-primary;
- }
-
- .services_text_2 {
-  width: 320px;
-  font-family: $primary-font;
-  font-size: 16px;
-  font-weight: 400;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 21px;
-  letter-spacing: 0px;
-  color: $gray-lorem;
-  margin-top: 8px;
-  margin-bottom: 150px;
- }
-
- table.contact_actions th {
-  text-transform: uppercase;
-  font-weight: normal;
-  text-align: left;
-  margin-top: 0px;
- }
-
-
-
 }
-
-
 
 .services {
  font-family: Raleway;
@@ -805,20 +764,6 @@ $z-nav: 20;
  color: $background-color-primary;
 }
 
-.services_title {
- font-family: Raleway;
- font-size: 36px;
- font-weight: 400;
- margin-top: 0;
- margin-left: 0;
- margin-right: 0;
- margin-bottom: 0;
- font-stretch: normal;
- font-style: normal;
- line-height: normal;
- letter-spacing: normal;
- color: $background-color-primary;
-}
 
 .services_large {
  font-family: Raleway;
@@ -832,6 +777,44 @@ $z-nav: 20;
  letter-spacing: normal;
  color: $background-color-primary;
 }
+
+.services_title {
+ font-family: $primary-font;
+ font-size: 36px;
+ font-weight: 400;
+ margin-top: 80px;
+ padding-bottom: 55px;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ text-align: center;
+ color: $background-color-primary;
+}
+
+
+.services_text_2 {
+ width: 320px;
+ font-family: $primary-font;
+ font-size: 16px;
+ font-weight: 400;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: 21px;
+ letter-spacing: 0px;
+ color: $gray-lorem;
+ margin-top: 8px;
+ margin-bottom: 150px;
+}
+
+table.contact_actions th {
+ text-transform: uppercase;
+ font-weight: normal;
+ text-align: left;
+ margin-top: 0px;
+}
+
+
 
 .contact-title {
  margin-left: 20px;
