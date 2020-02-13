@@ -1051,7 +1051,7 @@ input[type=submit] {
   font-weight: 500;
 }
 
-.email input:invalid {
+.contact_input_error {
   border-color: solid 1px #f08992;
 }
 
