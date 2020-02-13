@@ -1052,11 +1052,15 @@ input[type=submit] {
 }
 
 .contact_input_error {
-  border-color: solid 1px #f08992;
+  border: solid 1px #f08992;
 }
 
 .contact_form_success {
   background-color: #95f089;
+}
+
+.contact_form_fail {
+  background-color: #f08992;
 }
 
 .nws_signup {
