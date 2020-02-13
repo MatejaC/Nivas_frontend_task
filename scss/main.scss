@@ -1096,6 +1096,9 @@ input[type=submit] {
  font-weight: 500;
 }
 
+.newsletter_input_error {
+ border: solid 1px #F08992 !important;
+}
 
 .nws_signup {
  margin-bottom: 60px;
