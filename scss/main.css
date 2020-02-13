@@ -955,6 +955,12 @@ input[type=email] {
   resize: none;
 }
 
+input[type=name]:focus,
+input[type=email]:focus,
+.question:focus {
+  border: solid 1px #a1baf4;
+}
+
 input[type=submit] {
   width: 96px;
   height: 32px;

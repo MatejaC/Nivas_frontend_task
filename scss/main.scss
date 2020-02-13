@@ -994,6 +994,16 @@ input[type=email] {
  resize: none;
 }
 
+input[type=name],
+input[type=email],
+.question {
+ &:focus {
+  border: solid 1px $hover-color;
+ }
+}
+
+
+
 input[type=submit] {
  width: 96px;
  height: 32px;
