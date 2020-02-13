@@ -637,13 +637,14 @@ h3 {
     -ms-grid-column-span: 12;
     grid-column: 1 / 13;
   }
-  product_box {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  .product_image_center {
-    text-align: center;
-  }
+  /* product_box {
+  padding-top: 20px;
+  padding-bottom: 20px
+ }
+
+ .product_image_center {
+  text-align: center;
+ } */
   .contact_copy_allign {
     text-align: center;
   }
