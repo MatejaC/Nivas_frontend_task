@@ -321,14 +321,14 @@ h3 {
     grid-column: 1 / 5;
   }
   .product_1_image {
-    -ms-grid-column: 1;
+    -ms-grid-column: 4;
     -ms-grid-column-span: 4;
-    grid-column: 1 / 5;
+    grid-column: 4 / 8;
   }
   .product_1_copy {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
-    grid-column: 1 / 5;
+    -ms-grid-column: 8;
+    -ms-grid-column-span: 2;
+    grid-column: 8 / 10;
   }
   .product_2_image {
     -ms-grid-column: 1;
@@ -517,23 +517,23 @@ h3 {
         grid-row-start: 2;
   }
   .product_1_copy {
-    -ms-grid-column: 7;
-    -ms-grid-column-span: 4;
-    grid-column: 7 / 11;
+    -ms-grid-column: 8;
+    -ms-grid-column-span: 3;
+    grid-column: 8 / 11;
     -ms-grid-row: 2;
         grid-row-start: 2;
   }
   .product_2_copy {
-    -ms-grid-column: 3;
+    -ms-grid-column: 2;
     -ms-grid-column-span: 4;
-    grid-column: 3 / 7;
+    grid-column: 2 / 6;
     -ms-grid-row: 3;
         grid-row-start: 3;
   }
   .product_2_image {
-    -ms-grid-column: 7;
-    -ms-grid-column-span: 4;
-    grid-column: 7 / 11;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 6;
+    grid-column: 6 / 12;
     -ms-grid-row: 3;
         grid-row-start: 3;
   }
@@ -654,11 +654,66 @@ h3 {
   .social_icons_allign_2 {
     text-align: left;
   }
-  table.contact_actions th {
-    text-transform: uppercase;
+  .img_1_mobile {
+    -o-object-fit: contain;
+       object-fit: contain;
+    border-radius: 6px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+  }
+  .img_2_mobile {
+    -o-object-fit: contain;
+       object-fit: contain;
+    border-radius: 6px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+  }
+  .product_title {
+    font-family: Raleway;
+    font-size: 36px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #464646;
+    margin-top: 131px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+  }
+  .text_copy {
+    height: 115px;
+    font-family: Raleway;
+    font-size: 18px;
     font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.28;
+    letter-spacing: normal;
+    color: #414141;
+    margin-bottom: 30px;
+    margin-left: 30px;
     text-align: left;
-    margin-top: 0px;
+  }
+  .read_more {
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 0;
+    color: #464646;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-left: 30px;
+    text-decoration: none;
+    margin-bottom: 40px !important;
   }
   .services_title {
     font-family: "Raleway", sans-serif;
@@ -686,76 +741,12 @@ h3 {
     margin-top: 8px;
     margin-bottom: 150px;
   }
-}
-
-.product_title {
-  height: 29px;
-  font-family: Raleway;
-  font-size: 23px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #464646;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  margin-left: 20px;
-  text-align: left;
-}
-
-.text_copy {
-  font-family: "Raleway", sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  color: #414141;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  text-align: left;
-}
-
-.read_more {
-  font-family: Raleway;
-  font-size: 14px;
-  font-weight: bold;
-  margin-top: 0;
-  color: #464646;
-  text-transform: uppercase;
-  white-space: nowrap;
-  margin-left: 20px;
-  text-decoration: none;
-  margin-bottom: 40px !important;
-}
-
-.img_1_mobile {
-  -o-object-fit: contain;
-     object-fit: contain;
-  border-radius: 6px;
-  margin-top: 120px;
-  margin-bottom: 120px;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-delay: .5s;
-          animation-delay: .5s;
-}
-
-.img_2_mobile {
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-fit: fill;
-     object-fit: fill;
-  border-radius: 6px;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-delay: .5s;
-          animation-delay: .5s;
+  table.contact_actions th {
+    text-transform: uppercase;
+    font-weight: normal;
+    text-align: left;
+    margin-top: 0px;
+  }
 }
 
 .services {

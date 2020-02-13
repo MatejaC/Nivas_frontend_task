@@ -396,11 +396,11 @@ $z-nav: 20;
  }
 
  .product_1_image {
-  grid-column: 1 / 5;
+  grid-column: 4 / 8;
  }
 
  .product_1_copy {
-  grid-column: 1 / 5;
+  grid-column: 8 / 10;
  }
 
  .product_2_image {
@@ -581,17 +581,17 @@ $z-nav: 20;
  }
 
  .product_1_copy {
-  grid-column: 7 / 11;
+  grid-column: 8 / 11;
   grid-row-start: 2;
  }
 
  .product_2_copy {
-  grid-column: 3 / 7;
+  grid-column: 2 / 6;
   grid-row-start: 3;
  }
 
  .product_2_image {
-  grid-column: 7 / 11;
+  grid-column: 6 / 12;
   grid-row-start: 3;
  }
 
@@ -690,11 +690,64 @@ $z-nav: 20;
   text-align: left;
  }
 
- table.contact_actions th {
-  text-transform: uppercase;
+ .img_1_mobile {
+  object-fit: contain;
+  border-radius: 6px;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  animation-duration: 3s;
+  animation-delay: .5s;
+ }
+
+ .img_2_mobile {
+  object-fit: contain;
+  border-radius: 6px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  animation-duration: 3s;
+  animation-delay: .5s;
+ }
+
+ .product_title {
+  font-family: Raleway;
+  font-size: 36px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $porta-c;
+  margin-top: 131px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+ }
+
+ .text_copy {
+  height: 115px;
+  font-family: Raleway;
+  font-size: 18px;
   font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.28;
+  letter-spacing: normal;
+  color: $text-c;
+  margin-bottom: 30px;
+  margin-left: 30px;
   text-align: left;
-  margin-top: 0px;
+ }
+
+ .read_more {
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 0;
+  color: $porta-c;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-left: 30px;
+  text-decoration: none;
+  margin-bottom: 40px !important;
  }
 
  .services_title {
@@ -725,74 +778,18 @@ $z-nav: 20;
   margin-bottom: 150px;
  }
 
+ table.contact_actions th {
+  text-transform: uppercase;
+  font-weight: normal;
+  text-align: left;
+  margin-top: 0px;
+ }
+
+
+
 }
 
 
-.product_title {
- height: 29px;
- font-family: Raleway;
- font-size: 23px;
- font-weight: 500;
- font-stretch: normal;
- font-style: normal;
- line-height: normal;
- letter-spacing: normal;
- color: $porta-c;
- margin-top: 20px;
- margin-bottom: 10px;
- margin-left: 20px;
- text-align: left;
-}
-
-
-.text_copy {
- font-family: $primary-font;
- font-size: 16px;
- font-weight: normal;
- font-stretch: normal;
- font-style: normal;
- line-height: 1.5;
- letter-spacing: normal;
- color: $text-c;
- margin-top: 20px;
- margin-left: 20px;
- margin-bottom: 20px;
- text-align: left;
-}
-
-.read_more {
- font-family: Raleway;
- font-size: 14px;
- font-weight: bold;
- margin-top: 0;
- color: $porta-c;
- text-transform: uppercase;
- white-space: nowrap;
- margin-left: 20px;
- text-decoration: none;
- margin-bottom: 40px !important;
-}
-
-
-
-.img_1_mobile {
- object-fit: contain;
- border-radius: 6px;
- margin-top: 120px;
- margin-bottom: 120px;
- animation-duration: 3s;
- animation-delay: .5s;
-}
-
-.img_2_mobile {
- object-fit: contain;
- object-fit: fill;
- border-radius: 6px;
- margin-top: 30px;
- margin-bottom: 20px;
- animation-duration: 3s;
- animation-delay: .5s;
-}
 
 .services {
  font-family: Raleway;
