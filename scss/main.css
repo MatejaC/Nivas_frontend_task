@@ -961,6 +961,12 @@ input[type=email]:focus,
   border: solid 1px #a1baf4;
 }
 
+input[type=name]:focus,
+input[type=email]:focus,
+.question:focus {
+  font-weight: 500;
+}
+
 input[type=submit] {
   width: 96px;
   height: 32px;

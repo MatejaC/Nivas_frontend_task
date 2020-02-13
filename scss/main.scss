@@ -1000,6 +1000,10 @@ input[type=email],
  &:focus {
   border: solid 1px $hover-color;
  }
+
+ &:focus {
+  font-weight: 500;
+ }
 }
 
 
