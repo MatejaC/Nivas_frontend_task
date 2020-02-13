@@ -774,8 +774,17 @@ $z-nav: 20;
 }
 
 
-.img_2_mobile,
+
 .img_1_mobile {
+ object-fit: contain;
+ border-radius: 6px;
+ margin-top: 120px;
+ margin-bottom: 120px;
+ animation-duration: 3s;
+ animation-delay: .5s;
+}
+
+.img_2_mobile {
  object-fit: contain;
  object-fit: fill;
  border-radius: 6px;

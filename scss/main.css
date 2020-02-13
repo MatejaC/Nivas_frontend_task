@@ -732,8 +732,19 @@ h3 {
   margin-bottom: 40px !important;
 }
 
-.img_2_mobile,
 .img_1_mobile {
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 6px;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+.img_2_mobile {
   -o-object-fit: contain;
      object-fit: contain;
   -o-object-fit: fill;
