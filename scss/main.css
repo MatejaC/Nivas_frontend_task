@@ -696,6 +696,10 @@ h3 {
     width: auto;
     margin: 0 rem;
   }
+  .logos {
+    margin-left: -100px;
+    margin-right: -100px;
+  }
   .logos:before {
     display: block;
     height: 73px;
