@@ -241,7 +241,7 @@ $z-nav: 20;
 }
 
 .hero_text {
- font-size: 4.3rem;
+ font-size: 4.5rem;
  font-weight: 900;
  margin-bottom: 40px;
 }
@@ -389,10 +389,35 @@ $z-nav: 20;
   position: relative;
  }
 
+ .hero_controls {
+  font-size: 4rem;
+  position: absolute;
+  top: 11%;
+  z-index: 10;
+  color: white;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+
+  .hero_text {
+   font-size: 32px;
+   font-weight: bold;
+   margin-bottom: 40px;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: 1.28;
+   letter-spacing: normal;
+   text-align: center;
+   color: $background-color-primary;
+  }
+ }
 
  // grid definitions
  header {
-  grid-column: 1 / 5;
+  grid-column: 1 / 6;
  }
 
  .product_1_image {
@@ -472,21 +497,6 @@ $z-nav: 20;
  }
 
 
- .services_text {
-  width: 320px;
-  font-family: $primary-font;
-  font-size: 16px;
-  font-weight: 400;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 21px;
-  letter-spacing: 0px;
-  color: $gray-lorem;
-  margin-top: 8px;
-  margin-right: 40px;
-  margin-left: 50px;
-  margin-bottom: 30px;
- }
 
  // screen specific
  .contact_copy_allign {
@@ -527,6 +537,22 @@ $z-nav: 20;
   line-height: normal;
   letter-spacing: normal;
   color: $background-color-primary;
+ }
+
+ .services_text {
+  width: 320px;
+  font-family: $primary-font;
+  font-size: 16px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 21px;
+  letter-spacing: 0px;
+  color: $gray-lorem;
+  margin-top: 8px;
+  margin-right: 40px;
+  margin-left: 50px;
+  margin-bottom: 30px;
  }
 
 }
@@ -841,6 +867,10 @@ $z-nav: 20;
  &:first-child {
   margin-left: 158px;
  }
+
+ &:last-child {
+  margin-right: 158px;
+ }
 }
 
 
@@ -877,6 +907,7 @@ $z-nav: 20;
 }
 
 .agency_name {
+ width: 133px;
  height: 63px;
  font-family: $secondary-font;
  font-size: 17px;
@@ -903,7 +934,7 @@ $z-nav: 20;
  letter-spacing: normal;
  text-align: center;
  color: $black;
- margin-top: 0;
+ margin-top: 15px;
  margin-right: 244px;
  margin-left: 21px;
  white-space: nowrap;
@@ -993,7 +1024,6 @@ input[type=email] {
  width: 458px;
  height: 46px;
  border: solid 1px $grey-softy;
-
  margin-bottom: 10px;
  margin-left: 20px;
  font-family: Raleway;
@@ -1041,11 +1071,9 @@ input[type=email],
  }
 }
 
-
-
 input[type=submit] {
- width: 96px;
- height: 32px;
+ width: 140px;
+ height: 50px;
  background-color: $black;
  margin-top: 0;
  margin-right: 20px;
@@ -1060,29 +1088,29 @@ input[type=submit] {
  letter-spacing: normal;
  text-align: center;
  color: $background-color-primary;
- padding-top: 6px;
- padding-right: 6px;
- padding-bottom: 7px;
- padding-left: 7px;
+ padding-top: 15px;
+ padding-right: 48px;
+ padding-bottom: 14px;
+ padding-left: 48px;
 }
 
 .follow {
- font-family: Raleway;
- font-size: 18px;
+ font-family: $primary-font;
+ font-size: 30px;
  font-weight: 500;
  font-stretch: normal;
  font-style: normal;
  line-height: normal;
  letter-spacing: normal;
  color: $color-follow;
- margin-top: 30px !important;
+ margin-top: 112px;
  margin-bottom: 25px;
  white-space: nowrap;
 }
 
 .newsletter {
- font-family: Raleway;
- font-size: 18px;
+ font-family: $primary-font;
+ font-size: 30px;
  font-weight: 500;
  font-stretch: normal;
  font-style: normal;
@@ -1090,7 +1118,7 @@ input[type=submit] {
  letter-spacing: normal;
  color: $color-follow;
  margin-top: 48px;
- margin-bottom: 0;
+ margin-bottom: 28px;
 }
 
 .newsletter_signup {
@@ -1100,23 +1128,23 @@ input[type=submit] {
 .newsletter_signup .email {
  background-color: black;
  border: solid 1px $grey-softy;
- width: 208px;
- height: 32px;
- margin-top: 21px;
- margin-right: 16px;
- margin-bottom: 30px;
+ width: 299px;
+ height: 46px;
+ margin-top: 0;
+ margin-right: 19px;
+ margin-bottom: 116px;
  margin-left: 20px;
- font-family: Raleway;
- font-size: 14px;
+ font-family: $primary-font;
+ font-size: 18px;
  font-weight: 300;
  font-stretch: normal;
  font-style: normal;
- line-height: 1.79;
+ line-height: 1.39;
  letter-spacing: normal;
  color: $y-gmail-color;
- padding-left: 14px;
- padding-top: 4px;
- padding-bottom: 3px;
+ padding-left: 16px;
+ padding-top: 11px;
+ padding-bottom: 10px;
 
  &:focus {
   border: solid 1px $hover-color;
@@ -1152,21 +1180,21 @@ input[type=submit] {
 
 .newsletter_signup .signup_submit {
  border: solid 1px $grey-softy;
- width: 96px;
- height: 32px;
- margin-bottom: 30px;
- font-family: Raleway;
- font-size: 16px;
+ width: 140px;
+ height: 50px;
+ margin-bottom: 112px;
+ font-family: $primary-font;
+ font-size: 18px;
  font-weight: 500;
  font-stretch: normal;
  font-style: normal;
  line-height: normal;
  letter-spacing: normal;
  text-align: center;
- padding-top: 6px;
- padding-right: 6px;
- padding-bottom: 7px;
- padding-left: 7px;
+ padding-top: 15px;
+ padding-right: 38px;
+ padding-bottom: 14px;
+ padding-left: 38px;
  color: $black;
  background-color: $background-color-primary;
 }

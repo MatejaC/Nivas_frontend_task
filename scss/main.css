@@ -172,7 +172,7 @@ h3 {
 }
 
 .hero_text {
-  font-size: 4.3rem;
+  font-size: 4.5rem;
   font-weight: 900;
   margin-bottom: 40px;
 }
@@ -315,10 +315,34 @@ h3 {
     margin: 0 auto;
     position: relative;
   }
+  .hero_controls {
+    font-size: 4rem;
+    position: absolute;
+    top: 11%;
+    z-index: 10;
+    color: white;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+  }
+  .hero_controls .hero_text {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.28;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+  }
   header {
     -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
-    grid-column: 1 / 5;
+    -ms-grid-column-span: 5;
+    grid-column: 1 / 6;
   }
   .product_1_image {
     -ms-grid-column: 1;
@@ -415,21 +439,6 @@ h3 {
     -ms-grid-column-span: 4;
     grid-column: 1 / 5;
   }
-  .services_text {
-    width: 320px;
-    font-family: "Raleway", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 21px;
-    letter-spacing: 0px;
-    color: #999999;
-    margin-top: 8px;
-    margin-right: 40px;
-    margin-left: 50px;
-    margin-bottom: 30px;
-  }
   .contact_copy_allign {
     text-align: left;
     margin-left: 20px !important;
@@ -462,6 +471,21 @@ h3 {
     line-height: normal;
     letter-spacing: normal;
     color: #ffffff;
+  }
+  .services_text {
+    width: 320px;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 21px;
+    letter-spacing: 0px;
+    color: #999999;
+    margin-top: 8px;
+    margin-right: 40px;
+    margin-left: 50px;
+    margin-bottom: 30px;
   }
 }
 
@@ -798,6 +822,10 @@ h3 {
   margin-left: 158px;
 }
 
+.services_text:last-child {
+  margin-right: 158px;
+}
+
 .contact-title {
   margin-left: 20px;
   margin-bottom: 0;
@@ -831,6 +859,7 @@ h3 {
 }
 
 .agency_name {
+  width: 133px;
   height: 63px;
   font-family: "Avenir Medium", sans-serif;
   font-size: 17px;
@@ -857,7 +886,7 @@ h3 {
   letter-spacing: normal;
   text-align: center;
   color: #000000;
-  margin-top: 0;
+  margin-top: 15px;
   margin-right: 244px;
   margin-left: 21px;
   white-space: nowrap;
@@ -995,8 +1024,8 @@ input[type=email]:focus,
 }
 
 input[type=submit] {
-  width: 96px;
-  height: 32px;
+  width: 140px;
+  height: 50px;
   background-color: #000000;
   margin-top: 0;
   margin-right: 20px;
@@ -1011,29 +1040,29 @@ input[type=submit] {
   letter-spacing: normal;
   text-align: center;
   color: #ffffff;
-  padding-top: 6px;
-  padding-right: 6px;
-  padding-bottom: 7px;
-  padding-left: 7px;
+  padding-top: 15px;
+  padding-right: 48px;
+  padding-bottom: 14px;
+  padding-left: 48px;
 }
 
 .follow {
-  font-family: Raleway;
-  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   color: #7a7a7a;
-  margin-top: 30px !important;
+  margin-top: 112px;
   margin-bottom: 25px;
   white-space: nowrap;
 }
 
 .newsletter {
-  font-family: Raleway;
-  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -1041,7 +1070,7 @@ input[type=submit] {
   letter-spacing: normal;
   color: #7a7a7a;
   margin-top: 48px;
-  margin-bottom: 0;
+  margin-bottom: 28px;
 }
 
 .newsletter_signup {
@@ -1051,23 +1080,23 @@ input[type=submit] {
 .newsletter_signup .email {
   background-color: black;
   border: solid 1px #979797;
-  width: 208px;
-  height: 32px;
-  margin-top: 21px;
-  margin-right: 16px;
-  margin-bottom: 30px;
+  width: 299px;
+  height: 46px;
+  margin-top: 0;
+  margin-right: 19px;
+  margin-bottom: 116px;
   margin-left: 20px;
-  font-family: Raleway;
-  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.79;
+  line-height: 1.39;
   letter-spacing: normal;
   color: #737373;
-  padding-left: 14px;
-  padding-top: 4px;
-  padding-bottom: 3px;
+  padding-left: 16px;
+  padding-top: 11px;
+  padding-bottom: 10px;
 }
 
 .newsletter_signup .email:focus {
@@ -1103,21 +1132,21 @@ input[type=submit] {
 
 .newsletter_signup .signup_submit {
   border: solid 1px #979797;
-  width: 96px;
-  height: 32px;
-  margin-bottom: 30px;
-  font-family: Raleway;
-  font-size: 16px;
+  width: 140px;
+  height: 50px;
+  margin-bottom: 112px;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  padding-top: 6px;
-  padding-right: 6px;
-  padding-bottom: 7px;
-  padding-left: 7px;
+  padding-top: 15px;
+  padding-right: 38px;
+  padding-bottom: 14px;
+  padding-left: 38px;
   color: #000000;
   background-color: #ffffff;
 }
