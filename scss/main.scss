@@ -542,6 +542,7 @@ $z-nav: 20;
   margin-right: 40px;
   margin-left: 40px;
  }
+
 }
 
 
@@ -579,17 +580,17 @@ $z-nav: 20;
  }
 
  .product_1_copy {
-  grid-column: 7 / 10;
+  grid-column: 8 / 11;
   grid-row-start: 2;
  }
 
  .product_2_copy {
-  grid-column: 2 / 6;
+  grid-column: 7 / 8;
   grid-row-start: 3;
  }
 
  .product_2_image {
-  grid-column: 6 / 12;
+  grid-column: 12 / 13;
   grid-row-start: 3;
  }
 
@@ -667,14 +668,6 @@ $z-nav: 20;
  }
 
  //screen specific
- /* product_box {
-  padding-top: 20px;
-  padding-bottom: 20px
- }
-
- .product_image_center {
-  text-align: center;
- } */
 
  .contact_copy_allign {
   text-align: center;
@@ -687,6 +680,7 @@ $z-nav: 20;
  .social_icons_allign_2 {
   text-align: left;
  }
+
 
  .img_1_mobile {
   object-fit: contain;
@@ -701,9 +695,11 @@ $z-nav: 20;
   object-fit: contain;
   border-radius: 6px;
   margin-top: 104px;
-  margin-bottom: 20px;
+  margin-bottom: 133px;
+  margin-right: 250px;
   animation-duration: 3s;
   animation-delay: .5s;
+  justify-content: stretch;
  }
 
  .product_title {
@@ -720,8 +716,30 @@ $z-nav: 20;
   margin-left: 60px;
  }
 
+ .product_title_2 {
+  margin-left: 240px;
+  margin-right: 100px;
+  font-family: Raleway;
+  font-size: 36px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $porta-c;
+  margin-top: 131px;
+  margin-bottom: 10px;
+
+ }
+
+
+ .product_box {
+  margin-right: 0px;
+  margin-left: -750px;
+  background-color: $whitey;
+ }
+
  .text_copy {
-  height: 115px;
   font-family: Raleway;
   font-size: 18px;
   font-weight: normal;
@@ -731,7 +749,26 @@ $z-nav: 20;
   letter-spacing: normal;
   color: $text-c;
   margin-bottom: 30px;
+
   margin-left: 60px;
+  text-align: left;
+  margin-top: 0;
+ }
+
+ .text_copy_2 {
+  width: 340px;
+  height: 115px;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.28;
+  letter-spacing: normal;
+  color: $text-c;
+  margin-left: 240px;
+  margin-right: 10px;
+  margin-bottom: 30px;
   text-align: left;
   margin-top: 0;
  }
@@ -746,7 +783,20 @@ $z-nav: 20;
   white-space: nowrap;
   margin-left: 60px;
   text-decoration: none;
-  margin-bottom: 40px !important;
+  margin-bottom: 150px;
+ }
+
+ .read_more_2 {
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 0;
+  color: $porta-c;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-left: 240px;
+  text-decoration: none;
+  margin-bottom: 163px;
  }
 }
 
@@ -842,15 +892,15 @@ table.contact_actions th {
 .agency_name {
  height: 63px;
  font-family: Avenir Medium;
- font-size: 15px;
+ font-size: 17px;
  font-weight: 500;
  font-stretch: normal;
  font-style: normal;
- line-height: 1.4;
+ line-height: 1.24;
  letter-spacing: normal;
  color: $color-drakov;
  margin-top: 0;
- margin-bottom: 10px;
+ margin-bottom: 15px;
  margin-left: 21px;
 }
 
@@ -954,43 +1004,42 @@ form.contact_form>* {
 
 input[type=name],
 input[type=email] {
- width: 320px;
- height: 32px;
+ width: 458px;
+ height: 46px;
  border: solid 1px $grey-softy;
- margin-right: 20px;
+
  margin-bottom: 10px;
  margin-left: 20px;
  font-family: Raleway;
- font-size: 14px;
+ font-size: 18px;
  font-weight: 300;
  font-stretch: normal;
  font-style: normal;
  line-height: 1.79;
  letter-spacing: normal;
  color: $color-input;
- padding-top: 4px;
- padding-bottom: 3px;
- padding-left: 17px;
+ padding-top: 11px;
+ padding-bottom: 10px;
+ padding-left: 16px;
 }
 
 .question {
- width: 320px;
- height: 171px;
+ width: 458px;
+ height: 232px;
  border: solid 1px $grey-softy;
  margin-top: 0;
- margin-right: 20px;
  margin-bottom: 10px;
  margin-left: 20px;
  font-family: Raleway;
- font-size: 14px;
+ font-size: 18px;
  font-weight: 300;
  font-stretch: normal;
  font-style: normal;
  line-height: 1.79;
  letter-spacing: normal;
  color: $color-input;
- padding-top: 4px;
- padding-left: 14px;
+ padding-top: 13px;
+ padding-left: 13px;
  resize: none;
 }
 
@@ -1017,7 +1066,7 @@ input[type=submit] {
  margin-bottom: 40px;
  margin-left: 244px;
  font-family: Raleway;
- font-size: 16px;
+ font-size: 18px;
  font-weight: 500;
  font-stretch: normal;
  font-style: normal;
@@ -1152,4 +1201,19 @@ input[type=submit] {
   }
  }
 
+}
+
+
+.contact_form_message {
+ height: 19px;
+ font-family: Raleway;
+ font-size: 16px;
+ font-weight: 500;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ margin-right: 20px;
+ margin-bottom: 10px;
+ margin-left: 20px;
 }

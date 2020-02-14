@@ -514,23 +514,23 @@ h3 {
         grid-row-start: 2;
   }
   .product_1_copy {
-    -ms-grid-column: 7;
+    -ms-grid-column: 8;
     -ms-grid-column-span: 3;
-    grid-column: 7 / 10;
+    grid-column: 8 / 11;
     -ms-grid-row: 2;
         grid-row-start: 2;
   }
   .product_2_copy {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 4;
-    grid-column: 2 / 6;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 1;
+    grid-column: 7 / 8;
     -ms-grid-row: 3;
         grid-row-start: 3;
   }
   .product_2_image {
-    -ms-grid-column: 6;
-    -ms-grid-column-span: 6;
-    grid-column: 6 / 12;
+    -ms-grid-column: 12;
+    -ms-grid-column-span: 1;
+    grid-column: 12 / 13;
     -ms-grid-row: 3;
         grid-row-start: 3;
   }
@@ -634,14 +634,6 @@ h3 {
     -ms-grid-column-span: 12;
     grid-column: 1 / 13;
   }
-  /* product_box {
-  padding-top: 20px;
-  padding-bottom: 20px
- }
-
- .product_image_center {
-  text-align: center;
- } */
   .contact_copy_allign {
     text-align: center;
   }
@@ -667,11 +659,15 @@ h3 {
        object-fit: contain;
     border-radius: 6px;
     margin-top: 104px;
-    margin-bottom: 20px;
+    margin-bottom: 133px;
+    margin-right: 250px;
     -webkit-animation-duration: 3s;
             animation-duration: 3s;
     -webkit-animation-delay: .5s;
             animation-delay: .5s;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
   }
   .product_title {
     font-family: Raleway;
@@ -686,8 +682,26 @@ h3 {
     margin-bottom: 10px;
     margin-left: 60px;
   }
+  .product_title_2 {
+    margin-left: 240px;
+    margin-right: 100px;
+    font-family: Raleway;
+    font-size: 36px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #464646;
+    margin-top: 131px;
+    margin-bottom: 10px;
+  }
+  .product_box {
+    margin-right: 0px;
+    margin-left: -750px;
+    background-color: #f8f8f8;
+  }
   .text_copy {
-    height: 115px;
     font-family: Raleway;
     font-size: 18px;
     font-weight: normal;
@@ -701,6 +715,23 @@ h3 {
     text-align: left;
     margin-top: 0;
   }
+  .text_copy_2 {
+    width: 340px;
+    height: 115px;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.28;
+    letter-spacing: normal;
+    color: #414141;
+    margin-left: 240px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    text-align: left;
+    margin-top: 0;
+  }
   .read_more {
     font-family: Raleway;
     font-size: 14px;
@@ -711,7 +742,19 @@ h3 {
     white-space: nowrap;
     margin-left: 60px;
     text-decoration: none;
-    margin-bottom: 40px !important;
+    margin-bottom: 150px;
+  }
+  .read_more_2 {
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 0;
+    color: #464646;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-left: 240px;
+    text-decoration: none;
+    margin-bottom: 163px;
   }
 }
 
@@ -803,15 +846,15 @@ table.contact_actions th {
 .agency_name {
   height: 63px;
   font-family: Avenir Medium;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.4;
+  line-height: 1.24;
   letter-spacing: normal;
   color: #323232;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   margin-left: 21px;
 }
 
@@ -915,43 +958,41 @@ form.contact_form > * {
 
 input[type=name],
 input[type=email] {
-  width: 320px;
-  height: 32px;
+  width: 458px;
+  height: 46px;
   border: solid 1px #979797;
-  margin-right: 20px;
   margin-bottom: 10px;
   margin-left: 20px;
   font-family: Raleway;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.79;
   letter-spacing: normal;
   color: #303030;
-  padding-top: 4px;
-  padding-bottom: 3px;
-  padding-left: 17px;
+  padding-top: 11px;
+  padding-bottom: 10px;
+  padding-left: 16px;
 }
 
 .question {
-  width: 320px;
-  height: 171px;
+  width: 458px;
+  height: 232px;
   border: solid 1px #979797;
   margin-top: 0;
-  margin-right: 20px;
   margin-bottom: 10px;
   margin-left: 20px;
   font-family: Raleway;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.79;
   letter-spacing: normal;
   color: #303030;
-  padding-top: 4px;
-  padding-left: 14px;
+  padding-top: 13px;
+  padding-left: 13px;
   resize: none;
 }
 
@@ -976,7 +1017,7 @@ input[type=submit] {
   margin-bottom: 40px;
   margin-left: 244px;
   font-family: Raleway;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -1106,5 +1147,19 @@ input[type=submit] {
 .footer_social_icons_1 i:hover,
 .footer_social_icons_2 i:hover {
   color: #a1baf4;
+}
+
+.contact_form_message {
+  height: 19px;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
 }
 /*# sourceMappingURL=main.css.map */
