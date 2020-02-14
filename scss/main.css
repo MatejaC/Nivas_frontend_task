@@ -172,7 +172,7 @@ h3 {
 }
 
 .hero_text {
-  font-size: 4.5rem;
+  font-size: 4.3rem;
   font-weight: 900;
   margin-bottom: 40px;
 }
@@ -198,7 +198,7 @@ h3 {
   background-color: #ffffff;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
-  font-size: 1.35rem;
+  font-size: 1.3rem;
   text-align: center;
   color: #000000;
 }
@@ -228,11 +228,11 @@ h3 {
 }
 
 .hero_controls_prev {
-  left: 50px;
+  left: 60px;
 }
 
 .hero_controls_next {
-  right: 50px;
+  right: 60px;
 }
 
 .logos_siema {
@@ -463,19 +463,6 @@ h3 {
     letter-spacing: normal;
     color: #ffffff;
   }
-  .services_text_2 {
-    font-family: "Raleway", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 21px;
-    letter-spacing: 0px;
-    color: #999999;
-    margin-top: 8px;
-    margin-right: 40px;
-    margin-left: 40px;
-  }
 }
 
 @media (min-width: 800px) {
@@ -701,6 +688,22 @@ h3 {
     margin-left: -750px;
     background-color: #f8f8f8;
   }
+  .services_title:before {
+    display: block;
+    height: 73px;
+    background-color: #ffffff;
+    content: " ";
+    width: auto;
+    margin: 0 rem;
+  }
+  .logos:before {
+    display: block;
+    height: 73px;
+    background-color: #ffffff;
+    content: " ";
+    width: auto;
+    margin: 0 rem;
+  }
   .text_copy {
     font-family: Raleway;
     font-size: 18px;
@@ -758,66 +761,37 @@ h3 {
   }
 }
 
-.services {
-  font-family: Raleway;
-  font-size: 36px;
-  font-weight: 400;
-  margin-top: 80px;
-  margin-left: 20px;
-  margin-bottom: 15px;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #ffffff;
-}
-
 .services_large {
-  font-family: Raleway;
-  font-size: 36px;
-  font-weight: 400;
-  margin-top: 80px;
-  margin-bottom: 25px;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #ffffff;
-}
-
-.services_title {
   font-family: "Raleway", sans-serif;
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 400;
-  margin-top: 80px;
-  padding-bottom: 55px;
+  margin-top: 100px;
+  margin-bottom: 70px;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  text-align: center;
   color: #ffffff;
+  margin-left: 533px;
 }
 
-.services_text_2 {
-  width: 320px;
+.services_text {
+  height: 130px;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   font-stretch: normal;
   font-style: normal;
-  line-height: 21px;
-  letter-spacing: 0px;
+  line-height: 1.63;
+  letter-spacing: normal;
   color: #999999;
   margin-top: 8px;
-  margin-bottom: 150px;
+  margin-bottom: 194px;
+  justify-items: center;
 }
 
-table.contact_actions th {
-  text-transform: uppercase;
-  font-weight: normal;
-  text-align: left;
-  margin-top: 0px;
+.services_text:first-child {
+  margin-left: 158px;
 }
 
 .contact-title {
@@ -835,17 +809,26 @@ table.contact_actions th {
   line-height: normal;
   letter-spacing: normal;
   color: #464646;
-  margin-top: 100px;
+  margin-top: 150px;
   margin-bottom: 43px;
 }
 
 .contact_text {
   margin-bottom: 40px;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.28;
+  letter-spacing: normal;
+  text-align: center;
+  color: #414141;
 }
 
 .agency_name {
   height: 63px;
-  font-family: Avenir Medium;
+  font-family: "Avenir Medium", sans-serif;
   font-size: 17px;
   font-weight: 500;
   font-stretch: normal;
@@ -853,16 +836,16 @@ table.contact_actions th {
   line-height: 1.24;
   letter-spacing: normal;
   color: #323232;
-  margin-top: 0;
+  margin-top: 57px;
   margin-bottom: 15px;
   margin-left: 21px;
+  margin-right: 187px;
 }
 
 .map {
-  width: 95px;
-  height: 18px;
-  font-family: Raleway;
-  font-size: 15px;
+  height: 21px;
+  font-family: .map "Raleway", sans-serif;
+  font-size: 18px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -872,22 +855,21 @@ table.contact_actions th {
   color: #000000;
   margin-top: 0;
   margin-right: 244px;
-  margin-bottom: 35px;
   margin-left: 21px;
   white-space: nowrap;
 }
 
 .contact_actions_table {
   height: 75px;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 12px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: 2.08;
   letter-spacing: normal;
-  margin-top: 10px;
-  margin-bottom: 30px;
+  margin-top: 60px;
+  margin-bottom: 335px;
   margin-left: 20px;
   color: #3d3d3d;
   white-space: nowrap;
