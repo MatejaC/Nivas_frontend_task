@@ -696,7 +696,7 @@ $z-nav: 20;
   border-radius: 6px;
   margin-top: 104px;
   margin-bottom: 133px;
-  margin-right: 250px;
+  margin-left: 60px;
   animation-duration: 3s;
   animation-delay: .5s;
   justify-content: stretch;
@@ -713,7 +713,7 @@ $z-nav: 20;
   color: $porta-c;
   margin-top: 131px;
   margin-bottom: 10px;
-  margin-left: 60px;
+  margin-left: 30px;
  }
 
  .product_title_2 {
@@ -734,7 +734,7 @@ $z-nav: 20;
 
 
  .product_box {
-  margin-right: 0px;
+  margin-right: -150px;
   margin-left: -750px;
   background-color: $whitey;
  }
@@ -749,8 +749,7 @@ $z-nav: 20;
   letter-spacing: normal;
   color: $text-c;
   margin-bottom: 30px;
-
-  margin-left: 60px;
+  margin-left: 30px;
   text-align: left;
   margin-top: 0;
  }
@@ -767,7 +766,7 @@ $z-nav: 20;
   letter-spacing: normal;
   color: $text-c;
   margin-left: 240px;
-  margin-right: 10px;
+  margin-right: 60px;
   margin-bottom: 30px;
   text-align: left;
   margin-top: 0;
@@ -781,7 +780,7 @@ $z-nav: 20;
   color: $porta-c;
   text-transform: uppercase;
   white-space: nowrap;
-  margin-left: 60px;
+  margin-left: 30px;
   text-decoration: none;
   margin-bottom: 150px;
  }
